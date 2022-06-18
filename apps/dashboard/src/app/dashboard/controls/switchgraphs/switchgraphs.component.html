@@ -1,0 +1,7 @@
+<div [matMenuTriggerFor]="menu"><span><i class="fa fa-bar-chart"></i></span></div>
+<mat-menu #menu="matMenu">
+  <ng-template matMenuContent>
+    <button mat-menu-item (click)="setSelected(option)" *ngFor="let option of _menuData">{{option}}</button>
+
+  </ng-template>
+</mat-menu>

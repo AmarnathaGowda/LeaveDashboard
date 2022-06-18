@@ -1,0 +1,1038 @@
+<p *ngIf="ispdfloader">Please wait while we are exporting Graphs to PDF</p>
+<div class="container-fluid">
+  <div class="bg-grey">
+    <div class="row">
+      <div class="col-lg-8">
+      </div>
+      <div class="col-lg-4 text-right mt-1">
+        <ng-container *ngIf="ispdfloader; then istrue; else isfalse">
+        </ng-container>
+        <ng-template #istrue>
+          <a>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Generating Pdf...
+          </a>
+        </ng-template>
+        <ng-template #isfalse>
+          <a (click)="exportToPdf(itemsFirstRow, items)" style="cursor: pointer" *ngIf="showexportbtn">ExportToPdf</a>
+
+        </ng-template>
+
+      </div>
+    </div>
+    <div *ngIf="itemsFirstRow" class="example-container row staticGraphRow ">
+      <ng-container *ngFor="let item of itemsFirstRow;let i = index">
+
+        <div class="col-sm-3 pad-1 mar-0 example-box" *ngIf="item.parentGraphID === 1">
+          <div class="box">
+            <div id="exportgrp{{item.parentGraphID}}">
+              <div *ngIf="item['d'+item.sortOrder]?.spinner || item['d'+item.sortOrder]?.graph?.data">
+                <div class="row headrow">
+                  <div class="col-10 graphName" id="graphname{{item.parentGraphID}}" matTooltip="{{item.displayName}}"
+                    [matTooltipPosition]="'above'">
+                    {{item.displayName}}</div>
+                  <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                  </div>
+                  <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                    class="col-1 header-chart"></dashboard-ui-viewby>
+                  <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                        class="fa fa-cog"></i></span>
+                  </div>
+                  <!-- <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                        class="fa fa-bar-chart"></i></span></div> -->
+                </div>
+                <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                  (click)="openChartOpt($event)" [options]="options">
+                </dashboard-ui-dropdown>
+                <div class="charts" [ngStyle]="{'width': item.parentGraphID === 1 ? '-webkit-fill-available' : ''  }">
+                  <ng-container *ngIf="item['d'+item.sortOrder]?.spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-newdonutchart #svgeleref *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [data]="item['d'+item.sortOrder]?.graph?.data">
+                    </dashboard-ui-newdonutchart>
+
+                    <!-- [keys]="item['d'+item.sortOrder]?.graph?.keys" [data]="item['d'+item.sortOrder]?.graph?.data" [colors]="item['d'+item.sortOrder]?.graph?.colors" -->
+                    <!-- <dashboard-ui-dounutchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && !item['d'+item.sortOrder]?.spinner"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [keys]="item['d'+item.sortOrder]?.graph?.keys"
+                      [colors]="item['d'+item.sortOrder]?.graph?.colors" [type]="item['d'+item.sortOrder]?.graph?.type">
+                    </dashboard-ui-dounutchart> -->
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-5 pad-0 mar-0 example-box" *ngIf="item.parentGraphID === 2">
+          <div class="box">
+            <div id="exportgrp{{item.parentGraphID}}">
+              <div *ngIf="item['d'+item.sortOrder]?.linebarloader  || item['d'+item.sortOrder]?.graph?.data">
+                <div class="row headrow">
+                  <div class="col-10 graphName" id="graphname{{item.parentGraphID}}" matTooltip="{{item.displayName}}"
+                    [matTooltipPosition]="'above'">
+                    {{item.displayName}}</div>
+                  <div class="col-1 header-chart" style="text-align: right;"><span (click)="openDialog(item)"><i
+                        class="fa fa-eye"></i></span>
+                  </div>
+
+                  <!-- <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                    class="col-1 header-chart"></dashboard-ui-viewby> -->
+
+                  <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                        class="fa fa-cog"></i></span>
+                  </div>
+                  <!-- <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                        class="fa fa-bar-chart"></i></span></div> -->
+                </div>
+                <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                  (click)="openChartOpt($event)" [options]="options">
+                </dashboard-ui-dropdown>
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder]?.linebarloader; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-linebarchart *ngIf="item['d'+item.sortOrder]?.graph?.data "
+                      [keys]="item['d'+item.sortOrder]?.graph?.keys" [color]="item['d'+item.sortOrder]?.graph?.color"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"></dashboard-ui-linebarchart>
+
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class=" pad-0 mar-0 example-box smallboxgraph"
+          [ngClass]="item.parentGraphID === 3? 'col-sm-2 w-19':'col-sm-4'" *ngIf="item.parentGraphID === 3">
+          <div class="box">
+            <div id="exportgrp{{item.parentGraphID}}">
+              <div *ngIf="item['d'+item.sortOrder]?.latepiespinner  || item['d'+item.sortOrder]?.graph?.data"
+                class="frlateearly">
+                <div class="row headrow">
+                  <div class="col-9 graphName" id="graphname{{item.parentGraphID}}" matTooltip="{{item.displayName}}"
+                    [matTooltipPosition]="'above'">
+                    {{item.displayName}}</div>
+                  <div class="col-2 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                  </div>
+                  <!-- <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                    class="col-1 header-chart"></dashboard-ui-viewby> -->
+                  <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                        class="fa fa-cog"></i></span>
+                  </div>
+                  <!-- <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                        class="fa fa-bar-chart"></i></span></div> -->
+                </div>
+                <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                  (click)="openChartOpt($event)" [options]="options">
+                </dashboard-ui-dropdown>
+                <div class="charts"
+                  [ngStyle]="{'width': item.parentGraphID === 3 ? '-webkit-fill-available' : '' , 'height': item.parentGraphID === 3 ? '130px' : '' }">
+                  <ng-container *ngIf="item['d'+item.sortOrder]?.latepiespinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-dounutchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && !item['d'+item.sortOrder]?.graph?.latepiespinner"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [keys]="item['d'+item.sortOrder]?.graph?.keys"
+                      [colors]="item['d'+item.sortOrder]?.graph?.colors" [type]="item['d'+item.sortOrder]?.graph?.type">
+                    </dashboard-ui-dounutchart>
+                  </ng-template>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6" style="margin-left: 5px;">
+              <div class="halfdont-details">
+                <h4>Total Hours Worked</h4>
+                <h5>{{getTotalHoursWorkedData}}</h5>
+              </div>
+              <!-- <img src="../assets/images/c3a.PNG" alt="c3a" style="width:100%;height: 103px;"> -->
+            </div>
+            <div class="col-lg-6 " style="margin-left: -10px;">
+              <div class="halfdont-details">
+                <h4>Average Hours per employee</h4>
+                <h5>{{getAvgHoursPerEmpData}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pad-4 mar-0 example-box smallboxgraph"
+          [ngClass]="item.parentGraphID === 4? 'col-sm-2  w-19':'col-sm-4'" *ngIf="item.parentGraphID === 4">
+          <div class="box">
+            <div id="exportgrp{{item.parentGraphID}}">
+              <div *ngIf="item['d'+item.sortOrder]?.earlypiespinner || item['d'+item.sortOrder]?.graph?.data"
+                class="frlateearly">
+                <div class="row headrow">
+                  <div class="col-9 graphName" id="graphname{{item.parentGraphID}}" matTooltip="{{item.displayName}}"
+                    [matTooltipPosition]="'above'">
+                    {{item.displayName}}</div>
+                  <div class="col-2 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                  </div>
+                  <!-- <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                    class="col-1 header-chart"></dashboard-ui-viewby> -->
+                  <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                        class="fa fa-cog"></i></span>
+                  </div>
+                  <!-- <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                        class="fa fa-bar-chart"></i></span></div> -->
+                </div>
+                <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                  (click)="openChartOpt($event)" [options]="options">
+                </dashboard-ui-dropdown>
+                <div class="charts"
+                  [ngStyle]="{'width': item.parentGraphID === 4 ? '-webkit-fill-available' : '' , 'height': item.parentGraphID === 4 ? '130px' : '' }">
+                  <ng-container *ngIf="item['d'+item.sortOrder]?.earlypiespinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-dounutchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && !item['d'+item.sortOrder]?.graph?.earlypiespinner"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [keys]="item['d'+item.sortOrder]?.graph?.keys"
+                      [colors]="item['d'+item.sortOrder]?.graph?.colors" [type]="item['d'+item.sortOrder]?.graph?.type">
+                    </dashboard-ui-dounutchart>
+
+
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-6" style="margin-left: 5px;">
+              <div class="halfdont-details">
+                <h4>Late Login Hours </h4>
+                <h5>{{getLateLoginHoursData}}</h5>
+              </div>
+              <!-- <img src="../assets/images/c3a.PNG" alt="c3a" style="width:100%;height: 103px;"> -->
+            </div>
+            <div class="col-lg-6 " style="margin-left: -10px;">
+              <div class="halfdont-details">
+                <h4>Early Logout Hours</h4>
+                <h5>{{getEarlyLogoutHoursData}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </ng-container>
+    </div>
+
+    <!-- SECOND ROW STARTS HERE -->
+
+    <div *ngIf="items" class="example-container row row2 removeglutterx pad-0 mar-0" #containercdk
+      (mousemove)="mouseMove($event)" cdkDropListGroup>
+      <div cdkDropList [cdkDropListEnterPredicate]="dropListEnterPredicate"
+        (cdkDropListDropped)="dropListDropped($event)"></div>
+      <div cdkDropList *ngFor="let item of items;let i = index" class="col-sm-4 pad-0 mar-0 example-box"
+        [cdkDropListEnterPredicate]="dropListEnterPredicate" (cdkDropListDropped)="dropListDropped($event)">
+        <div class="box">
+
+          <!-- Daily Attendance -->
+
+          <div *ngIf="item.parentGraphID === 5" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].getDailyAttendancespinner ||  item['d'+item.sortOrder]?.graph?.data"
+              cdkDrag (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="col-9 graphName" matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                  [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                  class="col-1 header-chart"></dashboard-ui-viewby>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <div class="charts">
+                <ng-container *ngIf="item['d'+item.sortOrder].getDailyAttendancespinner; then istrue; else isfalse">
+                </ng-container>
+                <ng-template #istrue>
+                  <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                  <p class="text-center">Loading...</p>
+                </ng-template>
+                <ng-template #isfalse>
+                  <dashboard-ui-stackedbarchart *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                    [keys]="item['d'+item.sortOrder]?.graph.keys" [color]="item['d'+item.sortOrder]?.graph.color"
+                    [data]="item['d'+item.sortOrder]?.graph.data">
+                  </dashboard-ui-stackedbarchart>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- For Graph ID = 6  Employee worked on weekend holiday -->
+          <div *ngIf="item.parentGraphID === 6" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].weekendspinner ||  item['d'+item.sortOrder]?.graph?.data " cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class=" graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-9'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <dashboard-ui-switchgraphs [graphDetails]="item" [data]="item.graphViewType"
+                  (selectedView)="setSelectedSwitchView($event)" class="col-1 header-chart"></dashboard-ui-switchgraphs>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+                <!-- <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                      class="fa fa-bar-chart"></i></span></div> -->
+
+
+              </div>
+
+              <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                (click)="openChartOpt($event)" [options]="options">
+              </dashboard-ui-dropdown>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].weekendspinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-linechart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type !== '2D Stacked Columns'"
+                      [xaxis]="item['d'+item.sortOrder]?.graph.x" [yaxis]="item['d'+item.sortOrder]?.graph.y"
+                      [color]="item['d'+item.sortOrder]?.graph.colors" [keys]="item['d'+item.sortOrder]?.graph.keys"
+                      [data]="item['d'+item.sortOrder]?.graph.data">
+                    </dashboard-ui-linechart>
+                    <!-- <dashboard-ui-stackedbarchart *ngIf="item['d'+item.sortOrder]?.graph?.type === 'Stacked Columns'"
+                      [color]="item['d'+item.sortOrder]?.graph.colors" [keys]="item['d'+item.sortOrder]?.graph.keys"
+                      [data]="item['d'+item.sortOrder]?.graph.data">
+                    </dashboard-ui-stackedbarchart> -->
+
+                    <dashboard-ui-verticalbarchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data  && item['d'+item.sortOrder]?.graph?.type === '2D Stacked Columns'"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"
+                      [color]="item['d'+item.sortOrder]?.graph?.colors[item['d'+item.sortOrder]?.graph?.y]"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y">
+                    </dashboard-ui-verticalbarchart>
+                  </ng-template>
+
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+
+          <div *ngIf="item.parentGraphID === 7" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data " cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class=" graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-10'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-groupedverticalbarchart #exportgrp
+                      *ngIf="item.parentGraphID === 7 && item['d'+item.sortOrder]?.graph?.data"
+                      [color]="item['d'+item.sortOrder]?.graph.color" [data]="item['d'+item.sortOrder]?.graph.data">
+                    </dashboard-ui-groupedverticalbarchart>
+                  </ng-template>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 8" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data " cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="col-9 graphName" matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart">
+                  <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)">
+                  </dashboard-ui-viewby>
+
+                </div>
+
+                <!-- <dashboard-ui-switchgraphs [graphDetails]="item" [data]="item.graphViewType"
+                  (selectedView)="setSelectedSwitchView($event)" class="col-1 header-chart"></dashboard-ui-switchgraphs> -->
+
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+
+
+
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-horizontalbarchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type !=='2D Pie'"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+
+                    <dashboard-ui-newdonutchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type ==='2D Pie'"
+                      [data]="item['d'+item.sortOrder]?.graph?.data">
+                    </dashboard-ui-newdonutchart>
+
+                  </ng-template>
+
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+
+          <div *ngIf="item.parentGraphID === 9" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data" cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class=" graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-10'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-linechart *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [color]="item['d'+item.sortOrder]?.graph?.color" [xaxis]="item['d'+item.sortOrder]?.graph?.x"
+                      [yaxis]="item['d'+item.sortOrder]?.graph?.y" [keys]="item['d'+item.sortOrder]?.graph?.keys"
+                      [data]="item['d'+item.sortOrder]?.graph?.data">
+                    </dashboard-ui-linechart>
+
+
+                  </ng-template>
+
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 10" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data" cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="col-9 graphName" matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart">
+                  <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                    [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)">
+                  </dashboard-ui-viewby>
+                </div>
+                <!-- <dashboard-ui-switchgraphs [graphDetails]="item" [data]="item.graphViewType"
+                  (selectedView)="setSelectedSwitchView($event)" class="col-1 header-chart"></dashboard-ui-switchgraphs>
+ -->
+
+
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+
+                    <dashboard-ui-horizontalbarchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type !=='2D Pie'"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+
+                    <dashboard-ui-newdonutchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type ==='2D Pie'"
+                      [data]="item['d'+item.sortOrder]?.graph?.data">
+                    </dashboard-ui-newdonutchart>
+                  </ng-template>
+
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 11" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data" cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+
+                <div class=" graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-9'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                      class="fa fa-bar-chart"></i></span></div>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                (click)="openChartOpt($event)" [options]="options">
+              </dashboard-ui-dropdown>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <!-- <dashboard-ui-horizontalbarchart *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+                     -->
+
+                    <dashboard-ui-multiseries [data]="item['d'+item.sortOrder]?.graph?.data"></dashboard-ui-multiseries>
+
+                    <!-- <dashboard-ui-weeklyovertime class="weekly-overtime" *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [color]="item['d'+item.sortOrder]?.graph?.color"
+                      [keys]="item['d'+item.sortOrder]?.graph?.keys">
+                    </dashboard-ui-weeklyovertime> -->
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 12" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder].spinner || item['d'+item.sortOrder]?.graph?.data" cdkDrag
+              (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="col-8 graphName" matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                  [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                  class="col-1 header-chart"></dashboard-ui-viewby>
+                <dashboard-ui-switchgraphs [graphDetails]="item" [data]="item.graphViewType"
+                  (selectedView)="setSelectedSwitchView($event)" class="col-1 header-chart"></dashboard-ui-switchgraphs>
+
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-verticalbarchart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && showbar && !showpie && item['d'+item.sortOrder]?.graph?.type !== 'Line'"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [color]="item['d'+item.sortOrder]?.graph?.color"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y">
+                    </dashboard-ui-verticalbarchart>
+
+                    <dashboard-ui-linechart
+                      *ngIf="item['d'+item.sortOrder]?.graph?.data && item['d'+item.sortOrder]?.graph?.type === 'Line'"
+                      [xaxis]="item['d'+item.sortOrder]?.graph.x" [yaxis]="item['d'+item.sortOrder]?.graph.y"
+                      [color]="item['d'+item.sortOrder]?.graph.color" [keys]="item['d'+item.sortOrder]?.graph.keys"
+                      [data]="item['d'+item.sortOrder]?.graph.data">
+                    </dashboard-ui-linechart>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 13" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder]" cdkDrag (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+
+
+
+                <div class=" graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-9'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                      class="fa fa-bar-chart"></i></span></div>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                (click)="openChartOpt($event)" [options]="options">
+              </dashboard-ui-dropdown>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-verticalbarchart *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [color]="item['d'+item.sortOrder]?.graph?.color"
+                      [xaxis]="item['d'+item.sortOrder]?.graph?.x" [yaxis]="item['d'+item.sortOrder]?.graph?.y">
+                    </dashboard-ui-verticalbarchart>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 14" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder]" cdkDrag (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="graphName" [ngClass]="(item['d'+item.sortOrder]?.viewBy)?'col-8':'col-9'"
+                  matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+                <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                      class="fa fa-bar-chart"></i></span></div>
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                (click)="openChartOpt($event)" [options]="options">
+              </dashboard-ui-dropdown>
+
+              <div class="row">
+                <div class="charts">
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <dashboard-ui-linechart *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [color]="item['d'+item.sortOrder]?.graph?.color" [keys]="item['d'+item.sortOrder]?.graph?.keys"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [xaxis]="item['d'+item.sortOrder]?.graph?.x"
+                      [yaxis]="item['d'+item.sortOrder]?.graph?.y">
+                    </dashboard-ui-linechart>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div *ngIf="item.parentGraphID === 15" id="exportgrp{{item.parentGraphID}}">
+            <div *ngIf="item['d'+item.sortOrder]" cdkDrag (cdkDragMoved)="dragMoved($event)">
+              <div class="row headrow">
+                <div class="col-8 graphName" matTooltip="{{item.displayName}}" [matTooltipPosition]="'above'">
+                  {{item.displayName}}</div>
+
+                <dashboard-ui-viewby *ngIf="item['d'+item.sortOrder]?.viewBy" [graphDetails]="item"
+                  [data]="item['d'+item.sortOrder]?.viewBy?.data" (selectedView)="setSelectedView($event)"
+                  class="col-1 header-chart"></dashboard-ui-viewby>
+                <div class="col-1 header-chart"> <span (click)="openChartType(openChart, item)"><i
+                      class="fa fa-bar-chart"></i></span></div>
+
+
+                <div class="col-1 header-chart"><span (click)="openDialog(item)"><i class="fa fa-eye"></i></span>
+                </div>
+
+
+
+                <div class="col-1 header-chart"> <span (click)="openSettings(settings, item.displayName,item)"><i
+                      class="fa fa-cog"></i></span>
+                </div>
+
+              </div>
+
+              <dashboard-ui-dropdown class="settings" *ngIf="viewBy && itemnumber === item"
+                (click)="openChartOpt($event)" [options]="options">
+              </dashboard-ui-dropdown>
+
+              <div class="row">
+                <div class="charts">
+
+                  <ng-container *ngIf="item['d'+item.sortOrder].spinner; then istrue; else isfalse">
+                  </ng-container>
+                  <ng-template #istrue>
+                    <img src="../../assets/images/spinning-loading.gif" width="100%" alt="page-loader">
+                    <p class="text-center">Loading...</p>
+                  </ng-template>
+                  <ng-template #isfalse>
+                    <!-- <dashboard-ui-penalisation class="penal-Instance" *ngIf="penaliz?.graph?.data"
+                      [data]="penaliz?.graph?.data" [color]="penaliz?.graph?.color" >
+                    </dashboard-ui-penalisation> -->
+                    <!-- <dashboard-ui-penalinstance *ngIf="penaliz?.graph?.data" [data]="penaliz?.graph?.data"> </dashboard-ui-penalinstance> -->
+
+                    <dashboard-ui-penalinstance *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [data]="item['d'+item.sortOrder]?.graph?.data"> </dashboard-ui-penalinstance>
+
+                    <!-- <dashboard-ui-penalisation class="penal-Instance" *ngIf="item['d'+item.sortOrder]?.graph?.data"
+                      [data]="item['d'+item.sortOrder]?.graph?.data" [color]="item['d'+item.sortOrder]?.graph?.color">
+                    </dashboard-ui-penalisation> -->
+
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SECOND ROW ENDS HERE -->
+
+
+    <div style="position: absolute;z-index: -9999;">
+      <div class="chartsPDF" #chartsPDF style="height: 600px;width: max-content;overflow: visible;">
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- row one graph modal -->
+    <div class="modal firstrowmodal" tabindex="-1" id="rowonegraph" role="dialog">
+      <div class="modal-dialog" role="document" style="max-width: 54%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+          </div>
+          <div class="modal-body" style="overflow: scroll;">
+            <div [ngSwitch]="firstrowid">
+              <div *ngSwitchCase="'piechart'">
+                <dashboard-ui-dounutchart *ngIf="pieChart && !spinner" [data]="pieChart.data" [keys]="pieChart.keys"
+                  [colors]="pieChart.colors" [type]="pieChart.type">
+                </dashboard-ui-dounutchart>
+              </div>
+              <div *ngSwitchCase="'target'">
+                <dashboard-ui-linebarchart *ngIf="getTargetVsActualWorkDays?.data && !linebarloader"
+                  [keys]="getTargetVsActualWorkDays.keys" [color]="getTargetVsActualWorkDays.color"
+                  [data]="getTargetVsActualWorkDays.data"></dashboard-ui-linebarchart>
+              </div>
+              <div *ngSwitchCase="'earlylogout'">
+                <dashboard-ui-dounutchart *ngIf="earlylogoutChart && !earlypiespinner" [data]="earlylogoutChart.data"
+                  [keys]="earlylogoutChart.keys" [colors]="earlylogoutChart.colors" [type]="earlylogoutChart.type">
+                </dashboard-ui-dounutchart>
+              </div>
+              <div *ngSwitchCase="'latelogin'">
+                <dashboard-ui-dounutchart *ngIf="lateloginChart && !latepiespinner" [data]="lateloginChart.data"
+                  [keys]="lateloginChart.keys" [colors]="lateloginChart.colors" [type]="lateloginChart.type">
+                </dashboard-ui-dounutchart>
+              </div>
+              <div *ngSwitchDefault>Otherwise</div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closerowoneGraph()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row sec graph modal -->
+    <div class="modal secondrowm" *ngIf="secondrownum && secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+      tabindex="-1" id="rowsecgraph" role="dialog">
+      <div class="modal-dialog" role="document" style="max-width: 90%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{graphitemname}}</h5>
+          </div>
+          <div class="modal-body" style="overflow: scroll;">
+            <div class="chartsZoom">
+
+              <div class="chartsZoom" *ngIf="secondrownum?.dashboardGraphId === 1">
+                <dashboard-ui-newdonutchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data">
+                </dashboard-ui-newdonutchart>
+              </div>
+
+              <div *ngIf="secondrownum.dashboardGraphId === 2">
+                <dashboard-ui-linebarchart
+                  *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data && !secondrownum['d'+secondrownum.sortOrder]?.graph?.linebarloader"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"></dashboard-ui-linebarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 3">
+                <dashboard-ui-dounutchart
+                  *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data && !secondrownum['d'+secondrownum.sortOrder]?.graph?.latepiespinner"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [colors]="secondrownum['d'+secondrownum.sortOrder]?.graph?.colors"
+                  [type]="secondrownum['d'+secondrownum.sortOrder]?.graph?.type">
+                </dashboard-ui-dounutchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 4">
+                <dashboard-ui-dounutchart
+                  *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data && !secondrownum['d'+secondrownum.sortOrder]?.graph?.earlypiespinner"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [colors]="secondrownum['d'+secondrownum.sortOrder]?.graph?.colors"
+                  [type]="secondrownum['d'+secondrownum.sortOrder]?.graph?.type">
+                </dashboard-ui-dounutchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 6">
+                <dashboard-ui-linechart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph.y"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph.colors"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph.keys"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph.data">
+                </dashboard-ui-linechart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 5">
+                <dashboard-ui-stackedbarchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data">
+                </dashboard-ui-stackedbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 7">
+                <dashboard-ui-groupedverticalbarchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph.color"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph.data">
+                </dashboard-ui-groupedverticalbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 8">
+                <dashboard-ui-horizontalbarchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 9">
+                <dashboard-ui-linechart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data">
+                </dashboard-ui-linechart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 10">
+                <dashboard-ui-horizontalbarchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 12">
+                <dashboard-ui-verticalbarchart
+                  *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data && showbar && !showpie"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y">
+                </dashboard-ui-verticalbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 13">
+                <dashboard-ui-verticalbarchart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y">
+                </dashboard-ui-verticalbarchart>
+              </div>
+              <div *ngIf="secondrownum.dashboardGraphId === 14">
+                <dashboard-ui-linechart *ngIf="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [color]="secondrownum['d'+secondrownum.sortOrder]?.graph?.color"
+                  [keys]="secondrownum['d'+secondrownum.sortOrder]?.graph?.keys"
+                  [data]="secondrownum['d'+secondrownum.sortOrder]?.graph?.data"
+                  [xaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.x"
+                  [yaxis]="secondrownum['d'+secondrownum.sortOrder]?.graph?.y">
+                </dashboard-ui-linechart>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closerowsecGraph()">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

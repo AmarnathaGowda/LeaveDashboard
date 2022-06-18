@@ -1,0 +1,133 @@
+<div>
+  <h1 mat-dialog-title style="float: left">{{data.graphName}}</h1>
+  <span style="float: right" [mat-dialog-close]>X</span>
+</div>
+
+<div mat-dialog-content style="clear: both">
+  <div class="chartsZoom">
+
+    <div *ngIf="data?.dashboardGraphId === 1">
+      <dashboard-ui-newdonutchart *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [data]="data['d'+data.sortOrder]?.graph?.data">
+      </dashboard-ui-newdonutchart>
+    </div>
+    <dashboard-ui-linebarchart
+      *ngIf="data.dashboardGraphId === 2  && data['d'+data.sortOrder]?.graph?.data && !data['d'+data.sortOrder]?.graph?.linebarloader"
+      [keys]="data['d'+data.sortOrder]?.graph?.keys" [color]="data['d'+data.sortOrder]?.graph?.color"
+      [data]="data['d'+data.sortOrder]?.graph?.data">
+
+    </dashboard-ui-linebarchart>
+
+    <dashboard-ui-dounutchart
+      *ngIf="data.dashboardGraphId === 3 && data['d'+data.sortOrder]?.graph?.data && !data['d'+data.sortOrder]?.graph?.latepiespinner"
+      [data]="data['d'+data.sortOrder]?.graph?.data" [keys]="data['d'+data.sortOrder]?.graph?.keys"
+      [colors]="data['d'+data.sortOrder]?.graph?.colors" [type]="data['d'+data.sortOrder]?.graph?.type">
+    </dashboard-ui-dounutchart>
+
+    <dashboard-ui-dounutchart
+      *ngIf="data.dashboardGraphId === 4 && data['d'+data.sortOrder]?.graph?.data && !data['d'+data.sortOrder]?.graph?.latepiespinner"
+      [data]="data['d'+data.sortOrder]?.graph?.data" [keys]="data['d'+data.sortOrder]?.graph?.keys"
+      [colors]="data['d'+data.sortOrder]?.graph?.colors" [type]="data['d'+data.sortOrder]?.graph?.type">
+    </dashboard-ui-dounutchart>
+
+    <div *ngIf="data.dashboardGraphId === 6">
+      <!-- {{data['d'+data.sortOrder]?.graph?.type}} -->
+      <dashboard-ui-linechart *ngIf="data['d'+data.sortOrder]?.graph?.data && data['d'+data.sortOrder]?.graph?.type !== '2D Stacked Columns'" 
+      [xaxis]="data['d'+data.sortOrder]?.graph.x"
+        [yaxis]="data['d'+data.sortOrder]?.graph.y" [color]="data['d'+data.sortOrder]?.graph.colors"
+        [keys]="data['d'+data.sortOrder]?.graph.keys"  [data]="data['d'+data.sortOrder]?.graph.data">
+      </dashboard-ui-linechart>
+      <dashboard-ui-verticalbarchart
+      *ngIf="data['d'+data.sortOrder]?.graph?.data  && data['d'+data.sortOrder]?.graph?.type === '2D Stacked Columns'"
+      [data]="data['d'+data.sortOrder]?.graph?.data"
+      [color]="data['d'+data.sortOrder]?.graph?.colors[data['d'+data.sortOrder]?.graph?.y]"
+      [xaxis]="data['d'+data.sortOrder]?.graph?.x" [yaxis]="data['d'+data.sortOrder]?.graph?.y">
+      </dashboard-ui-verticalbarchart>
+    </div>
+    <dashboard-ui-stackedbarchart *ngIf="data.dashboardGraphId === 5 && data['d'+data.sortOrder]?.graph?.data"
+      [keys]="data['d'+data.sortOrder]?.graph?.keys" [color]="data['d'+data.sortOrder]?.graph?.color"
+      [data]="data['d'+data.sortOrder]?.graph?.data">
+    </dashboard-ui-stackedbarchart>
+    <div *ngIf="data.dashboardGraphId === 7">
+      <dashboard-ui-groupedverticalbarchart *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [color]="data['d'+data.sortOrder]?.graph.color" [data]="data['d'+data.sortOrder]?.graph.data">
+      </dashboard-ui-groupedverticalbarchart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 8">
+      <dashboard-ui-horizontalbarchart *ngIf="data['d'+data.sortOrder]?.graph?.data && data['d'+data.sortOrder]?.graph?.type !=='2D Pie'"
+        [xaxis]="data['d'+data.sortOrder]?.graph?.x" [yaxis]="data['d'+data.sortOrder]?.graph?.y"
+        [data]="data['d'+data.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+        <dashboard-ui-newdonutchart
+        *ngIf="data['d'+data.sortOrder]?.graph?.data && data['d'+data.sortOrder]?.graph?.type ==='2D Pie'"
+         [data]="data['d'+data.sortOrder]?.graph?.data">
+        </dashboard-ui-newdonutchart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 9">
+      <dashboard-ui-linechart *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [color]="data['d'+data.sortOrder]?.graph?.color" [xaxis]="data['d'+data.sortOrder]?.graph?.x"
+        [yaxis]="data['d'+data.sortOrder]?.graph?.y" [keys]="data['d'+data.sortOrder]?.graph?.keys"
+        [data]="data['d'+data.sortOrder]?.graph?.data">
+      </dashboard-ui-linechart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 10">
+      <dashboard-ui-horizontalbarchart *ngIf="data['d'+data.sortOrder]?.graph?.data  && data['d'+data.sortOrder]?.graph?.type !=='2D Pie'"
+        [xaxis]="data['d'+data.sortOrder]?.graph?.x" [yaxis]="data['d'+data.sortOrder]?.graph?.y"
+        [data]="data['d'+data.sortOrder]?.graph?.data"></dashboard-ui-horizontalbarchart>
+        <dashboard-ui-newdonutchart
+        *ngIf="data['d'+data.sortOrder]?.graph?.data && data['d'+data.sortOrder]?.graph?.type ==='2D Pie'"
+        [data]="data['d'+data.sortOrder]?.graph?.data">
+        </dashboard-ui-newdonutchart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 11">
+
+      <!-- <dashboard-ui-weeklyovertime class="weekly-overtime" *ngIf="penaliz?.graph?.data" [data]="penaliz?.graph?.data"
+      [keys]="penaliz?.graph?.keys"
+        [color]="penaliz?.graph?.color">
+      </dashboard-ui-weeklyovertime> -->
+
+
+      <dashboard-ui-multiseries [data]="data['d'+data.sortOrder]?.graph?.data"></dashboard-ui-multiseries>
+
+
+
+
+
+      <!-- <dashboard-ui-weeklyovertime class="weekly-overtimea" *ngIf=" data['d'+data.sortOrder]?.graph?.data"
+        [data]="data['d'+data.sortOrder]?.graph?.data" [color]="data['d'+data.sortOrder]?.graph?.color"
+        [keys]="data['d'+data.sortOrder]?.graph?.keys">
+      </dashboard-ui-weeklyovertime> -->
+    </div>
+    <div *ngIf="data.dashboardGraphId === 12">
+      <dashboard-ui-verticalbarchart *ngIf="data['d'+data.sortOrder]?.graph?.data   && data['d'+data.sortOrder]?.graph?.type !== 'Line'"
+        [data]="data['d'+data.sortOrder]?.graph?.data" [color]="data['d'+data.sortOrder]?.graph?.color"
+        [xaxis]="data['d'+data.sortOrder]?.graph?.x" [yaxis]="data['d'+data.sortOrder]?.graph?.y">
+      </dashboard-ui-verticalbarchart>
+      <dashboard-ui-linechart
+      *ngIf="data['d'+data.sortOrder]?.graph?.data && data['d'+data.sortOrder]?.graph?.type === 'Line'"
+      [xaxis]="data['d'+data.sortOrder]?.graph.x" [yaxis]="data['d'+data.sortOrder]?.graph.y"
+      [color]="data['d'+data.sortOrder]?.graph.color" [keys]="data['d'+data.sortOrder]?.graph.keys"
+      [data]="data['d'+data.sortOrder]?.graph.data">
+    </dashboard-ui-linechart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 13">
+      <dashboard-ui-verticalbarchart *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [data]="data['d'+data.sortOrder]?.graph?.data" [color]="data['d'+data.sortOrder]?.graph?.color"
+        [xaxis]="data['d'+data.sortOrder]?.graph?.x" [yaxis]="data['d'+data.sortOrder]?.graph?.y">
+      </dashboard-ui-verticalbarchart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 14">
+      <dashboard-ui-linechart *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [color]="data['d'+data.sortOrder]?.graph?.color" [keys]="data['d'+data.sortOrder]?.graph?.keys"
+        [data]="data['d'+data.sortOrder]?.graph?.data" [xaxis]="data['d'+data.sortOrder]?.graph?.x"
+        [yaxis]="data['d'+data.sortOrder]?.graph?.y">
+      </dashboard-ui-linechart>
+    </div>
+    <div *ngIf="data.dashboardGraphId === 15">
+      <dashboard-ui-penalinstance *ngIf="data['d'+data.sortOrder]?.graph?.data" [data]="data['d'+data.sortOrder]?.graph?.data"> </dashboard-ui-penalinstance>
+   
+      <!-- <dashboard-ui-penalisation class="penal-Instance" *ngIf="data['d'+data.sortOrder]?.graph?.data"
+        [data]="data['d'+data.sortOrder]?.graph?.data" [color]="data['d'+data.sortOrder]?.graph?.color">
+      </dashboard-ui-penalisation> -->
+    </div>
+  </div>
+</div>

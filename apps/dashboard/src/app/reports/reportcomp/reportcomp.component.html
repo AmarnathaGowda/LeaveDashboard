@@ -1,0 +1,19 @@
+
+
+<div  *ngIf="dtRendered && _gridData.data.length" >
+    <form *ngIf="dtRendered" name="form" #f="ngForm">
+    <div class="ad">
+        <button class="btn btn-primary btn-md    mlr-5 mr-10" type="button" (click)="submitbtn(button)">
+            <i class="fa fa-file-excel-o"></i> Export As
+        </button>
+        <input type="radio" [(ngModel)]="button" name="dt-buttons" value="excel" /> Excel
+        <input type="radio" [(ngModel)]="button" name="dt-buttons" value="Print" /> Print
+    </div>
+</form>
+<table *ngIf="dtRendered && _gridData.data.length" datatable [dtOptions]="dtOptions" class="row-border hover">
+
+</table>
+</div>
+<h3 *ngIf="!_gridData.data.length">
+    No Data
+</h3>

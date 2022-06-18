@@ -1,0 +1,50 @@
+<form name="form" (ngSubmit)="f.form.valid && submitBtn()" #f="ngForm" novalidate>
+    <div mat-dialog-title class="dialog-title">
+        <h5>Clone Report</h5>
+        <!-- <button mat-icon-button aria-label="close dialog" mat-dialog-close>
+        <mat-icon class="close-icon" color="warn">close</mat-icon>
+    </button> -->
+        <!-- <button>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </button> -->
+    </div>
+    <div mat-dialog-content>
+
+
+        <div class="row form-group mb-15">
+            <label class="control-label col-sm-6">Current report name:</label>
+            <div class="col-sm-6">
+                <input type="text" name="cgraphName" [(ngModel)]="data.graphName" disabled class="form-control"
+                    id="creportname" placeholder="Current report name" readonly>
+            </div>
+        </div>
+        <div class="row form-group mb-15">
+            <label class="control-label col-sm-6">New report name:</label>
+            <div class="col-sm-6">
+                <input type="text" name="ngraphName" [(ngModel)]="data.ngraphName" class="form-control" id="nreportname"
+                    placeholder="New report name">
+            </div>
+        </div>
+        <div class="row form-group mb-15 ">
+            <label class="control-label col-sm-6">Serial No:</label>
+            <div class="col-sm-6">
+               
+
+                <select  class="form-control"  name="serialNumber" required [(ngModel)]="data.serialNumber">
+                    <option [ngValue]="null">Select Order</option>
+                    <option *ngFor="let num of serialNuber; let i = index" [ngValue]="num">{{num}}</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div mat-dialog-actions class="text-end">
+        <div class="row">
+            <div class="col-sm-12 ">
+                <button class="btn btn-primary btn-md   mt-20 mlr-5">
+                    <i class="fa fa-save"></i> Save
+                </button>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,19 @@
+::ng-deep.dataTables_wrapper {
+  .dataTables_info {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+  }
+  .tr_count {
+    padding: 8px 14px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    border: 1px solid #cdcdcd;
+  }
+  thead th {
+    text-transform: capitalize;
+  }
+  table.dataTable {
+    margin: unset;
+  }
+}

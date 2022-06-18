@@ -1,0 +1,354 @@
+.graphName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 400;
+  margin: auto 0;
+  font-family: 'Calibri';
+  text-align: left;
+}
+.header-chart {
+  font-size: 16px;
+  margin: auto 0;
+  padding: 0px;
+}
+.headrow {
+  padding: 0px 12px 0px 0px;
+}
+.row2 {
+  .charts {
+    overflow: auto;
+  }
+}
+.example-box {
+  font-size: 30pt;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 4px;
+  position: relative;
+  z-index: 1;
+
+  .box {
+    min-height: 400px;
+    padding: 10px;
+
+    margin: 5px 5px;
+    background: #fff;
+    border: solid 1px #ccc;
+    transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+    box-shadow: 0px 2px 4px 2px #818181;
+    .cdk-drag {
+      cursor: move;
+    }
+   
+    .charts {
+      height: 351px;
+      // width: 394px;
+      // overflow: auto;
+      img {
+        width: 190px;
+      }
+      p {
+        font-size: 1rem;
+      }
+      &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        cursor: pointer;
+      }
+      &::-webkit-scrollbar:hover {
+        cursor: pointer;
+      }
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+  }
+}
+.settings {
+  z-index: 99;
+  position: absolute;
+  background-color: white;
+  right: 0;
+  .mat-list-base {
+    z-index: 99;
+    position: absolute;
+    background-color: white;
+  }
+}
+.charts {
+  z-index: 9;
+}
+
+.example-box:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  opacity: 0.6;
+}
+
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.3;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+button {
+  margin-right: 4px;
+}
+.c3imgab {
+  --bs-gutter-x: 0.5rem;
+}
+
+.halfdont-details {
+  background: #fff;
+  border: solid 1px #ccc;
+  transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
+  box-shadow: 0px 2px 4px 2px #818181;
+  background-color: white;
+  margin: 0px 0px;
+  word-break: break-word;
+  white-space: pre-wrap;
+  height: 103px;
+  h4 {
+    font-size: 13px;
+    padding-top: 12px;
+    text-align: center;
+    color: rgb(49, 49, 49);
+  }
+  h5 {
+    font-size: 16px;
+    text-align: center;
+    color: rgb(49, 49, 49);
+    font-weight: 700;
+    margin-top: 13px;
+  }
+}
+
+:host {
+  .w-19 {
+    width: 16.63%;
+  }
+  .chartsZoom {
+    div {
+      // width: 80%;
+      // height: fit-content;
+      width: 500px;
+      height: 300px;
+      max-height: 450px;
+    }
+  }
+  .staticGraphRow {
+    .smallboxgraph {
+      .box {
+        min-height: 233px !important;
+        max-height: 232px !important;
+      }
+     
+      .charts {
+        // width: 258px !important;
+        height: 193px !important;
+      }
+    }
+    .example-box {
+      .box {
+        .frlateeraly {
+          min-height: 204px;
+        }
+        min-height: 340px;
+        .charts {
+          height: 285px;
+          
+        }
+      }
+    }
+  }
+  .fa,
+  .header-chart {
+    cursor: pointer;
+  }
+  .container-fluid {
+    background: #dbdbdb;
+  }
+  @media only screen and (max-width: 1026px) {
+    .ccolhdonut {
+      margin: 2px 8px !important;
+    }
+  }
+  .bg-grey {
+    overflow: hidden;
+    background: #dbdbdb;
+    .pad-0 {
+      padding: 0px;
+    }
+    .pad-1 {
+      padding: 0px 0px 0px 12px;
+    }
+    .pad-4 {
+      padding: 0px 10px 0px 0px;
+    }
+    .mar-0 {
+      margin: 0px;
+    }
+    .removeglutterx {
+      --bs-gutter-x: 0.2rem;
+    }
+    .bgdashboardText {
+      background-color: #00519b;
+      color: white;
+      text-align: center;
+      min-height: 44px;
+      text-transform: uppercase;
+      h4 {
+        margin: auto;
+      }
+    }
+    .cimgs {
+      margin: 0px 0px 6px 0px;
+      .pad-0 {
+        padding: 0px;
+        &.w-19 {
+          width: 20.83%;
+        }
+      }
+      img {
+        width: -webkit-fill-available;
+      }
+      .ccol {
+        padding: 0px;
+        margin: 0px 5px;
+        box-shadow: 0px 2px 4px 2px #818181;
+        background-color: white;
+        min-height: 295px;
+      }
+      .donutchart {
+        padding: 10px 0px;
+        .header-text {
+          margin: 0px 10px;
+        }
+        .charts {
+          width: 418px;
+          overflow: scroll;
+
+          &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+            cursor: pointer;
+          }
+          &::-webkit-scrollbar:hover {
+            cursor: pointer;
+          }
+          /* Track */
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+
+          /* Handle */
+          &::-webkit-scrollbar-thumb {
+            background: #888;
+          }
+
+          /* Handle on hover */
+          &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+        }
+      }
+      .ccolhdonut {
+        margin: 2px 5px;
+        padding: 0px;
+        box-shadow: 0px 2px 4px 2px #818181;
+        //background-color: white;
+        img:nth-child(1) {
+          height: 113px;
+        }
+      }
+    }
+  }
+}
+
+.halfpie {
+  // height: 24vh;
+  background-color: white;
+}
+
+//spinner
+
+.custom-spinner {
+  left: 10%;
+  position: absolute;
+  top: 26%;
+}
+
+.custom-linebarchart img {
+  height: 35vh;
+}
+.custom-piechart img {
+  height: 35vh;
+}
+
+.custom-earlylogout img {
+  height: 125px !important;
+}
+
+:host ::ng-deep {
+  .penal-Instance {
+    .lines {
+      .line {
+        fill: none;
+        stroke: #07575b;
+        stroke-width: 3;
+      }
+      .line-group:nth-child(1) > .line {
+        fill: none;
+        stroke: #66a5ad;
+        stroke-width: 3;
+      }
+    }
+  }
+  .weekly-overtime {
+    .lines {
+      .wline-group {
+        .line {
+          fill: none;
+          stroke: #07575b;
+          stroke-width: 3;
+        }
+        :nth-child(1) > .line {
+          fill: none;
+          stroke: #66a5ad;
+          stroke-width: 3;
+        }
+      }
+    }
+  }
+}
+
+
+
+

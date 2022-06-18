@@ -1,0 +1,4322 @@
+[
+  {
+    "graphName": "Overtime Details",
+    "filters": [
+      {
+        "filterId": 3,
+        "name": "City",
+        "sortOrder": 1,
+        "selectedValue": [
+          { "id": "0f4a6c36-edba-47ba-9f96-8f131c93f621", "name": "ADILABAD" },
+          { "id": "fa43219a-d531-4989-9590-c3f5302f7a6e", "name": "AGARTALA" },
+          { "id": "937f0554-e563-4b80-b8a5-c213ec76a99f", "name": "AGRA" }
+        ],
+        "controlType": "Dropdown",
+        "data": [
+          { "id": "0f4a6c36-edba-47ba-9f96-8f131c93f621", "name": "ADILABAD" },
+          { "id": "fa43219a-d531-4989-9590-c3f5302f7a6e", "name": "AGARTALA" },
+          { "id": "937f0554-e563-4b80-b8a5-c213ec76a99f", "name": "AGRA" },
+          { "id": "c3e809ac-f416-409e-a64e-220d50a4ab99", "name": "AHMEDABAD" },
+          {
+            "id": "9441da44-8137-4478-b996-0438a30112fd",
+            "name": "AHMEDNAGAR"
+          },
+          { "id": "46aa6595-7d2c-45e4-906a-ec84033aa072", "name": "AHMEDPUR" },
+          { "id": "daffb668-92e8-4931-86ec-120f4fa43a15", "name": "AJMER" },
+          { "id": "f8f1a549-5112-41c8-bcb7-ab0875ad4cb2", "name": "AKLUJ" },
+          { "id": "ffa1fe89-77b7-4068-a23c-30833555c728", "name": "AKOLA" },
+          { "id": "e15c4542-1953-4d20-9557-cddc75f94916", "name": "ALIGARH" },
+          { "id": "6795ff3c-970b-4d9d-bc81-ee43d0822498", "name": "ALLAHABAD" },
+          { "id": "b69b5c8b-959a-43a9-917f-41a15e6496d3", "name": "ALLEPPEY" },
+          { "id": "b14a46dc-f1fd-4dc4-8677-0f3481f88ac1", "name": "ALMARA" },
+          { "id": "3113b60e-aa8c-4182-8a73-03b69cb4fe10", "name": "ALMORA" },
+          { "id": "9ab37ea0-c594-41de-8ed3-6f8d1a596c7d", "name": "ALWAR" },
+          { "id": "0128da31-fa4b-4931-9d42-5d3cda76a877", "name": "AMBALA" },
+          { "id": "aeba516d-030e-40ca-93cc-6d153f261a40", "name": "AMBARNATH" },
+          { "id": "6bc4dff5-366b-4e31-9995-993e73787bf5", "name": "AMBATTUR" },
+          {
+            "id": "f3a3f7c1-13a4-4bce-be7b-45b0d78fd3b3",
+            "name": "AMBATTUR CHENNAI"
+          },
+          {
+            "id": "70cd0070-7921-40b0-8dc3-6998acd0f389",
+            "name": "AMBEDKAR NAGAR"
+          },
+          {
+            "id": "78ede288-0d77-463d-af56-4c5a9f3a6c48",
+            "name": "AMBEDNAGAR"
+          },
+          {
+            "id": "caeb9c41-56c6-49aa-8dba-6ca145bc5b1c",
+            "name": "AMEENPUR MEDAK"
+          },
+          { "id": "b885dff5-83af-489e-97f2-cf9b7b2918bb", "name": "AMETHI" },
+          { "id": "1036eb77-c2bf-414d-ac3f-2377e5de4c55", "name": "AMRAVATI" },
+          { "id": "c5878057-d9c2-43ce-a856-87c0bc2d2ae2", "name": "AMRELI" },
+          { "id": "4c81d6f5-c60e-413a-a5a3-523ef61ffa6f", "name": "AMRITSAR" },
+          { "id": "ee9ee741-b7d1-4c46-862e-fc7ae106948a", "name": "AMROHA" },
+          { "id": "5e761c40-3f2e-4c5a-a6ab-739370a1df7b", "name": "ANAND" },
+          { "id": "d59e07ac-3b17-4e42-9006-8e781d81affe", "name": "ANANTAPUR" },
+          {
+            "id": "38544bb1-f2ee-422b-ac6c-ddae0a405330",
+            "name": "ANANTAPURA"
+          },
+          {
+            "id": "6a19ae54-9fb3-4a98-8eed-993b7675d913",
+            "name": "ANANTHAPUR"
+          },
+          {
+            "id": "c22c71ef-21ee-4677-9141-890e59cf05d8",
+            "name": "ANANTHPURA"
+          },
+          { "id": "bc1beb84-6cbe-4f5c-9543-fc57767e41df", "name": "ANCHETTY" },
+          { "id": "4a929031-4fdd-446a-848e-e0de4136e43d", "name": "ANDHERI" },
+          {
+            "id": "3f0f9afb-02c7-40c0-8a77-3cfbbe9dbba5",
+            "name": "ANDRAPRADESH"
+          },
+          { "id": "4a921075-f87e-440e-83ad-a180ee6b778d", "name": "ANGUL" },
+          { "id": "1ab80438-9c82-4b80-b579-fb1f4ceadfd2", "name": "ANHERI" },
+          {
+            "id": "70837ced-7d59-4413-9d35-4d55304d96bc",
+            "name": "ARAKKONNAM"
+          },
+          { "id": "6fde08b2-ee18-43a4-8edb-b9237e193097", "name": "ARIYALLUR" },
+          { "id": "e25c9870-9b83-443c-bf2c-ce4b32e745db", "name": "ASANSOL" },
+          { "id": "c18dfb52-5ddf-4b81-b8db-c2f554c235c0", "name": "ASSAM" },
+          { "id": "970a72fa-3ade-4990-b565-044deb8f7d41", "name": "ATHNER" },
+          { "id": "6fc69920-4332-4eef-a035-5f77bb018039", "name": "AURAIYA" },
+          {
+            "id": "555687a2-84de-4683-8a6c-fa86e8c3ad42",
+            "name": "AURANGABAD"
+          },
+          { "id": "d34fc5c2-92ab-4de3-a3bf-068a18439ed4", "name": "AVADI" },
+          { "id": "bbb371bc-fd08-4c85-8771-384b8ef1493b", "name": "AZADPUR" },
+          { "id": "8fc7f614-0c37-4a00-ad72-e3b32177da49", "name": "AZAMGARH" },
+          { "id": "1dae216a-e028-4293-b719-195a33abc759", "name": "BADARPUR" },
+          { "id": "9a0d14e8-cbbc-4e62-bfb2-6c6dc42a34fb", "name": "BADLAPUR" },
+          { "id": "3f968835-1784-4237-9d9a-a61b4ef95af5", "name": "BAGALKOT" },
+          {
+            "id": "d98f247e-a172-4ab3-9041-58cfb140528f",
+            "name": "BAKKARWALA"
+          },
+          { "id": "ded55e5f-931c-4606-8679-abf43768b613", "name": "BALANGIR" },
+          { "id": "e1c80fb4-15bc-43e0-89f1-a597249f258f", "name": "BALASORE" },
+          { "id": "1de8ebb1-d039-4036-b574-ee14fb00341a", "name": "BALESWAR" },
+          { "id": "9b35d051-9131-4c2e-ad32-a61d082812e4", "name": "BALIYA" },
+          { "id": "63815f0a-87a1-494d-ba34-37659116708a", "name": "BALLIA" },
+          { "id": "151cfe00-63d9-43ef-ade8-bb6ea35f17a1", "name": "BANDA" },
+          { "id": "e2f0c94f-20ba-43dd-9d4c-aa08d3e8c107", "name": "BANGALORE" },
+          { "id": "f49b89ca-6a82-4992-aac6-5fd0993874d9", "name": "BANKURA" },
+          { "id": "2d03583a-4ddd-47bf-9ed6-d06c4bc196b0", "name": "BARAMATI" },
+          { "id": "ea85ee64-5110-4a42-8a10-19190d8875a6", "name": "BAREILLY" },
+          { "id": "6e5fff2a-d170-4d4c-a655-952d6fcdedde", "name": "BARIPADA" },
+          { "id": "e7b5c4a9-1c15-476a-a56e-770851394cf4", "name": "BARODA" },
+          { "id": "c7caf148-7544-4b7e-8029-be976c34a83f", "name": "BASTI" },
+          { "id": "5bef36f4-87f3-4b61-984e-69e95d25cbdb", "name": "BATALA" },
+          { "id": "e78193e2-ddf8-45a0-bfc5-a12ce1de4e41", "name": "BATHINDA" },
+          { "id": "384ca39d-375e-4775-8a64-0ea8abe725a8", "name": "BEED" },
+          { "id": "956c02ca-bc94-4464-88fa-b0eb9c95142a", "name": "BEGUR" },
+          { "id": "dab6e642-950b-4bd5-91bd-16ba902c26fe", "name": "BEGUSARAI" },
+          { "id": "8b711b42-d830-4c9f-91d9-aff0d783a0fb", "name": "BELGAUM" },
+          { "id": "8b14066e-52c5-4a3f-a166-976662f6ee63", "name": "BELLARY" },
+          {
+            "id": "146590e2-d54f-40dc-b138-85f21be40c99",
+            "name": "BELTHANGADY"
+          },
+          {
+            "id": "1cbcbebc-234c-4839-aca4-d971a7d9893b",
+            "name": "BETHUADAHARI"
+          },
+          { "id": "d9355d03-bab9-4a10-bed9-1516f34b1f0f", "name": "BETUL" },
+          { "id": "aeef7d9c-3e58-4160-9b5f-6de1da82eb2e", "name": "BHABHUA" },
+          { "id": "2b08655c-6bb5-4885-bc2a-1d0b7b6f1089", "name": "BHABUA" },
+          { "id": "85f099c6-c8ff-4ef9-8b46-92b6f354b006", "name": "BHADOHI" },
+          { "id": "db9710df-333d-4ee6-a1b1-6b1d58cf4066", "name": "BHADRAK" },
+          { "id": "60553684-aec5-46a4-b136-2b8dd93285b4", "name": "BHAGALPUR" },
+          { "id": "f561afd4-e701-4f72-b8b6-f4e233faebe9", "name": "BHANDUP" },
+          { "id": "659737f9-672b-4b01-88bd-5bb988d10d9e", "name": "BHARATPUR" },
+          { "id": "274429b8-c9fb-46a3-a7ca-68b2c4609884", "name": "BHARUCH" },
+          { "id": "4d43877c-c04f-427e-8803-06aa739eb380", "name": "BHAVNAGAR" },
+          { "id": "ca735046-a978-44fc-b1ae-c5c867ae2788", "name": "BHILAI" },
+          { "id": "eaa4ec93-a48c-49c8-b847-3930a04d21bb", "name": "BHILVARA" },
+          { "id": "072f5464-39fb-491f-8069-944e6c94a9da", "name": "BHILWARA" },
+          { "id": "8049ef8c-b144-4df6-9bcc-b3406efbd1fd", "name": "BHIND" },
+          { "id": "2ca4e30e-0340-49cc-80f6-cdac583c06f4", "name": "BHIWANDI" },
+          { "id": "ecd1c69b-f81a-4d74-b524-3e3dafa3df56", "name": "BHIWANI" },
+          { "id": "f8c45876-5ed8-4b31-a5da-bd1ee2f0aa1b", "name": "BHOJPUR" },
+          { "id": "f8ac2f4c-c60a-4347-a750-0bbfd971c0ae", "name": "BHOPAL" },
+          { "id": "e10b6672-c847-446b-9c50-8ff634f41803", "name": "BHOWALI" },
+          { "id": "acd5bccd-e3c1-45c0-a19b-c839e05e106b", "name": "BHUJ" },
+          { "id": "4c229457-37a5-4a52-b839-5864ee205a59", "name": "BHYANDER" },
+          { "id": "d81cff1d-00f5-4ce1-834a-a36441f61a2b", "name": "BIDAR" },
+          { "id": "7c1076f2-fdfd-4426-8176-f22a3b68e58d", "name": "BIDHAR" },
+          { "id": "be09ac7a-cf31-4ca7-b5b9-f3522220e8a8", "name": "BIDHUNA" },
+          { "id": "3e0ef439-c491-4d80-935f-2543f462a673", "name": "BIHAR" },
+          { "id": "2573cf89-70c7-4336-a213-49646f97322d", "name": "BIJNOR" },
+          { "id": "6a116fad-f4dd-49aa-8bbf-1ac86a5281b2", "name": "BILASPUR" },
+          { "id": "a160a7ec-7d3e-499b-87a3-7ba3af0fa988", "name": "BISHNUPUR" },
+          { "id": "ab67411d-7a83-4e8a-aae2-c72c2a2f8c34", "name": "BOKARO" },
+          { "id": "251001cd-e390-48d3-b7ae-68895d8e5071", "name": "BORVAI" },
+          { "id": "2864586c-bf3e-4dd2-bb84-85c138a3a635", "name": "BUDAUN" },
+          {
+            "id": "aa069389-47d2-4aa0-9436-0a02061b79f9",
+            "name": "BULANDSHAHAR"
+          },
+          { "id": "396a144f-8a93-4dab-9f78-fd59dcd96572", "name": "BULDHANA" },
+          { "id": "cb5eb473-e627-4557-b479-822dcd07fc12", "name": "BUNDI" },
+          { "id": "db53df48-5e6a-4fe9-96c8-3a362dcac6d7", "name": "BURARI" },
+          { "id": "069ab120-ece8-42d8-8e12-f16ff82d4f52", "name": "BURDWAN" },
+          { "id": "27ec4ed6-c768-4713-a3d4-d8e5d2c53ad2", "name": "BUXAR" },
+          { "id": "cb4340cd-ae8a-4b89-bd0b-244a8c5b1aeb", "name": "CHAMOLI" },
+          {
+            "id": "f3bb07a2-0202-49dc-9fb5-539cefc2f453",
+            "name": "CHANDIGARH"
+          },
+          {
+            "id": "8e793dda-13a0-40f1-8ebb-088eb103731b",
+            "name": "CHANDRAPUR"
+          },
+          {
+            "id": "079b162b-29c6-4a7d-82d8-15d937a6e0f5",
+            "name": "CHANNAGIRI"
+          },
+          {
+            "id": "cbdaa299-f63e-4de1-a185-ccd1cde68f24",
+            "name": "CHANNAPATNA"
+          },
+          { "id": "bb79984f-71a8-4863-a065-91c107235991", "name": "CHAPPRA" },
+          { "id": "b159e6c1-9d8b-4764-aca7-0c8234aa8979", "name": "CHAPRA" },
+          { "id": "af13244e-44f9-43cc-9c59-152500eef1bb", "name": "CHAPRA" },
+          { "id": "f853ca0a-22ff-480e-9bee-e930a66fe389", "name": "CHEBUR" },
+          {
+            "id": "dc433f98-b9b7-4cea-8aae-438979b9f9e3",
+            "name": "CHENGALPET"
+          },
+          { "id": "c8417d0c-3ded-481f-b771-29920fef6d0f", "name": "CHENNAI" },
+          {
+            "id": "2c37c83c-5551-4be5-a6da-51ccbf0c2671",
+            "name": "CHHACHRAULI"
+          },
+          {
+            "id": "c1a78d90-6b08-46c9-bc4a-fcf21ded13bf",
+            "name": "CHHATARPUR"
+          },
+          {
+            "id": "efb34ba1-b229-4d6b-9685-b61757a720cf",
+            "name": "CHICKMAGALURE"
+          },
+          {
+            "id": "85968253-92af-46ba-93c6-418b6748073d",
+            "name": "CHIDAMBARAM"
+          },
+          {
+            "id": "a6760ef7-e9ac-4e28-abe6-efb04d66adc5",
+            "name": "CHIKKABALLAPUR"
+          },
+          {
+            "id": "2b520393-7172-4446-91fc-2e6cf9195802",
+            "name": "CHIKKABALLAPUR DIST"
+          },
+          {
+            "id": "fbfa7771-9765-4e41-b58b-602efa3a191a",
+            "name": "CHIKKABALLAPURA"
+          },
+          {
+            "id": "808ed840-ad58-459a-864b-867d69446d90",
+            "name": "CHIKKAMAGALURU"
+          },
+          {
+            "id": "8fb66b23-5364-47e4-9e9e-057a539633f1",
+            "name": "CHIKKAMANGALORE"
+          },
+          {
+            "id": "ccfb561a-72bf-42d9-8624-8322ffa91103",
+            "name": "CHIKMAGALUR"
+          },
+          {
+            "id": "95e108ec-1e29-4d12-b95d-27b83c9d5ebc",
+            "name": "CHINTAMANI"
+          },
+          { "id": "bfff81ca-d7a9-43be-8b61-876dfdcdd633", "name": "CHIPLUN" },
+          {
+            "id": "2def4c75-d725-444e-9d4a-17f4d17adb3f",
+            "name": "CHITRADURGA"
+          },
+          {
+            "id": "aa59cfdd-3535-41c2-8e4c-4328d9863a5d",
+            "name": "CHITRADURGA DIST"
+          },
+          { "id": "dbd6dd19-bf38-4110-b282-8eeeb3daf01e", "name": "CHITTOOR" },
+          {
+            "id": "cd2de03d-5f3a-42f9-a622-ab217c0c8f62",
+            "name": "CHITTOOR DIST"
+          },
+          { "id": "fd13245b-af45-47cf-b748-91b4b69b3607", "name": "CHITTOR" },
+          {
+            "id": "802c6e3f-ced7-49c0-b239-5170ea6e9ed8",
+            "name": "CHITTORGARH"
+          },
+          {
+            "id": "438741e1-a089-4b69-9af9-4ddd5e4bafe1",
+            "name": "COIMBATORE"
+          },
+          { "id": "37e3dbb3-21a3-4cde-9003-9b4af8bcd834", "name": "COORG" },
+          { "id": "dfe4b8e4-3dd2-4ea2-b469-dcfd0e256fd3", "name": "CUDDALORE" },
+          { "id": "5b68683c-2db1-43fe-9f96-2b646c09a848", "name": "CUTTACK" },
+          { "id": "2b5b46ac-88a3-49b0-a287-3ae4d67c0739", "name": "DADRI" },
+          { "id": "d60c4acf-5f32-4b30-a2de-4b23ab2a0752", "name": "DAMAN" },
+          { "id": "86de8fe3-3e20-4899-9770-1465f823d317", "name": "DANKAUR" },
+          { "id": "565526bf-4940-407d-8c14-7fbe7bf39321", "name": "DAPOLI" },
+          { "id": "ac3170d6-cc5e-4a78-8dd2-14e22bed4483", "name": "DARBHANGA" },
+          {
+            "id": "e0062ca8-7daa-4864-b404-ee894a54cd90",
+            "name": "DARJEELING"
+          },
+          {
+            "id": "a361e156-966e-46b2-abff-bbc68fb9afee",
+            "name": "DASARAHALLI"
+          },
+          {
+            "id": "411d6b84-9741-4a43-92d2-89dc3247aa86",
+            "name": "DAVANAGERE"
+          },
+          { "id": "796acd12-10b0-4bd2-9f7b-ee199713b996", "name": "DEESA" },
+          { "id": "7cfc2cba-7e34-42e2-acc4-5ece4ce2d59d", "name": "DEHRADUN" },
+          { "id": "f2655a0c-595d-4e75-84c3-7eeedf6fc804", "name": "DELHI" },
+          { "id": "a127e4a4-840f-4937-a78a-6aa2bd5170bb", "name": "DEORIA" },
+          {
+            "id": "403bf018-3029-4f04-a114-8bb87cca0efe",
+            "name": "DEVAKOTTAI"
+          },
+          {
+            "id": "065e510a-61c8-4810-ba51-2e2cb69ba86e",
+            "name": "DEVANAHALLI"
+          },
+          { "id": "9fc02754-cfd8-4a10-8ce9-2d84fc7f9c0a", "name": "DEWAS" },
+          { "id": "8e224c1a-819b-4c3f-bb75-8fb44f0d85c5", "name": "DHANBAD" },
+          { "id": "c7de7877-6a70-4ff2-8d28-b3c2a16ee610", "name": "DHAR" },
+          {
+            "id": "68e2ea30-52a6-404b-b54e-5a7e65e17161",
+            "name": "DHARAMAPURI"
+          },
+          {
+            "id": "ee823cf8-d89e-4cf9-8363-2092a69f98f0",
+            "name": "DHARMAPURI"
+          },
+          { "id": "96c82bbd-9f28-4906-8e38-53213abb9666", "name": "DHARWAD" },
+          { "id": "cf86cd7d-2788-43cc-aeca-ecb920255ac9", "name": "DHULE" },
+          { "id": "6cea86ad-6a83-4405-89d4-4c8882c61638", "name": "DIBRUGARH" },
+          {
+            "id": "51b8cfd6-30a8-4b9d-9e76-736fb419b846",
+            "name": "DILDARNAGAR"
+          },
+          { "id": "5728d0b4-55ff-4e5c-aba5-f3c9c9760993", "name": "DINDIGUL" },
+          { "id": "f8e1fc34-131d-4cac-b641-ec8ecab68f2e", "name": "DOMBIVALI" },
+          { "id": "ae06d11e-da85-4dc6-bbf2-815ed7f9245f", "name": "DOMBIVLI" },
+          { "id": "e0f22f90-ef78-4cf2-8e0f-ee3930f3ff90", "name": "DURG" },
+          { "id": "82f6a933-d020-4d7e-b22b-a34c9db8af56", "name": "DWARKA" },
+          {
+            "id": "86607418-c1c1-491e-9ee2-9ff31db75ea0",
+            "name": "EAST GODAVARI"
+          },
+          { "id": "7464a37f-2d4c-4eac-a678-a7d3ce28f534", "name": "ELURU" },
+          { "id": "c28c79c8-38b0-4a4a-9a74-66456e27dd9c", "name": "ERNAKULAM" },
+          { "id": "40ea854b-6832-431f-bc77-2581ea23eb10", "name": "ETAWAH" },
+          { "id": "4b3ae263-9126-4b70-8b70-c32af0e034cc", "name": "ETHA UP" },
+          { "id": "9e9ce851-efa7-4a9e-955f-3c09ff05e44c", "name": "FARIDABAD" },
+          {
+            "id": "7100fa54-f2c1-40b5-8121-da520eb873cd",
+            "name": "FARRUKHABAD"
+          },
+          { "id": "01bf14d8-ffde-4f92-a33a-507435a46813", "name": "FIROZABAD" },
+          { "id": "df0036e1-f6aa-484c-917a-565a5283c850", "name": "FIROZPUR" },
+          { "id": "0d14646f-53c2-4d09-a88b-4b57f2aed52d", "name": "G.NOIDA" },
+          { "id": "048a8e25-beb5-4515-a3bb-74a8e6cd5496", "name": "GADAG" },
+          {
+            "id": "1f58ad00-2231-4e1d-8d5a-6cba0afdfd78",
+            "name": "GANDHIDHAM"
+          },
+          {
+            "id": "691bd866-13de-465b-a7ae-c415ddc96a14",
+            "name": "GANDHINAGAR"
+          },
+          { "id": "808d7980-077c-47bf-9891-77f2cfa34d27", "name": "GANGAKHED" },
+          { "id": "8e2fd6e7-09d0-4a12-a666-82018d213342", "name": "GARHWAL" },
+          { "id": "f98660af-4ac8-4ed3-9058-f48f5994435e", "name": "GAYA" },
+          { "id": "ca7cbc29-6c0b-48f1-a71c-af4087e55d42", "name": "GAZIABAD" },
+          { "id": "ffb0b19e-00a2-4c6f-9001-3a4e20763f43", "name": "GHAZIABAD" },
+          { "id": "7aa7fecf-3883-492b-9848-9633cb6353f5", "name": "GHAZIPUR" },
+          { "id": "0f334a3a-d89c-4dbf-b6fa-ad553934a139", "name": "GOA" },
+          { "id": "482ec510-78bf-4ae9-a903-85bdbdb2a138", "name": "GOLAGHAT" },
+          { "id": "49bab0f6-cf91-4e4a-a946-27f7d772371a", "name": "GONDA" },
+          { "id": "3c405756-bfc6-43db-9e6f-404eba858489", "name": "GONDAL" },
+          { "id": "200ada1e-767e-4c61-a647-5d79dee31d73", "name": "GONDIA" },
+          { "id": "958b70ef-2df8-4c97-8dd6-d4f93139251a", "name": "GOPALGANJ" },
+          { "id": "f65cd064-ce7d-42e4-9f00-653ba629dc97", "name": "GOPALGANJ" },
+          { "id": "bd3b95fa-b069-4bac-a3cd-921999de3b5f", "name": "GOPESHWAR" },
+          { "id": "2fc0779f-b9ab-41e0-af9d-40595fb838c9", "name": "GORAKHPUR" },
+          { "id": "d9a66f55-97d5-496d-9c64-48dd0d28d577", "name": "GOVANDI" },
+          {
+            "id": "9629bb0a-ab35-48bb-8d10-7e1cf6ea5e0d",
+            "name": "GREATER NOIDA"
+          },
+          {
+            "id": "8cb4b958-361f-4b9d-b424-6cef4a3c37cc",
+            "name": "GREATERNOIDA"
+          },
+          { "id": "9a94b0c1-1426-4b6c-a680-1f05de0fe7df", "name": "GUJARAT" },
+          { "id": "d6be7c55-dc13-4698-bfc1-81965db93665", "name": "GULBARGA" },
+          { "id": "8657ea76-e148-4e81-9002-258c98472cc2", "name": "GUNTUR" },
+          { "id": "e9e8b0f4-c9b9-458d-a0f2-964a8d2be478", "name": "GURGAON" },
+          {
+            "id": "f9ceb615-8c2d-4970-acbf-effd6be1f62f",
+            "name": "GURUKUL INDRAPRASTHA"
+          },
+          { "id": "9d94c51a-74b3-4135-a421-3463fc42482c", "name": "GUWAHATI" },
+          { "id": "4eb5ce50-643b-4a5f-899e-2db13a2f8728", "name": "GWALIOR" },
+          { "id": "50f10e96-47d7-4044-acff-f2346ab613dc", "name": "GYANPUR" },
+          { "id": "e3882ba8-e6ff-4067-a6ef-c71f3b2b00ca", "name": "HAJIPUR" },
+          { "id": "6d4b9a7d-370b-461e-af73-42823bc66227", "name": "HAMIRPUR" },
+          { "id": "f478e808-2d97-4381-b91b-f2e00a3079d1", "name": "HAPUR" },
+          { "id": "58d3af50-dc39-44a5-a61e-d767f5b5fee0", "name": "HARDOI" },
+          { "id": "a5f4d4ed-1b2a-4996-ad0e-46c7012d8422", "name": "HASSAN" },
+          {
+            "id": "1d297039-4162-4ab2-b077-7ea68ba0f18d",
+            "name": "HASSAN DIST"
+          },
+          { "id": "ebb4dd2f-909a-4827-b782-65712e0388e5", "name": "HATHARAS" },
+          { "id": "84496ef3-dc04-4730-82ab-c993cba308df", "name": "HAVERI" },
+          { "id": "3bcbc59a-03e0-4078-8d17-68a7c98c743a", "name": "HAZARIBAG" },
+          { "id": "613810a1-6027-48a7-a167-33a260bb871f", "name": "HIMANCHAL" },
+          { "id": "17b1dbdc-2c6f-4375-8beb-79e39206fb71", "name": "HINDUPUR" },
+          {
+            "id": "6bf075c3-7e09-4832-b03c-797fd15beb29",
+            "name": "HINGANGHAT"
+          },
+          { "id": "58142558-eda6-4cc7-b8a7-24acaebfa26b", "name": "HISAR" },
+          {
+            "id": "2e44409c-e61a-4bcc-8d56-09d8f2d7e1da",
+            "name": "HMT TOWNSHIP HYDERABAD"
+          },
+          { "id": "0900ebed-fa8e-42a6-8c6b-e994fc59d982", "name": "HOJAI" },
+          { "id": "1c9cca6a-b268-469f-b2aa-cdb75cda4b1f", "name": "HOOGHLY" },
+          {
+            "id": "277855b2-37be-4612-8c07-4e4e0a0a0b88",
+            "name": "HOSHANGABAD"
+          },
+          { "id": "84417f38-3e57-4ec6-93bb-b698eb0893ed", "name": "HOSUR" },
+          { "id": "7e49a4b4-af94-4e7f-9c4c-a5d87009e3f7", "name": "HOWRAH" },
+          { "id": "afc2ad58-c504-4981-8059-d53f0ef19a79", "name": "HUBLI" },
+          { "id": "8259731c-55b5-4356-b4cd-272b90e87b86", "name": "HUMNABAD" },
+          { "id": "51eedcfa-14c9-40e8-8d59-97494ceb3e22", "name": "HUSNABAD" },
+          { "id": "f74f9a44-3b8c-4a7f-93be-ce52f86c0ed8", "name": "HYDERABAD" },
+          { "id": "8f6488d7-fec9-4c27-a6d0-8c948c37dba2", "name": "IGATPURI" },
+          { "id": "f1e08f25-f81c-42b3-ac09-7aba50681ecd", "name": "IMPHAL" },
+          { "id": "ab33a2f0-dc8f-41cc-a90d-b1ecdbf19203", "name": "INDAPUR" },
+          { "id": "8944ae70-252f-408d-bceb-b81173ac286a", "name": "INDORE" },
+          { "id": "ec1133c4-64bf-4425-8c31-cfd5a77c4c71", "name": "ITWA" },
+          { "id": "930d3d3a-0c9d-41f7-8938-5028f6a9cb1e", "name": "JABALPUR" },
+          {
+            "id": "91dbab69-cc06-4cde-8432-62eb8f0ea92e",
+            "name": "JAGATSINGHAPUR"
+          },
+          { "id": "e400fbf9-d80f-4ae8-b452-61162e17e5ae", "name": "JAGDALPUR" },
+          { "id": "d8a8f018-5763-48ad-9337-e5f2a538dcc8", "name": "JAIPUR" },
+          { "id": "bb79f27d-a800-4ac3-8401-870715412887", "name": "JAJPUR" },
+          { "id": "ec8d9de6-2fa2-4f46-83ca-ff39d78b0cac", "name": "JALANA" },
+          { "id": "d6f0f3cb-b29e-4603-a1f4-03f73574398f", "name": "JALANDHAR" },
+          { "id": "baa9c745-6e93-44f2-b000-91a858bc3dee", "name": "JALGAON" },
+          { "id": "108bbde4-018f-4b7b-9ab8-77aae7549738", "name": "JALNA" },
+          {
+            "id": "f67d0ea6-4ce9-4586-9a1a-a7d93fe3645b",
+            "name": "JALPAIGURI"
+          },
+          { "id": "f001d827-65e4-46c0-84c8-3947bc9327f5", "name": "JAMMU" },
+          { "id": "af5a50b8-1e70-4eeb-9941-1140b78e2279", "name": "JAMNAGAR" },
+          {
+            "id": "ad74f0e3-1833-4dc6-b1c3-76677f4b0f45",
+            "name": "JAMSHEDPUR"
+          },
+          { "id": "4fe8fd65-b877-4da2-b83e-812606cdc55e", "name": "JAUNPUR" },
+          {
+            "id": "744e8cb1-ef38-41ef-8ba0-baed1456d6f5",
+            "name": "JAYSINGPUR"
+          },
+          { "id": "ade9ae07-33ab-4d7c-98ee-ab053255ef95", "name": "JHAJJAR" },
+          { "id": "9126297b-41a2-482b-93bb-029f488c650f", "name": "JHANSI" },
+          { "id": "164192a2-21e0-4d89-935f-2f063772d46e", "name": "JIND" },
+          { "id": "6bdee801-bfd6-4f0b-b2f4-1a1fa441ebd5", "name": "JODHPUR" },
+          { "id": "4b126078-0e11-496d-b96a-0269b3762fb9", "name": "JORHAT" },
+          { "id": "0a3eb0f4-c463-4187-bc14-1508c2f7c2b6", "name": "JOUNPUR" },
+          { "id": "9f432012-a1a0-48ea-80a8-61a38e76afe9", "name": "JUNAGADH" },
+          { "id": "c3832711-9b3d-45b6-a133-d76cd942a9a5", "name": "JUNNAR" },
+          { "id": "957f6943-8c26-4195-b2d0-e8230a43b276", "name": "KACHCHH" },
+          { "id": "67f1c618-7fd6-4db9-8ce5-0164b282bdac", "name": "KADAPA" },
+          { "id": "91c1a5ac-45cd-4bad-ac25-fb18b1e4a13b", "name": "KAIMUR" },
+          { "id": "db7cc2e0-d298-4c0a-aba0-bc93b845b7e7", "name": "KALYAN" },
+          { "id": "21f1fbef-cc9a-486f-b022-3edb4421f3bb", "name": "KALYANI" },
+          {
+            "id": "0d21b2f2-14ba-453f-8727-5f3ec5330d0c",
+            "name": "KANAKAPURA"
+          },
+          {
+            "id": "9f624cf4-a25e-45f7-9c30-ef10dc566ad3",
+            "name": "KANCHEEPURAM"
+          },
+          {
+            "id": "07bbf061-b289-48b0-a323-681b30ca7318",
+            "name": "KANCHIPURAM"
+          },
+          { "id": "dc65b00a-7909-4d10-a8f4-73f5965f0815", "name": "KANGAR" },
+          { "id": "fe61d105-3193-4a54-b19c-0e88a19fc043", "name": "KANGRA" },
+          { "id": "a36c701e-bccc-43cf-a4e8-fcdbfafac0d7", "name": "KANNAUJ" },
+          {
+            "id": "3c976866-de05-402d-99ea-595ae8e8c65f",
+            "name": "KANNIYAKUMARI"
+          },
+          { "id": "6f2333f4-5556-49ac-a9f3-0fb7babb42ed", "name": "KANNUR" },
+          { "id": "bc7a3b61-24eb-47cb-81b6-755c7657f0d0", "name": "KANPUR" },
+          {
+            "id": "e46eefd9-bc1f-46ab-a256-f3acb0b884cf",
+            "name": "KANPUR NAGAR"
+          },
+          {
+            "id": "17759099-dc4c-4f5c-99c1-8cfbddbc072e",
+            "name": "KAPURTHALA"
+          },
+          { "id": "e9b8750e-2687-4e34-8ae3-a9981160edea", "name": "KARAD" },
+          {
+            "id": "58b44465-c47a-4b7c-b10c-e7b6670c48f8",
+            "name": "KARIMNAGAR"
+          },
+          { "id": "a2ff80fa-a491-4135-9578-c2b218eb5880", "name": "KARJAT" },
+          { "id": "cc15c27a-851c-4202-b8eb-4055bb250c96", "name": "KARNATAKA" },
+          { "id": "764400e5-439b-4ca7-909a-49e8f78fa578", "name": "KARWAR" },
+          { "id": "3ccfdfee-fafb-4b40-9883-fe86f0f10b58", "name": "KASGANJ" },
+          { "id": "7e0cd9fd-7702-4e03-9b5e-27c5f18c5fa9", "name": "KATHUA" },
+          { "id": "e6b6ad92-63e0-436b-a069-0b63c77568b7", "name": "KATIHAR" },
+          { "id": "e02f7bf4-8f84-48ca-a5bf-5d03572ab7bf", "name": "KATORIA" },
+          { "id": "bc348723-dd00-46df-8ab2-3df575f1f84b", "name": "KENDRAPAR" },
+          { "id": "8158da0a-da98-4b12-a8e5-3ee9f44d3730", "name": "KHAMMAM" },
+          { "id": "ac8d9a03-fc24-41e1-841e-3b74a8009ff9", "name": "KHARAGPUR" },
+          { "id": "0dbea4b3-7ae1-4232-b4c7-5417c3190750", "name": "KHARAR" },
+          { "id": "519e3360-36ab-4d4c-9707-0d13315d653e", "name": "KHED" },
+          { "id": "4fd411e6-cd29-4bc4-b4dc-883b636ac94d", "name": "KHOPOLI" },
+          { "id": "23ca19cc-1cbc-405a-a901-68850c2ed88a", "name": "KHURJA" },
+          {
+            "id": "0825fde2-f5c3-4295-b111-b2c57686a02f",
+            "name": "KISHANGANJ"
+          },
+          { "id": "a7437b46-f0dc-4f94-ae59-999e930726b4", "name": "KODAGU" },
+          {
+            "id": "326fa196-7855-4892-847c-2fd4d89f702e",
+            "name": "KODAIKANAL"
+          },
+          { "id": "65d31e2b-904b-48bb-b951-d42da4d9d67f", "name": "KODARMA" },
+          { "id": "f487ae91-018a-4139-8d61-ecfbee898346", "name": "KOLAR" },
+          {
+            "id": "b691454d-4cd4-428e-b020-1b5c15c372be",
+            "name": "KOLAR DISTRICT"
+          },
+          {
+            "id": "6fc6f6c6-854f-4bf5-889b-6a2a94cce8e0",
+            "name": "KOLAR GOLD FIELDS"
+          },
+          { "id": "112a11b3-9e52-4218-9402-9b9bb7246e9c", "name": "KOLHAPUR" },
+          { "id": "4dd0e07c-c38c-485d-90b0-d8269220d062", "name": "KOLKATA" },
+          {
+            "id": "e2d6b0b6-8a86-4479-aae2-989eecfbabc9",
+            "name": "KOLKATA INACTIVE"
+          },
+          { "id": "eb0d9bf5-deab-4b0b-bc43-25dd48268dd8", "name": "KOLLEGAL" },
+          { "id": "4f6c4b92-9457-4147-bc11-66e23aa6b444", "name": "KONOSHI" },
+          { "id": "4d6b0aba-d4e2-4dea-9b80-c5ee60c9a02c", "name": "KOPARGAON" },
+          { "id": "fc3e834d-2210-4535-9597-693cc493ff5e", "name": "KOPERGAON" },
+          {
+            "id": "0ef74a13-1112-46e4-a578-7e394ca56778",
+            "name": "KOPERKHAIRNAE"
+          },
+          { "id": "46a56d86-6da4-416d-8d0b-d34dfa6002a8", "name": "KOPPA" },
+          { "id": "52217954-06eb-4019-9dc6-b0f4dc88bf7b", "name": "KOTA" },
+          { "id": "913dc9d9-75a7-4715-acc8-b4e436226f92", "name": "KOTTAYAM" },
+          {
+            "id": "25a6c5a2-b9c5-4c33-94ac-c4d3f4dd3fd3",
+            "name": "KOVILABAKKAM"
+          },
+          {
+            "id": "ab7068cc-8fd8-45f7-84e7-993c2931caff",
+            "name": "KOVILPATTI"
+          },
+          {
+            "id": "23cfd9fc-5372-4cf8-a138-62fca82ae179",
+            "name": "KRISHNAGIRI"
+          },
+          { "id": "b3f0f9ab-0146-4603-b8f1-8650e09b49b5", "name": "KUDAL" },
+          { "id": "169b5b78-99c5-468c-b033-ce0a18d5214c", "name": "KURLA" },
+          { "id": "f50ac9c9-1c93-481b-813f-ca3a5dfc09e8", "name": "KURNOOL" },
+          {
+            "id": "8a550719-305b-4e88-8593-01e03906e830",
+            "name": "KURUKSHETRA"
+          },
+          {
+            "id": "45284139-8ba1-4ff1-bb7b-68ddf0e09cdb",
+            "name": "KUSHALNAGAR"
+          },
+          {
+            "id": "e846552b-f2b4-4d62-a421-e521b7f11d06",
+            "name": "KUSHINAGAR"
+          },
+          { "id": "5b2c7066-af60-4b7e-b70d-4a0cdddb0503", "name": "KUTCH" },
+          { "id": "603ce503-fe6f-4928-954a-4d4d26f49ecf", "name": "LAKHIMPUR" },
+          { "id": "23c8efeb-2eb9-4220-97cd-3a14543215c0", "name": "LATUR" },
+          { "id": "94889fab-4605-45c4-a7ff-fad78eea2a84", "name": "LONAVALA" },
+          { "id": "2291d05f-0f6b-4ec0-ba4f-f9ffad68c806", "name": "LUCKNOW" },
+          { "id": "50f75d4a-ee82-4173-8cc7-c5e543de5539", "name": "LUDHIANA" },
+          { "id": "6323cf4a-b997-4c17-a407-ac292dce31b7", "name": "MADHUBANI" },
+          {
+            "id": "b73c218b-32ed-4729-91a2-115970c5de1f",
+            "name": "MADHYAMGRAM"
+          },
+          {
+            "id": "8244ae89-5c49-4173-8b1c-d3965f0ffb75",
+            "name": "MAHABUBNAGAR"
+          },
+          {
+            "id": "63ae6a5c-ebe1-4631-8054-b6eb5e4f105e",
+            "name": "MAHENDRAGARH"
+          },
+          { "id": "7cb3cc84-9d59-4578-8c9a-e45620afd552", "name": "MAHUR" },
+          { "id": "2fde0e13-aefd-45e8-bac5-6beffeb5b2df", "name": "MAINPURI" },
+          { "id": "3055ddbe-8a74-45d2-b6ff-2763711a9706", "name": "MALUR" },
+          { "id": "02269d45-f7f9-4f41-9170-349e8b7eba46", "name": "MALVAN" },
+          {
+            "id": "29264a3b-8491-40c8-8601-8e1009c57dd3",
+            "name": "MANAGALORE"
+          },
+          { "id": "cd9ae5a6-e5f2-4939-8ec5-ccfe5f1da036", "name": "MANDI" },
+          { "id": "71011a48-5246-4512-a2f8-c20088d5690c", "name": "MANDYA" },
+          { "id": "bc506bc8-273e-4424-a729-c875ac3dde74", "name": "MANGALORE" },
+          { "id": "c4c18c56-39c0-43c4-b5d2-bdc51bf56db9", "name": "MANGAON" },
+          { "id": "91a3b3a5-0fef-4431-a73e-69aac7689185", "name": "MANIPUR" },
+          { "id": "c659a577-509e-4679-9155-16a1bf0566d8", "name": "MANKHURD" },
+          { "id": "1ad4c90b-42cc-466c-b3db-a56b6f7cc06d", "name": "MAPUSA" },
+          { "id": "dd1f9962-a80f-4001-b384-338b4c23a61b", "name": "MATHURA" },
+          { "id": "46ae9013-2819-448d-b99c-d2d3c811a791", "name": "MEDAK" },
+          {
+            "id": "128abd4d-e1f8-4054-a3ee-be614c7aa4cc",
+            "name": "MEDINI NAGAR"
+          },
+          { "id": "01c12959-2555-4323-80ae-b80700a0f149", "name": "MEDINIPUR" },
+          { "id": "fc3d335b-9e6a-44ea-95e0-7bc58f911287", "name": "MEERUT" },
+          { "id": "01a322ee-c198-4032-bc1b-dfdc6d8f885e", "name": "MEGHALAYA" },
+          { "id": "e78e1e23-1b0e-4413-8a8d-56c8d98d80ea", "name": "MEHSANA" },
+          {
+            "id": "4a220448-c531-4eb7-b95f-b42b5e95a74a",
+            "name": "MELMARUVATHUR"
+          },
+          { "id": "2c229f70-74bd-49c5-aad6-5f0b8dde7fc2", "name": "MIRAJ" },
+          { "id": "30dea05d-2219-4cba-b39d-b70977a674e3", "name": "MIRZAPUR" },
+          { "id": "f9302903-74e6-46c1-bad0-e98b94956de2", "name": "MODINAGAR" },
+          { "id": "ef6b5366-20c3-416f-b0d5-4120e2a038e7", "name": "MOHALI" },
+          { "id": "641627e5-73c7-4843-9576-a80f1eaa7469", "name": "MORADABAD" },
+          { "id": "f74df5d0-9426-4274-b79a-9dd7c9123106", "name": "MUDIGERE" },
+          {
+            "id": "5a663e4c-0088-45b6-bbb1-c2728aae8f65",
+            "name": "MUJAFFARPUR"
+          },
+          { "id": "ca50a7d7-6c1a-4438-a403-00dbec8c6eb9", "name": "MULBAGAL" },
+          { "id": "d7e856be-7b5c-4a55-a804-1acb420848a7", "name": "MUMBAI" },
+          { "id": "d8a0eeb5-dc6c-4660-8f38-0cd30f600c5d", "name": "MUNDHOL" },
+          { "id": "803399c3-51ae-46fd-9fc7-7afbe90f2a34", "name": "MUNGER" },
+          {
+            "id": "6afeac8e-9a6d-4439-8b90-ab49d0740c8b",
+            "name": "MURSHIDABAD"
+          },
+          { "id": "f279a7da-6dfb-4409-a1bf-b9bd30a44711", "name": "MUTHALI" },
+          {
+            "id": "181c86e7-dff6-4f15-b469-bd1f0336ef62",
+            "name": "MUZAFFARNAGAR"
+          },
+          {
+            "id": "fd3feca9-53e5-4e5c-9940-9c08c0ae4f25",
+            "name": "MUZAFFARPUR"
+          },
+          { "id": "9e4f704e-5510-484a-bf4f-68035b684fb2", "name": "MYS" },
+          { "id": "019579d3-e533-4193-a18a-4f994b2fba6b", "name": "MYSORE" },
+          { "id": "8ab2ed47-d3ce-485f-81ba-becccc89a25b", "name": "NA" },
+          { "id": "169ff257-03d2-4e48-b4ad-196ceb8abca7", "name": "NADIAD" },
+          {
+            "id": "6c6107a5-cf31-4425-8acc-7f8b115c8acf",
+            "name": "NAGAPATTINAM"
+          },
+          { "id": "d43a287b-0abd-4afb-b8da-09c36ca99247", "name": "NAGPUR" },
+          { "id": "8a294205-292a-4549-a84b-5b1ea2cec7cb", "name": "NAIHATI" },
+          { "id": "b819ae5e-597d-4b5a-aa06-1f41c472dd9c", "name": "NALGONDA" },
+          {
+            "id": "d3ca5e1f-0bc2-4712-958e-a66f578ecd69",
+            "name": "NALLASOPARA"
+          },
+          { "id": "9ec09632-2ad4-4cd6-a29a-56c8ccd4e157", "name": "NAMAKKAL" },
+          { "id": "9bd49a79-ab99-4c5e-a4f8-6f06bd1c84e2", "name": "NANDED" },
+          { "id": "bdbe7d5d-28df-4684-a466-91c7bc187f3a", "name": "NANGLOI" },
+          { "id": "2b2d7cfd-5b3d-4aa9-a4ac-a9462d7f208d", "name": "NARNAUL" },
+          { "id": "dda96d0f-3063-4308-9d01-1e3a897d2856", "name": "NASHIK" },
+          {
+            "id": "552a2ddf-8dde-4b81-b5bf-8163a01ea38e",
+            "name": "NAVI MUMBAI"
+          },
+          {
+            "id": "e00493f2-afe4-481f-aed3-4b75fb90bf30",
+            "name": "NAVIMUMBAI"
+          },
+          { "id": "dcd9ff22-d9ce-4746-bda0-2abbdc121d11", "name": "NAVSARI" },
+          { "id": "10e72c92-04f3-4c31-9de9-f5febf596b12", "name": "NAWADA" },
+          { "id": "940158ab-6320-40a7-a8b2-af6c1dc4aa25", "name": "NELLORE" },
+          { "id": "5b8083f1-ac0d-4ff2-be24-32ad1b00adf0", "name": "NEW DELHI" },
+          {
+            "id": "932edc2f-14fe-4413-b053-211a10a018e8",
+            "name": "NEW PANVEL"
+          },
+          { "id": "16fb4866-2965-4a30-92bc-b4b43978aff0", "name": "NILGIRIS" },
+          { "id": "10505fa1-b8cd-4c9c-901f-a3a044a67b15", "name": "NIZAMABAD" },
+          { "id": "2523900e-7a1b-45ee-b6eb-a253dd528a9c", "name": "NOIDA" },
+          { "id": "da7cdc81-3c99-433d-9f0a-e4f4a9bbc86d", "name": "NOMATI" },
+          { "id": "b8e6711c-15c0-4231-812e-ed9f8632de9c", "name": "ODISHA" },
+          { "id": "2b7ff76f-3b4d-4960-8a22-3e19706052fa", "name": "OSMANABAD" },
+          { "id": "8785175e-86c4-473f-bf94-071ce8107d75", "name": "PALAKKAD" },
+          { "id": "c750a1b4-f402-4c7b-bc5d-a15dff57d350", "name": "PALANPUR" },
+          { "id": "4f41b33a-fbea-4234-94d6-5eafa19a91fd", "name": "PALGHAR" },
+          { "id": "8e796fd8-11ae-49c9-8194-e7b5a816ce62", "name": "PALTHAN" },
+          { "id": "dca36165-4a78-4fb5-92a5-1933d5c04afe", "name": "PALWAL" },
+          { "id": "2010be9f-91ba-41cc-8bbc-3e2eb3176ff6", "name": "PANCHKULA" },
+          { "id": "7cdabf91-51b1-4d21-aab1-95765c9aad62", "name": "PANGI" },
+          { "id": "64d5f904-fdf4-45cd-bac3-71fdace6a834", "name": "PANIPAT" },
+          { "id": "69d350cd-9ecb-4c02-808f-2101aa7e9377", "name": "PANJIM" },
+          { "id": "089339eb-8c11-49aa-b389-2aead86aac1f", "name": "PANVEL" },
+          { "id": "e3dbaa1b-222a-4457-a13a-70f884dcc3e1", "name": "PARBHANI" },
+          { "id": "3a7884fd-9801-4d78-86e4-e5bc7dae7054", "name": "PATAN" },
+          {
+            "id": "7dae0991-1a13-4886-ab7a-4ca116956b08",
+            "name": "PATHANAMTHITTA"
+          },
+          { "id": "4205e6c4-ae35-498e-9d0d-07f25b2f3000", "name": "PATHANKOT" },
+          { "id": "2e19b38b-fef0-4087-a013-62128e487eb7", "name": "PATIALA" },
+          { "id": "e16e2491-848b-4987-8b52-8cb29aac2d3a", "name": "PATNA" },
+          {
+            "id": "f295d122-055d-42c4-9e04-c006885c476f",
+            "name": "PENHA DE FRANCE"
+          },
+          {
+            "id": "be72a45c-3e31-430d-887f-2fdff7390824",
+            "name": "PERAMBALUR"
+          },
+          { "id": "a93f80da-759c-447a-9404-ae3eaff83bcb", "name": "PHAGWARA" },
+          { "id": "6a3222aa-55e5-495c-b42e-3ca103eb7190", "name": "PHALTAN" },
+          { "id": "8f4eaa49-2910-4bae-9718-e8bdeea22ca9", "name": "PILBHIT" },
+          { "id": "7ca68283-9cf3-4bc2-8e23-ac36881449b4", "name": "PILIBHIT" },
+          { "id": "b9ee9368-5402-44c5-98eb-b8a9d258ad9f", "name": "PILKHUWA" },
+          { "id": "b8c50fb0-d1fa-4aa6-bc67-7261fffdb03c", "name": "PINJORE" },
+          { "id": "e9ca807b-af9a-4ea4-9e6f-d5bf45ef6f38", "name": "PIPARIYA" },
+          { "id": "62fd0b75-450e-4a9b-9ba6-7f40515b711a", "name": "PIRAPUR" },
+          {
+            "id": "e61b8a2c-6809-42a3-9cde-7548fff50aea",
+            "name": "PONDICHERRY"
+          },
+          { "id": "e45e2664-c0da-46e1-a8a0-5b50447227fc", "name": "PORBANDAR" },
+          { "id": "b66eb4d9-14d5-47ef-8e3c-8eebc53d95dc", "name": "PRAKASAM" },
+          { "id": "a558b16d-79e8-467a-90e1-786db461f95c", "name": "PRANTIJ" },
+          {
+            "id": "58170f51-4d74-4192-bc23-63e40385fa42",
+            "name": "PRATAPGARH"
+          },
+          {
+            "id": "b450dfe5-cf99-496d-8824-784902d5181a",
+            "name": "PRATAPGRAH"
+          },
+          {
+            "id": "b0984525-3dbf-4437-81be-696d3051c8c0",
+            "name": "PREM NAGAR"
+          },
+          {
+            "id": "d9d98ace-f78c-405d-b72a-73196a2f2b21",
+            "name": "PUDUKOTTAI"
+          },
+          { "id": "855b8daa-ea64-477e-a94a-80da04125aed", "name": "PUNE" },
+          { "id": "39b647a7-7e7d-4183-a855-5466e4f22e57", "name": "PUNJAB" },
+          { "id": "3972e45c-a55e-469b-90f6-c216665d84cd", "name": "PURI" },
+          { "id": "1e6a560f-16b0-4a38-a1fd-f867b3283ee9", "name": "PUTTUR" },
+          { "id": "7da7adca-0487-47a1-a724-a5b4843c873d", "name": "RAEBARELI" },
+          { "id": "bc390908-ac51-4680-9daa-0c4f5551a6b7", "name": "RAIBARELI" },
+          { "id": "a2bdea5a-dee7-4975-83a9-6a2b7ca4ca58", "name": "RAICHUR" },
+          { "id": "4ed715aa-d50b-4ba4-899c-b8c05cb0d7cc", "name": "RAIGAD" },
+          { "id": "c56df1b0-7957-421e-99d1-3517c75f86e5", "name": "RAIGARH" },
+          { "id": "11b8927d-9319-4a41-b806-9c03538af286", "name": "RAIPUR" },
+          { "id": "3d353d31-44ea-484a-8206-90e597115acb", "name": "RAJASTHAN" },
+          { "id": "e73186f9-4316-49bf-99cb-a5e4e3d77698", "name": "RAJKOT" },
+          { "id": "33862e10-e383-48c2-b08e-e1d68457bb65", "name": "RAJPURA" },
+          {
+            "id": "b7bb6794-7bc7-44f0-b96f-6b8fa20b247a",
+            "name": "RAMANAGARA"
+          },
+          {
+            "id": "62dabd76-4ed8-417a-891e-aa69e4d20b86",
+            "name": "RAMANATHAPURAM"
+          },
+          {
+            "id": "136392ed-f3a9-4085-9fe1-73e498ee6fa8",
+            "name": "RAMANTHAPUR"
+          },
+          { "id": "2def2a34-a761-4d6c-9faf-32a1dfd85ccf", "name": "RAMGARH" },
+          { "id": "cda0e878-b75e-4bba-8287-ba012094d50e", "name": "RANCHI" },
+          {
+            "id": "2577531f-7582-40ab-a40a-dbc4f452e06e",
+            "name": "RANEBENNUR"
+          },
+          {
+            "id": "62f27a3b-89a1-4463-96ef-33d378ab981e",
+            "name": "RANGA REDDY DISTRICT"
+          },
+          {
+            "id": "1f2bafb2-826d-40e7-bf45-9d4728cb61e5",
+            "name": "RANGAREDDY"
+          },
+          {
+            "id": "78cf0c89-975e-4e57-9f1f-9d5bb01c07ef",
+            "name": "RARI CHAMBA"
+          },
+          { "id": "c08101d3-54bc-4925-85cd-7502273e0724", "name": "RATLAM" },
+          { "id": "75459465-ee52-462b-ae39-516f0af951d8", "name": "RATNAGIRI" },
+          { "id": "5e46ba25-7883-44f8-a52d-45ba8cfd102b", "name": "REDHILLS" },
+          { "id": "8ea34248-fa7b-4921-81f0-fb23074b66ae", "name": "REWA" },
+          { "id": "517cdf54-81bf-4467-af77-fe1e56f39af5", "name": "REWARI" },
+          { "id": "9fc67f55-1590-4d9e-8ba2-a0e91de69883", "name": "ROHINI" },
+          { "id": "56cc88c2-192d-4513-8d66-c28eca12bb13", "name": "ROHTAK" },
+          { "id": "c6d46dd8-52d1-4cfa-8b95-244575df531c", "name": "ROKAR" },
+          { "id": "64d7f599-1418-420c-8885-bd7fbca5a3b2", "name": "RUPNAGAR" },
+          {
+            "id": "bf99fd1d-7dee-47e3-a5a6-e94a889659e5",
+            "name": "SABARKANTHA"
+          },
+          {
+            "id": "5c332fa3-fa72-4e5d-a2c2-a483a9964350",
+            "name": "SADASHIVPET"
+          },
+          {
+            "id": "3608fe84-18a1-48b9-addc-fe8a0b1fa933",
+            "name": "SAHARANPUR"
+          },
+          { "id": "de74bc03-d058-4369-a99e-26b745fbfa86", "name": "SALEM" },
+          {
+            "id": "dd73a137-c427-4e7e-a740-2011082864ab",
+            "name": "SAMASTIPUR"
+          },
+          { "id": "42669f1f-8c8c-44c0-aea8-bc89ac563f00", "name": "SANGALI" },
+          { "id": "cfa17447-6fa0-48cf-b4a2-5ad086d321b0", "name": "SANGAMNER" },
+          {
+            "id": "1a334532-b93e-4512-8c27-cf4b7c02ad2a",
+            "name": "SANGAREDDY"
+          },
+          { "id": "9e508f18-106c-4df8-89ef-fb7d3d0fe6d7", "name": "SANGLI" },
+          { "id": "ff613290-3656-4815-8d59-e05754924ef7", "name": "SARAN" },
+          { "id": "5b443750-61e8-420d-a7f8-43b3bd762e9d", "name": "SARKAGHAT" },
+          { "id": "faa5a4ab-4110-499a-b5a9-1da8257c8dc6", "name": "SATANA" },
+          { "id": "57b2fa49-cde1-4b13-8efb-3185bbaa56aa", "name": "SATARA" },
+          { "id": "120d68d1-a819-49eb-a96f-6716f5a70f4c", "name": "SATLASANA" },
+          { "id": "2af7e05a-1e72-4116-a750-95c31763d808", "name": "SATNA" },
+          {
+            "id": "138e830c-da8c-4537-8da4-654f9288614f",
+            "name": "SAWANTWADI"
+          },
+          {
+            "id": "5d36aab8-c538-460c-9370-21a9e25dcc52",
+            "name": "SECUNDERABAD"
+          },
+          { "id": "a55483df-0ca3-4f56-ad6f-0267c6489344", "name": "SELAM" },
+          { "id": "0773c318-61f7-4865-8a96-4f17c6195ac5", "name": "SENAPATI" },
+          { "id": "6c1d45e0-13e8-497a-972d-454193af6a84", "name": "SEOHAR" },
+          { "id": "8649fb6e-ff90-4a36-beef-521d53278807", "name": "SHAHAPUR" },
+          { "id": "45f4d97b-83b5-4ce6-a936-7c363e8129ec", "name": "SHAHDARA" },
+          { "id": "7f4b2308-fe8e-45aa-bf43-7008437086c1", "name": "SHAMLI" },
+          {
+            "id": "0b5ca3c4-a923-4996-9b53-48d6ecfc1826",
+            "name": "SHEIKHPURA"
+          },
+          { "id": "67c009f7-82a6-4081-bf4e-70357f7399f5", "name": "SHILLONG" },
+          { "id": "71580d10-821f-4786-b702-5280cb05f556", "name": "SHIMOGA" },
+          {
+            "id": "d25fafcd-b2fe-4128-a4e3-780d129cb6ec",
+            "name": "SHRIRAMPUR"
+          },
+          { "id": "e89d7b8c-81c0-462b-a66d-524fe39e8e51", "name": "SIDDAPUR" },
+          {
+            "id": "5e846b49-11ed-4380-8f8b-1c58a1e32c19",
+            "name": "SIDDHARTHNAGAR"
+          },
+          {
+            "id": "2eae0601-b075-4a58-8dfb-a75a1b4090bb",
+            "name": "SIKANDRABAD"
+          },
+          { "id": "1d7b12fb-4a73-41e6-853c-0f45d69d82ec", "name": "SIKAR" },
+          { "id": "6fd47242-b7e6-4c0b-b695-7f6dcad9610f", "name": "SILCHAR" },
+          { "id": "9c554224-8ca1-4cb1-83e9-b333b33d87f1", "name": "SILIGURI" },
+          { "id": "b46c36e6-ee5a-4ef5-8d21-d628990a3a36", "name": "SILVASSA" },
+          {
+            "id": "c4976ebc-986f-49b0-8158-d845d43713fd",
+            "name": "SINDHUDURG"
+          },
+          {
+            "id": "a588bf08-1b3b-434f-9d6c-dacfc95d7065",
+            "name": "SINDHUDURGA"
+          },
+          { "id": "5bfccca3-1eff-4718-85e8-62bd49a6e2be", "name": "SIRMAUR" },
+          { "id": "d436c1c5-bf7c-41d5-8821-92b6eafdc93c", "name": "SIRSI" },
+          { "id": "f9690056-3426-459c-b4d9-a3e28cbc52f0", "name": "SITAMADHI" },
+          { "id": "d972838f-0b2e-488f-8660-de1b025cd010", "name": "SITAMARI" },
+          { "id": "20448328-cf7c-4ca0-a7e1-a2965807a0ff", "name": "SIVAGANGA" },
+          { "id": "80fb067d-a727-44b9-9941-363805249459", "name": "SIWAN" },
+          { "id": "2171fc9a-c59a-4938-ac79-151d88f09760", "name": "SOLAPUR" },
+          { "id": "2f91233f-602d-43fe-a5b3-e3b485623e84", "name": "SONEPAT" },
+          {
+            "id": "3c92f432-4278-4c19-8702-45a7d8df0e29",
+            "name": "SRI GANGA NAGAR"
+          },
+          {
+            "id": "69d22e90-108d-4e69-a86a-77acb0b52680",
+            "name": "SRIKAKULAM"
+          },
+          {
+            "id": "95baea44-153e-451c-bff2-8bd50b4367d2",
+            "name": "SRINIVASPUR"
+          },
+          {
+            "id": "2a647e4e-8b90-4212-97a4-6db79e1bedc1",
+            "name": "SRIVILLIPUTHUR"
+          },
+          {
+            "id": "64d80ca8-04c2-4c66-9553-412bd2fe1d00",
+            "name": "STORE-BHILAI-SUPELA"
+          },
+          { "id": "f1f2aa4f-ad0f-45e4-80ee-4f9deaf5ba4f", "name": "SULTANPUR" },
+          { "id": "5243909d-2e29-4c7c-841f-0aee4acb2a22", "name": "SURAT" },
+          {
+            "id": "c2bec87c-72b8-4f8f-af4f-870461db88e3",
+            "name": "SURENDRANAGAR"
+          },
+          { "id": "6152d0cc-7087-4ccf-ba9b-1dbf7f0fa50f", "name": "TAORU" },
+          { "id": "7a427790-dc2e-42c1-ab8c-00e3fab33068", "name": "TEKKALI" },
+          { "id": "be70e8ac-5d3e-4208-8d48-f1daef1c1e3a", "name": "TEZPUR" },
+          { "id": "d3be9d18-86cf-400e-8c02-a4ffc7765923", "name": "THANE" },
+          { "id": "a854d164-4d0a-46be-90f2-b416766bc086", "name": "THANJAVUR" },
+          { "id": "cc11b08e-f4d0-4035-9c00-3028ec836789", "name": "THENI" },
+          {
+            "id": "0f3191fa-1ff4-46d4-aa3c-7475319dc3c0",
+            "name": "THIRTHAHALLI"
+          },
+          {
+            "id": "42fbec7b-fa7a-4a57-82e0-3b50db57bd48",
+            "name": "THIRUNAVELI"
+          },
+          {
+            "id": "48228624-7629-4dc2-bd6d-94232174c5a7",
+            "name": "THIRUVALLUR"
+          },
+          {
+            "id": "9cc1685b-7c1e-4c98-a1a8-5a3157916bcf",
+            "name": "THIRUVALLUR DISTRICT"
+          },
+          {
+            "id": "f512e113-19b1-403a-bf1f-f7b064cc6f91",
+            "name": "THIRUVANAMALAI"
+          },
+          { "id": "bd815c3c-6622-467b-ae8f-c296c03ef712", "name": "THRISSUR" },
+          {
+            "id": "625e86fd-e610-4294-8a69-bc98a9cca71f",
+            "name": "TINDIVANAM"
+          },
+          { "id": "3bb5a03d-b928-4a11-b978-821b078cf7c5", "name": "TINSUKIA" },
+          { "id": "627a3541-ce10-4bb6-952f-0812388ff6cb", "name": "TIPTUR" },
+          {
+            "id": "7b60508f-ebf0-4bd6-b8fe-0b480e32cee1",
+            "name": "TIRUCHIRAPPALLI"
+          },
+          {
+            "id": "f7ca93c5-22ab-4e5e-ab64-bcf9188345f1",
+            "name": "TIRUNELVELI"
+          },
+          { "id": "a08a23e3-f870-46b2-9773-670829c613ee", "name": "TIRUPPUR" },
+          {
+            "id": "0f3d4600-991e-4591-9fc2-8dbe92789004",
+            "name": "TIRUVANNAMALAI"
+          },
+          { "id": "8232b5cc-7808-4e4a-b127-3296e87fb91b", "name": "TRICHY" },
+          { "id": "4eb80e9f-a4c5-4265-8e40-2f277cc8b7b8", "name": "TRIPURA" },
+          { "id": "22004bf4-b8ae-402f-a49a-cd99e8d30bcf", "name": "TRIPURA" },
+          {
+            "id": "4df54024-320c-4084-bcc1-af6f770e637c",
+            "name": "TRIVANDRUM"
+          },
+          { "id": "3092fd07-de0c-4bf6-afb0-0afc319ede3d", "name": "TULJAPUR" },
+          { "id": "b5e797d6-0b1c-4948-84c8-f67664196803", "name": "TUMKUR" },
+          { "id": "a58d8209-583f-4312-9eeb-dff7098a1b68", "name": "TUNDLA" },
+          { "id": "eea3846a-e3cd-4092-8986-6336b5a50f66", "name": "UCHCHHAL" },
+          { "id": "faa22396-1674-4786-9135-cccadc2a5a6c", "name": "UDAIPUR" },
+          {
+            "id": "fb64ed8e-f337-48d0-8f27-3f18de0a7f14",
+            "name": "UDHAM SINGH NAGAR"
+          },
+          { "id": "5846f241-3b29-4202-a13d-37cbf89585c1", "name": "UDUPI" },
+          { "id": "546d3d1f-e34a-4177-9de2-2fc5fe3cc64d", "name": "UJJAIN" },
+          {
+            "id": "30a8d72f-2c1e-461d-b690-f2cb653f1b7a",
+            "name": "ULHASNAGAR"
+          },
+          { "id": "25d053e8-9972-4c35-968a-85da7cb51dc2", "name": "UNA" },
+          { "id": "f0d3c11c-8c03-431e-b249-9480518f0ab8", "name": "UNNAO" },
+          { "id": "c2c5c5ba-965c-46be-9193-1a02794db864", "name": "UP" },
+          { "id": "64130db6-f204-4a11-b533-c48c6e70f539", "name": "URAN" },
+          { "id": "0799412c-324c-4050-b4c2-d4d74db8401d", "name": "VADODARA" },
+          { "id": "aec6440b-473f-4998-ac45-ba7a1dfe1e75", "name": "VAISHALI" },
+          {
+            "id": "634727f7-ae6b-49ad-abc5-a6cc72d8d8dd",
+            "name": "VALANGAMAN"
+          },
+          { "id": "2cb8461d-ba74-4f49-8f4f-79a1d8140132", "name": "VALSAD" },
+          { "id": "27ae571a-f38f-4a0e-afe8-0fe3bd544c7c", "name": "VARANASI" },
+          { "id": "65bf96a4-f2ca-4160-ac52-b1fd420179cb", "name": "VASAI" },
+          { "id": "59d5b239-aff2-444e-aefa-754a028ac007", "name": "VELLORE" },
+          {
+            "id": "c1211ec2-9785-4145-9e22-0ddb54e87f21",
+            "name": "VETTUVANKANI"
+          },
+          { "id": "8ec80c96-1295-426d-bd1c-e7202e4760b5", "name": "VIJAYAPUR" },
+          {
+            "id": "fbc75530-94f4-428c-ab08-1e99cfd114af",
+            "name": "VIJAYAWADA"
+          },
+          { "id": "c3546c56-7065-4b84-85b3-f663e9f899a7", "name": "VIKARABAD" },
+          {
+            "id": "949a24c5-b8ca-406e-bec1-e182094c15ac",
+            "name": "VILLUPURAM"
+          },
+          {
+            "id": "99e69392-6573-4ad8-971b-291fb98fa423",
+            "name": "VILLUPURAM DISTRICT"
+          },
+          {
+            "id": "93bb586a-ead8-4a0c-b743-365327b89c5a",
+            "name": "VILUPPURAM"
+          },
+          { "id": "8af726fb-e9ec-4be6-a78a-1da7de97e2e4", "name": "VINJAMUR" },
+          { "id": "4ffd6cd4-a663-4646-8b2b-6740e46de71b", "name": "VIRAJPET" },
+          { "id": "ff4e1554-58c2-4613-841b-9bed2e33d6bc", "name": "VIRAR" },
+          {
+            "id": "57f2b6f4-33c2-4815-9c75-cbf74aeb4ce4",
+            "name": "VIRUDHUNAGAR"
+          },
+          {
+            "id": "20a2a884-4d73-4a41-9d2e-4f91e3f42ec7",
+            "name": "VISAKHAPATNAM"
+          },
+          {
+            "id": "e6cc323e-fb37-4bdd-ae9b-ccc43f79e3e5",
+            "name": "VISHAKAPATNAM"
+          },
+          {
+            "id": "60313ae3-504a-4dd3-8f0c-573f9746a806",
+            "name": "VIZIANAGARAM"
+          },
+          { "id": "3c44b67a-d05e-4489-8f20-e6347cfd7337", "name": "VYARA" },
+          {
+            "id": "4ec5bb2c-a9aa-4a56-9941-39a1cace5290",
+            "name": "WANAPARTHY"
+          },
+          { "id": "105ba2ec-c6e7-4b9c-ba71-b206903fcc12", "name": "WARANGAL" },
+          { "id": "737a14e7-263d-45ce-9219-67c2b8aba7b2", "name": "WASHI" },
+          { "id": "31bc1f4d-dbdd-4a24-8b18-32b1ad4bcb91", "name": "WASHIM" },
+          {
+            "id": "d44b16df-c417-4d70-aa26-124e657a1f72",
+            "name": "WEST BENGAL"
+          },
+          {
+            "id": "895fbe05-5160-428f-9082-f75722b44555",
+            "name": "WEST BENGALBURNPUR"
+          },
+          {
+            "id": "2d983169-462a-4d19-ad71-a819bbc300ec",
+            "name": "WESTBENGAL"
+          },
+          { "id": "27b56369-d8a2-4b41-903a-937c9db55e8d", "name": "YADGIRI" },
+          {
+            "id": "414c1c06-f182-486f-b9c0-2fda301468ef",
+            "name": "YAMUNA NAGAR"
+          },
+          { "id": "6baaa0c2-6cb7-4cc7-bf6d-8f1ac0471ffb", "name": "YAVATMAL" },
+          { "id": "46624133-56c8-4256-9e07-87cea2f23922", "name": "YELLAPUR" }
+        ]
+      },
+      {
+        "filterId": 4,
+        "name": "Branch",
+        "sortOrder": 2,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": [
+          {
+            "id": "7458059f-d0e4-4a11-b34a-50a6fb9a80a7",
+            "name": "Ahmedabad-Airport"
+          },
+          {
+            "id": "10e8adc9-a528-41d4-ad75-f7363c46d345",
+            "name": "Ahmedabad-Ashram Road"
+          },
+          {
+            "id": "1e9b7b4e-eb28-409e-84de-202d4d1a0b0d",
+            "name": "Ahmedabad-Devarc"
+          },
+          {
+            "id": "030b14a2-8a64-48d9-ad4f-938114b6989e",
+            "name": "Ahmedabad-Himalaya"
+          },
+          {
+            "id": "9c76188d-1d68-40d5-9c1f-af47470a80e7",
+            "name": "Ahmedabad-Maninagar"
+          },
+          {
+            "id": "83c12c70-ebfa-4fa2-b604-eab5fa238745",
+            "name": "Ahmedabad-Motera"
+          },
+          {
+            "id": "238b52c5-0009-4bdd-94f8-3bb2a4cc776d",
+            "name": "Ahmedabad-Satyam"
+          },
+          {
+            "id": "174f2867-7646-465a-a908-70535e30b476",
+            "name": "Aurangabad-Prozone"
+          },
+          {
+            "id": "9c0ade09-aee0-4689-8075-a3f6db69cd71",
+            "name": "Bangalore RPA & Bangalore Digi under – Zonal Office – RPA – Bangalore"
+          },
+          {
+            "id": "c8200597-15a5-4d8e-8ebb-7582ba53df05",
+            "name": "Bangaluru- VR Mall"
+          },
+          {
+            "id": "9f089fe1-c9d9-4f61-aaf4-23a15e41eabc",
+            "name": "Bangaluru-Banashankari"
+          },
+          {
+            "id": "599452f5-0298-481c-a41b-0e9f24428b6f",
+            "name": "Bangaluru-Banerghatta"
+          },
+          {
+            "id": "97690430-1dc2-4341-9703-720061f0b50a",
+            "name": "Bangaluru-BEL Road"
+          },
+          {
+            "id": "f94785aa-e8a5-4aec-aaea-63c5f9ababe2",
+            "name": "Bangaluru-Indiranagar"
+          },
+          {
+            "id": "e6047200-8ad4-462b-9b98-dfc7b913a589",
+            "name": "Bangaluru-Jayanagar 4th Block"
+          },
+          {
+            "id": "c3583ddc-18b4-4905-bc73-72d0f77b64f7",
+            "name": "Bangaluru-Jayanagar Woody's"
+          },
+          {
+            "id": "d5c7fabf-319e-4c66-a2be-b7684619d22f",
+            "name": "Bangaluru-Kormangala 2"
+          },
+          {
+            "id": "03fb0778-bcc9-49c7-a651-1c1bcab3df89",
+            "name": "Bangaluru-Manor"
+          },
+          {
+            "id": "dcba748d-89fa-4123-a530-d512d98bc7cc",
+            "name": "Bangaluru-Mantri Mall"
+          },
+          {
+            "id": "447f3080-4f28-41d0-a23a-e51db90b3608",
+            "name": "Bangaluru-Marathalli D"
+          },
+          {
+            "id": "9e8743e7-6970-432a-97b2-3b4987d17b8d",
+            "name": "Bangaluru-Phoenix Market City"
+          },
+          {
+            "id": "25ee14e9-8381-4999-b42c-279bbb2c1756",
+            "name": "Bangaluru-Rajaji Nagar"
+          },
+          {
+            "id": "9d3529a3-a95a-48de-bdae-cbeb1e4deaaa",
+            "name": "Bangaluru-Sadashivnagar"
+          },
+          {
+            "id": "8a691451-c002-4d92-88d8-34e2ad2fc71e",
+            "name": "Bangaluru-Sarjapur Total Mall"
+          },
+          {
+            "id": "d04e9214-2cb2-4502-b438-913ff1a8ebf7",
+            "name": "Bangaluru-Whitefield"
+          },
+          {
+            "id": "f00b45b7-ccc0-4057-91ed-682c6eb8d380",
+            "name": "Baroda-Centresquare"
+          },
+          {
+            "id": "ac0eddfc-e3d2-4288-a322-b55e5d77176d",
+            "name": "Baroda-EVA Mall"
+          },
+          {
+            "id": "2cbb44a5-9dc3-4d49-87a0-49025d1599df",
+            "name": "Chennai-Annanagar"
+          },
+          {
+            "id": "75f79963-1616-4cf6-b9d3-360421c221b1",
+            "name": "Chennai-Grand Mall"
+          },
+          {
+            "id": "d8b406c8-de9b-438e-85bc-5d7da9909515",
+            "name": "Chennai-Mogappair"
+          },
+          {
+            "id": "6002cf38-7b49-43ec-840f-a70eeeb22f65",
+            "name": "Chennai-Mount Road"
+          },
+          {
+            "id": "b785b9be-cb1f-4f4f-ab44-27f4af33dc1c",
+            "name": "Chennai-Phoenix"
+          },
+          {
+            "id": "9b3404c1-dcf2-4fdd-803f-d17e238e3de5",
+            "name": "Chennai-TNagar"
+          },
+          {
+            "id": "d1eb590b-a7b7-4107-9426-ce0e5d6183ed",
+            "name": "Contact Center"
+          },
+          {
+            "id": "f4a40604-bc0d-4b25-bb21-b92f017b5001",
+            "name": "Delhi Airport2"
+          },
+          {
+            "id": "42bee8b2-20f5-4bfd-b8f2-1441fbce39c6",
+            "name": "Delhi AirportT3"
+          },
+          {
+            "id": "ccea7bcf-f962-4461-a525-a8554f28e483",
+            "name": "Delhi RPA & Dwarka Digi under – Zonal Office – RPA – Delhi"
+          },
+          {
+            "id": "8da45d64-31c0-419c-826c-23660e6791b9",
+            "name": "Delhi-Airport"
+          },
+          {
+            "id": "aef0455c-ef39-4609-bffd-ca6e57ea9fba",
+            "name": "Delhi-Dwarka"
+          },
+          {
+            "id": "67643c25-17cc-4b3c-bff2-c7f443a1d527",
+            "name": "Delhi-Green Park"
+          },
+          {
+            "id": "72bf1770-fd06-4725-b58a-626c71fa4edd",
+            "name": "Delhi-Janakpuri U1"
+          },
+          {
+            "id": "93f65268-aba0-48c5-9978-f6315ff90913",
+            "name": "Delhi-Kailash"
+          },
+          {
+            "id": "e901d4e5-f9b5-48ce-ab26-96100c6687ab",
+            "name": "Delhi-KamlaNagar"
+          },
+          {
+            "id": "fc7ed7b5-5420-477a-a071-f73ab694a486",
+            "name": "Delhi-Odoen-Cannuaght Place"
+          },
+          {
+            "id": "131a955b-7fd8-4d47-9c28-faf40af0f704",
+            "name": "Delhi-Preet Vihar"
+          },
+          {
+            "id": "37b4cce0-0323-4a29-9f00-c0a5698404f3",
+            "name": "Delhi-Pusa Road"
+          },
+          {
+            "id": "24cf8c89-10aa-4105-8c80-b549ada0c492",
+            "name": "Delhi-Rajouri"
+          },
+          {
+            "id": "c5d2f237-62c4-4f32-8d35-4dc4f1e9b838",
+            "name": "Delhi-Rohini"
+          },
+          {
+            "id": "a39753b5-112e-4a32-a24f-d86a1212f4be",
+            "name": "Delhi-Rohini Metro"
+          },
+          {
+            "id": "628796cf-511b-454c-940a-8872d7027579",
+            "name": "Delhi-Saket"
+          },
+          {
+            "id": "03c19c3b-4b59-4061-8b09-20fd76a957f6",
+            "name": "Delhi-Select City"
+          },
+          {
+            "id": "5768c688-ad8a-45b7-b5a1-d6725db31ed9",
+            "name": "Delhi-South Ex"
+          },
+          {
+            "id": "c5d8815c-9d17-4d1b-aef4-0b947145a751",
+            "name": "E Comm - Contact Center"
+          },
+          {
+            "id": "9c1901ed-4711-4020-b546-3aff6a151e16",
+            "name": "Faridabad-Crown"
+          },
+          {
+            "id": "96b65165-e078-4813-b296-4c394bf6a59e",
+            "name": "Gaziabad-Aditya"
+          },
+          {
+            "id": "a848e15e-1bdd-41f1-8c64-7e26481f87f6",
+            "name": "Gaziabad-Gaur Central"
+          },
+          {
+            "id": "9b7fed7a-3e3d-41f5-9323-41cc0588bdab",
+            "name": "Ghaziabad-Pacific"
+          },
+          {
+            "id": "b0b0d5a3-7444-446b-8094-1b3925720222",
+            "name": "GreaterNoida-Ansal"
+          },
+          {
+            "id": "a5f1bed9-2fd3-4c0d-9d1f-0fbf18ed5b5f",
+            "name": "GreaterNoida-Logix"
+          },
+          {
+            "id": "82c4ecf9-4604-409f-93ab-e29ed8774437",
+            "name": "Gurgaon-Ambience Mall"
+          },
+          {
+            "id": "0bb28371-c6e4-4d48-b304-d2f12520331e",
+            "name": "Gurgaon-DLF Mega Mall"
+          },
+          {
+            "id": "25c3154d-f8c7-4b28-a10d-64b3b3c4246a",
+            "name": "Gurgaon-Sec 29"
+          },
+          {
+            "id": "cfd442c7-6389-49d6-b92e-a913e4638b8d",
+            "name": "Gurgaon-Sohna Road"
+          },
+          {
+            "id": "0f63bea5-409e-4ee6-855a-8597978764d4",
+            "name": "Hyderabad-A S Rao Nagar"
+          },
+          {
+            "id": "330b368b-b0e2-4b91-9c21-bfe73541f92e",
+            "name": "Hyderabad-Air Port"
+          },
+          {
+            "id": "c7540252-0e04-435e-8923-1d230b28f18e",
+            "name": "Hyderabad-Attapur"
+          },
+          {
+            "id": "e1826f0e-f930-4bd1-9808-f7a53312b9b6",
+            "name": "Hyderabad-Jubilee"
+          },
+          {
+            "id": "3be245ad-93e3-4be8-ab10-a54fd36c79cc",
+            "name": "Hyderabad-Kompally"
+          },
+          {
+            "id": "5f6692f2-ad81-4b31-a4f6-36139ed6d32e",
+            "name": "Hyderabad-Kondapur"
+          },
+          {
+            "id": "1d1ebd90-1149-449a-acbb-49fcb0d16e26",
+            "name": "Hyderabad-L B Nagar"
+          },
+          {
+            "id": "56e1315e-2611-4b72-abf9-ec04aa431251",
+            "name": "Hyderabad-New Vikrampuri"
+          },
+          {
+            "id": "dc304535-9b45-455e-8972-7bc96da38b0f",
+            "name": "Hyderabad-Panjagutta"
+          },
+          {
+            "id": "7a3100c3-669f-4c3f-894b-6f7fca6f9033",
+            "name": "Hyderabad-Ramanthapur"
+          },
+          {
+            "id": "fda94ecb-4b1f-46e7-86f7-e71e76497d60",
+            "name": "Mumbai RPA & Mumbai Digi under – Zonal office – RPA – Mumbai"
+          },
+          {
+            "id": "7732d2a1-9f19-417c-b448-39bd8a2d661d",
+            "name": "Mumbai-Airport"
+          },
+          {
+            "id": "5cde8540-1a37-4d2e-8f95-025f7e65e1ad",
+            "name": "Mumbai-Airport T2D"
+          },
+          {
+            "id": "63c47cb0-d963-44d2-aa01-01ce662ae199",
+            "name": "Mumbai-Andheri"
+          },
+          {
+            "id": "2ddc231d-feb2-4aee-978d-5f4c0b2b14da",
+            "name": "Mumbai-Bandra"
+          },
+          {
+            "id": "670c662d-85ce-4101-b4e3-e53812806223",
+            "name": "Mumbai-Bhandup"
+          },
+          {
+            "id": "28244288-0a81-49b7-a173-c66dbaa9acd5",
+            "name": "Mumbai-Borivali"
+          },
+          {
+            "id": "2dee7b75-cc84-4564-abd6-19c25fd3c23c",
+            "name": "Mumbai-Breach Candy"
+          },
+          {
+            "id": "6a13f7d1-3ff0-4c11-b1cd-cd8348fb440c",
+            "name": "Mumbai-Ghatkopar"
+          },
+          {
+            "id": "74c4a5c3-8267-4d49-b291-6c509e86750e",
+            "name": "Mumbai-Growel"
+          },
+          {
+            "id": "b246a5f0-c156-4395-be21-045307da389b",
+            "name": "Mumbai-Infiniti"
+          },
+          {
+            "id": "2ca9c797-7513-4684-b526-c223e940161c",
+            "name": "Mumbai-Juhu"
+          },
+          {
+            "id": "ab0e6a94-daad-43fb-88b4-8b8bcc5d9889",
+            "name": "Mumbai-Kandivali"
+          },
+          {
+            "id": "469310d0-21f5-4238-a841-54d213e5030b",
+            "name": "Mumbai-Kurla"
+          },
+          {
+            "id": "c0965ca5-1a06-4b51-abc8-05b3b1350f8d",
+            "name": "Mumbai-Malad"
+          },
+          {
+            "id": "c179ed90-6c07-49a9-a99b-52b464e50ba7",
+            "name": "Mumbai-Mulund"
+          },
+          {
+            "id": "40d33626-04b4-46a8-9fce-3d0465ad966f",
+            "name": "Mumbai-Oberoi"
+          },
+          {
+            "id": "e5203238-f9b6-427f-9e7a-ad4a2983f73b",
+            "name": "Mumbai-Prabhadevi"
+          },
+          {
+            "id": "2ad3a723-6b3a-4867-8641-fc307d5b6423",
+            "name": "Mumbai-Sion"
+          },
+          {
+            "id": "33ed2c7c-a97e-4926-b9b1-5804d0607a6b",
+            "name": "Nashik-Hari Prabha"
+          },
+          {
+            "id": "5591a2cd-30f1-4408-92b6-443b5d76ba9f",
+            "name": "NaviMumbai-Belapur"
+          },
+          {
+            "id": "372cbc22-d986-400e-b0f4-68ed853482de",
+            "name": "NaviMumbai-Khargar"
+          },
+          {
+            "id": "03cf51de-b1cf-4fbb-9e3b-c6b926b1728d",
+            "name": "NaviMumbai-Seawoods"
+          },
+          {
+            "id": "25f228ca-bd62-4bf8-9807-25a7ee042bba",
+            "name": "NaviMumbai-Vashi Akshar Plaza"
+          },
+          {
+            "id": "7735e645-7300-44fd-8bff-e95ae32f8f0b",
+            "name": "Noida-Garden Galleria"
+          },
+          {
+            "id": "7ae25665-c40d-4302-8060-875e64c0a8cf",
+            "name": "Noida-Mall of India"
+          },
+          {
+            "id": "85621757-e725-45c8-a7f8-320f086716de",
+            "name": "Omnichannel Operations-Ops-SO"
+          },
+          {
+            "id": "3a938e76-cd08-492d-94f6-d3ab5b4e40a6",
+            "name": "Pune-Aundh"
+          },
+          {
+            "id": "4efd48cb-f383-4070-8ad3-72402b30e9b3",
+            "name": "Pune-Baner"
+          },
+          {
+            "id": "e0b3e5aa-6051-4809-9eda-70193dc66082",
+            "name": "Pune-Kothrud"
+          },
+          {
+            "id": "b25cd8f9-f3d4-4bd2-a2a8-e4f18ecab5e8",
+            "name": "Pune-Krome"
+          },
+          {
+            "id": "a73ad0f4-6e3b-4b9b-b590-a4a206ffb00b",
+            "name": "Pune-Phoenix Market City"
+          },
+          {
+            "id": "e9ad069f-f6f5-416f-a45f-5f9bfa3fba87",
+            "name": "Pune-Pimpri"
+          },
+          {
+            "id": "11108036-1a5b-451c-8d2f-04b6024fcc6d",
+            "name": "Pune-Seasons Mall"
+          },
+          {
+            "id": "7bd7f70a-a642-4d70-9161-292399cdc4a7",
+            "name": "Pune-Wakad"
+          },
+          {
+            "id": "9e3fb7a8-0ca7-489e-b40f-63038cb994f8",
+            "name": "Punjab-Chandigarh-Sec22"
+          },
+          {
+            "id": "4010f72b-e187-4a8b-8bcf-66fc926523ac",
+            "name": "Punjab-Chandigarh-Sec26"
+          },
+          {
+            "id": "1595bf64-6e8a-4a92-bf34-49fe8543d99e",
+            "name": "Rajkot-Crystal"
+          },
+          { "id": "e480cd5b-207e-4bb8-9b97-54443eee87a5", "name": "SO" },
+          {
+            "id": "39f6dea2-b0e6-49d6-8e39-3206e55430fb",
+            "name": "Store - Mumbai-Fort"
+          },
+          {
+            "id": "611b3040-7723-4615-9dd7-c1b772b70615",
+            "name": "Store - Mumbai-Phoenix"
+          },
+          {
+            "id": "7fddd96f-5123-415f-8137-1aecbd8d81a8",
+            "name": "Store-Ahmedabad – Shyamal Cross Road"
+          },
+          {
+            "id": "8721e363-8a94-48b8-82f6-9f7ef0026ddc",
+            "name": "Store-Ahmedabad – Shyamal Cross Road-NAPS"
+          },
+          {
+            "id": "970de29f-f908-48b2-9d7b-72332e9519d9",
+            "name": "Store-Ahmedabad- Satva Icon"
+          },
+          {
+            "id": "897feeff-a0ae-4181-b529-6a87bf214288",
+            "name": "Store-Ahmedabad- Satva Icon-NAPS"
+          },
+          {
+            "id": "44e949f6-af9c-41a2-bf85-dd225bef8e83",
+            "name": "Store-Ahmedabad-Airport"
+          },
+          {
+            "id": "493a4f97-1e3e-46ce-aef7-45a56021e064",
+            "name": "Store-Ahmedabad-Ashram Road"
+          },
+          {
+            "id": "dbe2c01a-b68a-4f2b-9501-0036f71eb4b6",
+            "name": "Store-Ahmedabad-Ashram Road-NAPS"
+          },
+          {
+            "id": "1bbb32c9-039d-4e6e-9658-e791a30f0aca",
+            "name": "Store-Ahmedabad-Bopal"
+          },
+          {
+            "id": "81027d54-0faa-4022-824f-c7d210da5fc1",
+            "name": "Store-Ahmedabad-Devarc"
+          },
+          {
+            "id": "8b6cbdc4-160e-44d7-835f-c35ea664b04f",
+            "name": "Store-Ahmedabad-Devarc-NAPS"
+          },
+          {
+            "id": "005542d9-162c-429c-85f1-6958a6699801",
+            "name": "Store-Ahmedabad-Himalaya"
+          },
+          {
+            "id": "fbe81277-afcc-45b7-8d15-7174d40ff830",
+            "name": "Store-Ahmedabad-Himalaya-NAPS"
+          },
+          {
+            "id": "e85e931c-3fcd-4bc9-b99f-8fdabc5f42cf",
+            "name": "Store-Ahmedabad-Maninagar"
+          },
+          {
+            "id": "f9fd2429-eb5b-4a06-9119-ddee38a8b21e",
+            "name": "Store-Ahmedabad-Maninagar-NAPS"
+          },
+          {
+            "id": "1be836a3-2b71-4ecf-8496-483deb796f09",
+            "name": "Store-Ahmedabad-Motera"
+          },
+          {
+            "id": "406101c1-8b59-40be-800d-b4aba801dd12",
+            "name": "Store-Ahmedabad-Motera-NAPS"
+          },
+          {
+            "id": "37af4498-15db-4d12-bc86-7b733a6c3a02",
+            "name": "Store-Ahmedabad-Pushkar Icon"
+          },
+          {
+            "id": "5ca3b7e6-12ea-4e64-9ea5-2c9f5cf7a1ce",
+            "name": "Store-Ahmedabad-Pushkar Icon-NAPS"
+          },
+          {
+            "id": "2acb9ffa-b5ac-4261-b0a1-452ee109a83a",
+            "name": "Store-Ahmedabad-Satyam"
+          },
+          {
+            "id": "dec0248b-ec01-4ea9-a864-ebb992d2b200",
+            "name": "Store-Ahmedabad-Satyam-NAPS"
+          },
+          {
+            "id": "9924bef5-042a-4c41-a179-255522b8c7d3",
+            "name": "Store-Ahmedabad-Science City"
+          },
+          {
+            "id": "bc28300e-af8e-4f48-824d-0d6ce8405076",
+            "name": "Store-Ahmedabad-Science City-NAPS"
+          },
+          {
+            "id": "f18041d2-acb6-40ad-a80c-71db1a538607",
+            "name": "Store-Amravati-Badnera Road"
+          },
+          {
+            "id": "beb72d66-9383-4380-8576-e6c0601967df",
+            "name": "Store-Anand-CP House"
+          },
+          {
+            "id": "58127926-2b6d-4ef9-9b83-91b854d26875",
+            "name": "Store-Anand-CP House-NAPS"
+          },
+          {
+            "id": "1cf3ef65-c37b-4c6c-8258-7d3b396be9ce",
+            "name": "Store-Aurangabad-Prozone"
+          },
+          {
+            "id": "29985dc1-7735-408c-aa9c-35896c6969a9",
+            "name": "Store-Aurangabad-Prozone-NAPS"
+          },
+          {
+            "id": "e18bcd9f-5b9b-4202-a29a-afab27cc9060",
+            "name": "Store-Aurangabad-Walunj"
+          },
+          {
+            "id": "0bb22e5e-c66d-4bd8-a6d3-a3e353998b8f",
+            "name": "Store-Aurangabad-Walunj-NAPS"
+          },
+          {
+            "id": "24a4fc97-6024-4539-902b-698e0c0de31d",
+            "name": "Store-Bangalore - GT World Mall"
+          },
+          {
+            "id": "45532cd5-95d1-4a39-bc7d-89bb68ab79ff",
+            "name": "Store-Bangalore - GT World Mall-NAPS"
+          },
+          {
+            "id": "294965c4-5b50-433e-bacc-2060894518ff",
+            "name": "Store-Bangaluru- VR Mall"
+          },
+          {
+            "id": "109a2aff-5768-477b-a380-27e140233aa6",
+            "name": "Store-Bangaluru-Banashankari"
+          },
+          {
+            "id": "a8ae552d-41e8-4b99-9fc1-6a1bf9ff7db1",
+            "name": "Store-Bangaluru-Banashankari-NAPS"
+          },
+          {
+            "id": "e7fe73e5-ad54-4af4-b8b6-35c6a79d661f",
+            "name": "Store-Bangaluru-Banerghatta"
+          },
+          {
+            "id": "0bbaf27a-d7b6-4fa0-a548-746cf44a7bfd",
+            "name": "Store-Bangaluru-Banerghatta-NAPS"
+          },
+          {
+            "id": "f02252ad-927e-4da3-a757-e653ee0fd58c",
+            "name": "Store-Bangaluru-BEL Road"
+          },
+          {
+            "id": "fdc8ac77-0955-4bcc-a0ff-f497a0b6bd7e",
+            "name": "Store-Bangaluru-BEL Road-NAPS"
+          },
+          {
+            "id": "183df417-38ce-4ec1-b628-e48c53fd363f",
+            "name": "Store-Bangaluru-Davangere"
+          },
+          {
+            "id": "f6487620-94d0-458a-9160-73fa71acfbcc",
+            "name": "Store-Bangaluru-Davangere-NAPS"
+          },
+          {
+            "id": "1fc62f59-5a3e-4252-998a-542a24a2fb23",
+            "name": "Store-Bangaluru-Gunjur"
+          },
+          {
+            "id": "1b640434-2826-435b-addb-79025c6b9aa9",
+            "name": "Store-Bangaluru-Gunjur-NAPS"
+          },
+          {
+            "id": "f0ddf983-9771-47dd-a3fa-ea169c48e8c4",
+            "name": "Store-Bangaluru-Hennur Road"
+          },
+          {
+            "id": "cc5fbdb5-6d96-46fd-abbc-eaf2225168f2",
+            "name": "Store-Bangaluru-Hennur Road-NAPS"
+          },
+          {
+            "id": "cb2cf91f-6cd8-468a-8dc8-792c599e6d2f",
+            "name": "Store-Bangaluru-Indiranagar"
+          },
+          {
+            "id": "4c3f6521-b750-48f8-bf57-d85ae5a15e63",
+            "name": "Store-Bangaluru-Indiranagar-NAPS"
+          },
+          {
+            "id": "851cb780-f1c6-412b-9c3b-080a1bb8e89d",
+            "name": "Store-Bangaluru-Jayanagar 4th Block"
+          },
+          {
+            "id": "9b7ef823-ec5f-4efd-aa4a-b2192f85b3d7",
+            "name": "Store-Bangaluru-Jayanagar 4th Block-NAPS"
+          },
+          {
+            "id": "4660a3a0-0cdf-41f8-83cd-8d0a812381a9",
+            "name": "Store-Bangaluru-Jayanagar Woodys"
+          },
+          {
+            "id": "868187ae-c2d4-4dcd-96ba-68936dcccdf1",
+            "name": "Store-Bangaluru-Jayanagar Woodys-NAPS"
+          },
+          {
+            "id": "3d4b770c-a8de-4373-ac11-8b55d7cdfa81",
+            "name": "Store-Bangaluru-Kormangala (SB)"
+          },
+          {
+            "id": "9a008bd9-af02-4051-ac19-e46c8bdf7584",
+            "name": "Store-Bangaluru-Kormangala 2"
+          },
+          {
+            "id": "25582e44-4a7b-4d13-8ef5-bcabe9b2fd58",
+            "name": "Store-Bangaluru-Kormangala 2-NAPS"
+          },
+          {
+            "id": "8713c270-523e-4b46-a786-3c9cb946ea33",
+            "name": "Store-Bangaluru-Malleshwram"
+          },
+          {
+            "id": "1c63b515-5b72-4f05-85e8-dcf9f1d4037d",
+            "name": "Store-Bangaluru-Malleshwram-NAPS"
+          },
+          {
+            "id": "341b125c-8195-4d1e-a4a6-cb7c99c3558f",
+            "name": "Store-Bangaluru-Manor"
+          },
+          {
+            "id": "2c21bd8b-b042-4223-a667-cf3f163c7bd4",
+            "name": "Store-Bangaluru-Manor-NAPS"
+          },
+          {
+            "id": "66bfc7d8-2a74-4104-afc1-1aca6b9e7a21",
+            "name": "Store-Bangaluru-Mantri Mall"
+          },
+          {
+            "id": "08fe0ec4-c3fe-43b2-bdfe-4a638178f739",
+            "name": "Store-Bangaluru-Marathalli D"
+          },
+          {
+            "id": "4f7a5af9-8c65-45e9-ac1d-7289b5bf093d",
+            "name": "Store-Bangaluru-Marathalli D-NAPS"
+          },
+          {
+            "id": "e469513f-4b2a-4958-bbed-7acb6b6f855f",
+            "name": "Store-Bangaluru-Phoenix Market City"
+          },
+          {
+            "id": "6e3dede7-e1d0-43a3-a21c-9d227d6af4aa",
+            "name": "Store-Bangaluru-Phoenix Market City-NAPS"
+          },
+          {
+            "id": "86a09945-1537-4cb8-99f5-7ad21ce6c9d1",
+            "name": "Store-Bangaluru-Rajaji Nagar"
+          },
+          {
+            "id": "074a3d01-f1b0-46fb-b78a-72e4654873f7",
+            "name": "Store-Bangaluru-Rajaji Nagar-NAPS"
+          },
+          {
+            "id": "248f6c63-8636-4f1f-b5f8-e7189744d53f",
+            "name": "Store-Bangaluru-Sadashivnagar"
+          },
+          {
+            "id": "65bacc35-a6cb-4980-9d56-9b02d4ecb1c3",
+            "name": "Store-Bangaluru-Sarjapur Total Mall"
+          },
+          {
+            "id": "d0eaca90-1293-45cb-92d1-8100dbc0acaf",
+            "name": "Store-Bangaluru-Sarjapur Total Mall-NAPS"
+          },
+          {
+            "id": "c2d6d58d-0454-478f-a1e7-b3250538b216",
+            "name": "Store-Bangaluru-Whitefield"
+          },
+          {
+            "id": "45e13a96-5e59-4cfa-a894-ace3f4b29720",
+            "name": "Store-Bangaluru-Whitefield-NAPS"
+          },
+          {
+            "id": "93ab6ce9-d920-4ff0-ba2f-f9ce464a5f8a",
+            "name": "Store-Bangaluru-Woodys Dark"
+          },
+          {
+            "id": "01497e09-0ec0-413c-ab23-82e80e08756b",
+            "name": "Store-Bangaluru-Yelhanka"
+          },
+          {
+            "id": "74cec1f2-8c5e-43ff-ad10-73c9bb6f1205",
+            "name": "Store-Bangaluru-Yelhanka-NAPS"
+          },
+          {
+            "id": "7c820317-3f3c-43a2-aac0-5ea1a12292a7",
+            "name": "Store-Baramati-Prime Square"
+          },
+          {
+            "id": "79786b35-f204-4045-9dbf-ae99e49d491d",
+            "name": "Store-Baramati-Prime Square-NAPS"
+          },
+          {
+            "id": "cb26cf14-51a0-4210-a560-e991524a8007",
+            "name": "Store-Baroda- OP Road"
+          },
+          {
+            "id": "dc987260-506d-4536-8f9e-62c025e31f56",
+            "name": "Store-Baroda- OP Road-NAPS"
+          },
+          {
+            "id": "77566e41-7fa9-4929-b1a0-8af0e1e63424",
+            "name": "Store-Baroda-Centresquare"
+          },
+          {
+            "id": "30875ea5-4db0-453f-9a51-316e19b691ca",
+            "name": "Store-Baroda-Centresquare-NAPS"
+          },
+          {
+            "id": "33d2247b-7c74-4d9a-86d6-8bfa1fbe375d",
+            "name": "Store-Baroda-EVA Mall"
+          },
+          {
+            "id": "6328d0c3-a97d-4b95-bf16-d10dd18bc117",
+            "name": "Store-Baroda-EVA Mall-NAPS"
+          },
+          {
+            "id": "50a7357f-51aa-4fd9-9d73-6414f5c16fd5",
+            "name": "Store-Baroda-Karelibagh"
+          },
+          {
+            "id": "052b939a-c3b5-470b-84e1-4306c5ffba9b",
+            "name": "Store-Baroda-Karelibagh-NAPS"
+          },
+          {
+            "id": "0e030806-4a2a-4368-a579-affec8f97807",
+            "name": "Store-Bengaluru - Electronic City"
+          },
+          {
+            "id": "b618646e-d870-4f9e-82bd-941b275da54f",
+            "name": "Store-Bengaluru - Electronic City-NAPS"
+          },
+          {
+            "id": "7f4022fe-f1d4-45c1-86a6-b117e92c8f67",
+            "name": "Store-Bengaluru-BEL Road"
+          },
+          {
+            "id": "f9c3f69e-b240-4fc4-a8ad-429dee269bf7",
+            "name": "Store-Bengaluru-Manor"
+          },
+          {
+            "id": "77b92052-faa8-4d2d-83a3-10613731fa81",
+            "name": "Store-Bengaluru-Mantri Mall"
+          },
+          {
+            "id": "4a397245-dbc1-49e5-bbae-8302347f708f",
+            "name": "Store-Bengaluru-Marathalli D"
+          },
+          {
+            "id": "42c7f093-6974-4184-aef3-8b503bc6f4cc",
+            "name": "Store-Bengaluru-Rajaji Nagar"
+          },
+          {
+            "id": "400e06e8-28e7-47ff-9489-1ba63297bc6c",
+            "name": "Store-Bengaluru-Sarjapur Total Mall"
+          },
+          {
+            "id": "dc438623-b6f3-48fc-b275-dfdc681b0903",
+            "name": "Store-Bengaluru-Whitefield"
+          },
+          {
+            "id": "f4b6b704-acdf-475a-8c5a-9b3eeb5f2f18",
+            "name": "Store-Bengaluru-Yelhanka"
+          },
+          {
+            "id": "60a9736c-d40b-4f0d-b49b-be5d5d0bbd35",
+            "name": "Store-Bharuch-Acropolis"
+          },
+          {
+            "id": "209b80d0-eadd-4650-b3bb-1aa007b0eccc",
+            "name": "Store-Bhatinda-GT Road"
+          },
+          {
+            "id": "ce193b9c-985b-42b7-bc04-258c00546e74",
+            "name": "Store-Bhatinda-GT Road-NAPS"
+          },
+          {
+            "id": "6628fe96-94a7-405a-8823-914c140882f3",
+            "name": "Store-Bhavnagar-SunEx"
+          },
+          {
+            "id": "9cba46a4-0fe8-46b3-a050-f04e6cf0a706",
+            "name": "Store-Bhilai-Supela"
+          },
+          {
+            "id": "6410d646-78ec-4663-aaa6-4b4fd0f6a4f4",
+            "name": "Store-Bhopal-Arera"
+          },
+          {
+            "id": "374fbbf5-a85c-4c17-968d-58230d483e29",
+            "name": "Store-Bhopal-Arera-NAPS"
+          },
+          {
+            "id": "49e4a524-9551-4242-86bc-833d64fe3270",
+            "name": "Store-Bhopal-DB City"
+          },
+          {
+            "id": "95b83697-c849-45fc-907e-bce1bc1d9fa0",
+            "name": "Store-Bhuj-Seven Sky"
+          },
+          {
+            "id": "e30da221-c557-4e8c-94fd-6905dc849350",
+            "name": "Store-Bhuj-Seven Sky-NAPS"
+          },
+          {
+            "id": "2c49260a-9628-4a08-8e29-205b7e1bf8c1",
+            "name": "Store-Bilaspur-Om Shakuntalan"
+          },
+          {
+            "id": "c27e78ed-4d44-476c-b62f-bb8c99eb2c32",
+            "name": "Store-Bilaspur-Om Shakuntalan-NAPS"
+          },
+          {
+            "id": "e49b9c5d-aa6c-46f9-8faf-ec54a840ab33",
+            "name": "Store-Chennai- Avadi"
+          },
+          {
+            "id": "bd3789e4-4551-436e-bac1-c376b053c344",
+            "name": "Store-Chennai- Avadi-NAPS"
+          },
+          {
+            "id": "dc4cc53b-f074-4c14-b0e8-86f4ecf5db51",
+            "name": "Store-Chennai- Chrompet"
+          },
+          {
+            "id": "b3453236-9a5a-4021-8a23-7f9960402dfe",
+            "name": "Store-Chennai- Chrompet-NAPS"
+          },
+          {
+            "id": "12941f91-4b00-4c33-9ff1-f76d660e553a",
+            "name": "Store-Chennai- OMR"
+          },
+          {
+            "id": "a9a2dd3d-5d24-4500-afac-4cb7c7c2cfd4",
+            "name": "Store-Chennai- OMR-NAPS"
+          },
+          {
+            "id": "d46b6dcd-fc93-4f54-826c-ae8d5302040b",
+            "name": "Store-Chennai-Alwarpet"
+          },
+          {
+            "id": "24634cf1-72f7-4732-a373-1e565bb7d8ec",
+            "name": "Store-Chennai-Alwarpet-NAPS"
+          },
+          {
+            "id": "069efe03-f9ca-4476-86a5-ab58553dacbf",
+            "name": "Store-Chennai-Annanagar"
+          },
+          {
+            "id": "94f15fd5-4747-4df8-8ed3-60cc29c076b7",
+            "name": "Store-Chennai-Annanagar-NAPS"
+          },
+          {
+            "id": "6de77ad3-cd44-4f9c-a637-45c09af734bf",
+            "name": "Store-Chennai-Coimbatore"
+          },
+          {
+            "id": "c1dff9a9-fa17-4495-becc-ebc5a4fedb23",
+            "name": "Store-Chennai-Coimbatore-NAPS"
+          },
+          {
+            "id": "9a453244-9cdb-4c60-8cc1-3578ec23275e",
+            "name": "Store-Chennai-Grand Mall"
+          },
+          {
+            "id": "ff525674-63e4-46f7-ae84-8467037c00d1",
+            "name": "Store-Chennai-Grand Mall-NAPS"
+          },
+          {
+            "id": "36d3dc41-6e43-4e57-b7e3-b75217050ad3",
+            "name": "Store-Chennai-Lakshmi Mills"
+          },
+          {
+            "id": "3213c7fe-e060-4fbb-bed0-9cfabe87864d",
+            "name": "Store-Chennai-Lakshmi Mills-NAPS"
+          },
+          {
+            "id": "4cea0966-f3fe-4ba3-89e3-d90f40c62a34",
+            "name": "Store-Chennai-Mogappair"
+          },
+          {
+            "id": "20ee2484-ebce-4c02-a2a4-05b859e92ad9",
+            "name": "Store-Chennai-Mogappair-NAPS"
+          },
+          {
+            "id": "6e8da874-b037-43be-9dc1-b5fa2d10a43e",
+            "name": "Store-Chennai-Mount Road"
+          },
+          {
+            "id": "754232a6-dfbd-425f-b8a2-2a504973e102",
+            "name": "Store-Chennai-Mount Road-NAPS"
+          },
+          {
+            "id": "a79fd145-ac7f-4af9-91fb-112dfd266b1c",
+            "name": "Store-Chennai-Phoenix"
+          },
+          {
+            "id": "55ce24de-98ee-4697-91f7-150f82ff1684",
+            "name": "Store-Chennai-Phoenix-NAPS"
+          },
+          {
+            "id": "937497cf-3430-4a51-9cd9-5e02648bea6b",
+            "name": "Store-Chennai-Salem"
+          },
+          {
+            "id": "7c5b39ee-b196-42ef-9ed1-782ffb76b73e",
+            "name": "Store-Chennai-Salem-NAPS"
+          },
+          {
+            "id": "c7bc6bbd-cc39-4e7e-9f91-0256c7670a50",
+            "name": "Store-Chennai-TNagar"
+          },
+          {
+            "id": "5ecccb5d-d800-416e-9e8f-f3d6911156de",
+            "name": "Store-Chennai-TNagar-NAPS"
+          },
+          {
+            "id": "036883e1-d1e4-4385-8608-41a7eb31479c",
+            "name": "Store-Del-Civil Lines"
+          },
+          {
+            "id": "9056f695-1112-4af7-aa6c-b6ea5ac58969",
+            "name": "Store-Del-Civil Lines-NAPS"
+          },
+          {
+            "id": "443c5cd1-9e67-4224-ae18-a40d32936bdf",
+            "name": "Store-Delhi Airport2"
+          },
+          {
+            "id": "5c021d1d-c011-43d5-b8df-759b1c4d50e7",
+            "name": "Store-Delhi AirportT3"
+          },
+          {
+            "id": "e3e90aef-f27f-4832-a70e-62d1919e72c5",
+            "name": "Store-Delhi-Airport"
+          },
+          {
+            "id": "775f93e4-054e-45e3-a7b3-2143627edb0a",
+            "name": "Store-Delhi-DLF Saket"
+          },
+          {
+            "id": "afc508cd-9b80-45ea-9795-3a08705e3ee9",
+            "name": "Store-Delhi-Dwarka"
+          },
+          {
+            "id": "e1e4edd6-12c0-48cc-b3b7-c1872a5da985",
+            "name": "Store-Delhi-Dwarka-NAPS"
+          },
+          {
+            "id": "2fc23f2b-a5fa-45a7-ab99-3fb7607b4882",
+            "name": "Store-Delhi-Green Park"
+          },
+          {
+            "id": "1bf128e9-1774-4a43-9641-fe4ba1330290",
+            "name": "Store-Delhi-Janakpuri U1"
+          },
+          {
+            "id": "568fb265-59dd-4713-8eba-ebdf79b3f83b",
+            "name": "Store-Delhi-Janakpuri U1-NAPS"
+          },
+          {
+            "id": "a817729a-4805-480d-b890-6c5aff7deeb6",
+            "name": "Store-Delhi-Kailash"
+          },
+          {
+            "id": "21941565-9814-40a2-98a3-8af69d1fbf03",
+            "name": "Store-Delhi-Kailash-NAPS"
+          },
+          {
+            "id": "47d918ed-2fa8-4e57-86d4-dc480f3f8129",
+            "name": "Store-Delhi-KamlaNagar"
+          },
+          {
+            "id": "21afdbb4-f7fd-4387-a660-d3b40ebe7f44",
+            "name": "Store-Delhi-KamlaNagar-NAPS"
+          },
+          {
+            "id": "fbec462e-2e59-455e-95e1-3d7cab9860fd",
+            "name": "Store-Delhi-New VasantKunj"
+          },
+          {
+            "id": "c7c798a5-5154-4c25-9f9c-e048df545b23",
+            "name": "Store-Delhi-New VasantKunj-NAPS"
+          },
+          {
+            "id": "a36ed58c-e86d-4ca3-aa5f-8d5266085f06",
+            "name": "Store-Delhi-Odoen-Cannuaght Place"
+          },
+          {
+            "id": "e9c9a11a-ae22-45b8-b906-332e8df375ea",
+            "name": "Store-Delhi-Odoen-Cannuaght Place-NAPS"
+          },
+          {
+            "id": "a3aa969f-4dbc-4a3f-bf8d-ab8215109925",
+            "name": "Store-Delhi-Pitampura"
+          },
+          {
+            "id": "c7c12a3e-4b52-4d1f-8ad8-af6b0c7a36b6",
+            "name": "Store-Delhi-Pitampura-NAPS"
+          },
+          {
+            "id": "d467689f-3208-4c7b-a82b-4e05d8e7f1c4",
+            "name": "Store-Delhi-Preet Vihar"
+          },
+          {
+            "id": "f5fc664d-ce16-43ed-a463-034b9df8a344",
+            "name": "Store-Delhi-Preet Vihar-NAPS"
+          },
+          {
+            "id": "315e1cc7-e018-4aa4-93b7-c17e7eb9feb6",
+            "name": "Store-Delhi-Pusa Road"
+          },
+          {
+            "id": "f3e6d15c-8f18-476e-83d7-1a9ce19975ef",
+            "name": "Store-Delhi-Pusa Road-NAPS"
+          },
+          {
+            "id": "96a141c3-512c-48de-a468-d79a9f698732",
+            "name": "Store-Delhi-Rajouri"
+          },
+          {
+            "id": "c2e0ab86-5b60-433a-afb5-160b9543eb24",
+            "name": "Store-Delhi-Rajouri-NAPS"
+          },
+          {
+            "id": "6316b087-dffb-4811-93f1-9fcc880684fd",
+            "name": "Store-Delhi-Rohini"
+          },
+          {
+            "id": "0b2a93f5-1caf-4c16-aa09-82b373139ec5",
+            "name": "Store-Delhi-Rohini Metro"
+          },
+          {
+            "id": "b24da68e-f84f-4b68-a505-3592f12c4344",
+            "name": "Store-Delhi-Rohini Metro-NAPS"
+          },
+          {
+            "id": "76f450ac-f94a-4a77-a71f-09eacec2f740",
+            "name": "Store-Delhi-Rohini-NAPS"
+          },
+          {
+            "id": "de261b29-b10f-4d08-a71f-f1c812f92a7a",
+            "name": "Store-Delhi-Saket"
+          },
+          {
+            "id": "958f5364-05b1-4696-8e6d-8d98832cfa1d",
+            "name": "Store-Delhi-Saket-NAPS"
+          },
+          {
+            "id": "a903df01-fd1c-4c58-85f6-59730b7a4436",
+            "name": "Store-Delhi-Select City"
+          },
+          {
+            "id": "177403e5-1c64-4f08-8901-a7fbe79b03a0",
+            "name": "Store-Delhi-Select City-NAPS"
+          },
+          {
+            "id": "fb567897-b8fc-421f-8100-9cbac079cf04",
+            "name": "Store-Delhi-South Ex"
+          },
+          {
+            "id": "17c2afc5-13d0-46fa-8b7e-a6c7a3dc793b",
+            "name": "Store-Delhi-South Ex-NAPS"
+          },
+          {
+            "id": "fb0bac50-d5e9-4575-8583-0be429fabe8f",
+            "name": "Store-Delhi-Vegas Mall"
+          },
+          {
+            "id": "e7b2f9b0-2829-4017-a11e-59c84c1fe1b9",
+            "name": "Store-Delhi-Vegas Mall-NAPS"
+          },
+          {
+            "id": "70323cf9-0dc4-494f-9828-85947cd6730d",
+            "name": "Store-Dhanbad-Prabhatam Mall"
+          },
+          {
+            "id": "48c2b114-6aca-45c4-8285-0a60dea06189",
+            "name": "Store-Dhanbad-Prabhatam Mall-NAPS"
+          },
+          {
+            "id": "8acdcd78-743a-4633-a7b1-ba9ec5306c82",
+            "name": "Store-Eluru - Narasimharao Pet"
+          },
+          {
+            "id": "c7a9c4c3-82b3-42b0-9d89-3291521b5277",
+            "name": "Store-Eluru - Narasimharao Pet-NAPS"
+          },
+          {
+            "id": "a0847ba9-ebf8-443d-8a38-2ce9365b426d",
+            "name": "Store-Faridabad-Crown"
+          },
+          {
+            "id": "3c5d98fe-5795-4f9c-bfb2-4853acbb9aa6",
+            "name": "Store-Faridabad-Crown-NAPS"
+          },
+          {
+            "id": "c745a506-3e64-43fa-afb4-49e6ec1cfbb3",
+            "name": "Store-Gandhidham-Chandan Square"
+          },
+          {
+            "id": "69222ce3-0e4d-441c-b791-f0785735decc",
+            "name": "Store-Gandhidham-Chandan Square-NAPS"
+          },
+          {
+            "id": "fd002db2-78c3-4d4d-96c4-83a4256cf9b7",
+            "name": "Store-Gandhinagar-Shagun 11"
+          },
+          {
+            "id": "64b9ff28-5130-4134-a091-1b213258d022",
+            "name": "Store-Gandhinagar-Shagun 11-NAPS"
+          },
+          {
+            "id": "f3bcb004-c15e-401d-9e54-4d98e24f3d46",
+            "name": "Store-Gaziabad-Aditya"
+          },
+          {
+            "id": "cf9acf2a-f75c-4230-b44d-e8f5e08fc72c",
+            "name": "Store-Gaziabad-Aditya-NAPS"
+          },
+          {
+            "id": "c9c38372-bb7a-49f4-a068-72699db3815f",
+            "name": "Store-Gaziabad-Gaur Central"
+          },
+          {
+            "id": "a8bc82b2-1b62-4862-8633-5ef21930d3d7",
+            "name": "Store-Gaziabad-Gaur Central-NAPS"
+          },
+          {
+            "id": "098ace56-db12-47bc-a33f-f07f9c1e1f43",
+            "name": "Store-Ghaziabad-Pacific"
+          },
+          {
+            "id": "fc99b707-7896-4b3c-a79f-d5edf0d03844",
+            "name": "Store-Ghaziabad-Pacific-NAPS"
+          },
+          {
+            "id": "5f393a46-ece5-4c14-b7e8-7057bec2a616",
+            "name": "Store-Goa-Porvorim"
+          },
+          {
+            "id": "26e94dea-4381-493f-bd40-961fb613dc28",
+            "name": "Store-Goa-Porvorim-NAPS"
+          },
+          {
+            "id": "832f8ebc-077f-47ba-b205-7604033b5c28",
+            "name": "Store-GreaterNoida-Ansal"
+          },
+          {
+            "id": "37482769-6760-476e-b353-7f06e5d4e59f",
+            "name": "Store-GreaterNoida-Ansal-NAPS"
+          },
+          {
+            "id": "4303b36e-5e0d-4e6d-8468-58991c672f99",
+            "name": "Store-GreaterNoida-Logix"
+          },
+          {
+            "id": "9261c0a4-93c9-4bb6-b79f-7bb925f40db5",
+            "name": "Store-GreaterNoida-Logix-NAPS"
+          },
+          {
+            "id": "b8acd226-05a4-4686-be7b-cc6fbde9a219",
+            "name": "Store-Guntur - Lakshmipuram"
+          },
+          {
+            "id": "11b19767-aaa0-4b8d-8e47-085fcb423a3c",
+            "name": "Store-Guntur - Lakshmipuram-NAPS"
+          },
+          {
+            "id": "87816b37-604c-4523-91b4-6a212bfb9c30",
+            "name": "Store-Gurgaon- Worldmark2"
+          },
+          {
+            "id": "d38b49d5-63d9-48c0-91f2-1cf1d064e5ab",
+            "name": "Store-Gurgaon-Ambience Mall"
+          },
+          {
+            "id": "78afb948-a7c4-460b-85ab-db2796e9346a",
+            "name": "Store-Gurgaon-Ambience Mall-NAPS"
+          },
+          {
+            "id": "fdab2888-eda0-49eb-8c3b-6d28c94679d5",
+            "name": "Store-Gurgaon-DLF Mega Mall"
+          },
+          {
+            "id": "ff9943cb-1385-4ef1-9f36-e6e8e4cdd3a3",
+            "name": "Store-Gurgaon-DLF Mega Mall-NAPS"
+          },
+          {
+            "id": "54b49068-23d3-4500-92f5-16d6f9a1ad8e",
+            "name": "Store-Gurgaon-Sec 12"
+          },
+          {
+            "id": "ca749ea6-3ffb-4196-bdbd-efe11039d0c6",
+            "name": "Store-Gurgaon-Sec 12-NAPS"
+          },
+          {
+            "id": "934432d7-3c11-4ff0-a8eb-6dfb2838928e",
+            "name": "Store-Gurgaon-Sec 29"
+          },
+          {
+            "id": "a096a754-541b-42ce-8653-56e94a4ea27c",
+            "name": "Store-Gurgaon-Sec 29-NAPS"
+          },
+          {
+            "id": "99732f9e-0ce5-42c3-a18f-9565aec2a188",
+            "name": "Store-Gurgaon-Sohna Road"
+          },
+          {
+            "id": "850be6d4-3160-4daa-9a92-9c03c85f4f19",
+            "name": "Store-Gurgaon-Sohna Road-NAPS"
+          },
+          {
+            "id": "074e831b-740a-4212-b2ea-d7c9fa4d2e54",
+            "name": "Store-Hosur - Bagalur Rd"
+          },
+          {
+            "id": "2db65f33-1109-49d0-bff8-4944b616589d",
+            "name": "Store-Hosur - Bagalur Rd-NAPS"
+          },
+          {
+            "id": "ce017d78-b025-4f8b-ae04-68dc375abcc2",
+            "name": "Store-Hubli-Signature Mall"
+          },
+          {
+            "id": "4dddb705-1c48-4be8-9081-1c9107299b37",
+            "name": "Store-Hubli-Signature Mall-NAPS"
+          },
+          {
+            "id": "677550e1-bf0f-47a5-bc5f-7afcae71bc87",
+            "name": "Store-Hubli-Stellar mal"
+          },
+          {
+            "id": "27e72ffc-7d65-428d-819b-5e6886e3e2f3",
+            "name": "Store-Hyderabad-A S Rao Nagar"
+          },
+          {
+            "id": "39cc00a8-af3e-4fc7-8060-5d33455dd5ef",
+            "name": "Store-Hyderabad-A S Rao Nagar-NAPS"
+          },
+          {
+            "id": "4705d803-cf63-4be8-83e4-ce9ed9d893d0",
+            "name": "Store-Hyderabad-Air Port"
+          },
+          {
+            "id": "02bcd2ce-dba1-485f-b86a-b9114d67736c",
+            "name": "Store-Hyderabad-Attapur"
+          },
+          {
+            "id": "a41e6d60-c8fd-4dda-b473-c231ad9aabd8",
+            "name": "Store-Hyderabad-Attapur-NAPS"
+          },
+          {
+            "id": "082290e5-e0b1-4a3e-b0a7-73ad30003d97",
+            "name": "Store-Hyderabad-Jubilee"
+          },
+          {
+            "id": "af263c78-e73d-4d7f-b0b3-c40c3f102d56",
+            "name": "Store-Hyderabad-Jubilee-NAPS"
+          },
+          {
+            "id": "a4aac424-9715-4c25-9cbf-122745130fb7",
+            "name": "Store-Hyderabad-Kharmanghat"
+          },
+          {
+            "id": "9123df46-fca9-46c5-96fc-b238f2332b0d",
+            "name": "Store-Hyderabad-Kharmanghat-NAPS"
+          },
+          {
+            "id": "1fcc29c6-ace1-41aa-9d40-0bbffb4eeabf",
+            "name": "Store-Hyderabad-Kompally"
+          },
+          {
+            "id": "a067cc82-9789-4901-a7ac-5607026f139e",
+            "name": "Store-Hyderabad-Kompally-NAPS"
+          },
+          {
+            "id": "bb7559ba-c34b-42dc-8c23-b613f58092e2",
+            "name": "Store-Hyderabad-Kondapur"
+          },
+          {
+            "id": "11b21109-54b0-4fd3-9de9-c30fbc0de44d",
+            "name": "Store-Hyderabad-Kondapur-NAPS"
+          },
+          {
+            "id": "d7ca4a64-64b7-41c3-abac-794bbd34ec25",
+            "name": "Store-Hyderabad-Kukatpally"
+          },
+          {
+            "id": "e0e0a6dd-63e7-4697-8115-b1b0477731ef",
+            "name": "Store-Hyderabad-Kukatpally-NAPS"
+          },
+          {
+            "id": "f40caa87-0202-477f-9ede-d985eff88a3e",
+            "name": "Store-Hyderabad-L B Nagar"
+          },
+          {
+            "id": "5febabf1-a7e3-4859-847a-cf5d7664d48e",
+            "name": "Store-Hyderabad-L B Nagar-NAPS"
+          },
+          {
+            "id": "c91a2902-c3c1-414e-8e09-85f030168a0f",
+            "name": "Store-Hyderabad-Madinaguda"
+          },
+          {
+            "id": "6adcac5b-6dd8-42c2-b08f-a65a2b657ccf",
+            "name": "Store-Hyderabad-Madinaguda-NAPS"
+          },
+          {
+            "id": "26f14095-8a98-45f8-bf17-f26bc34a881a",
+            "name": "Store-Hyderabad-New Vikrampuri"
+          },
+          {
+            "id": "5b16ce74-3364-42c0-99f4-278bf96f9635",
+            "name": "Store-Hyderabad-New Vikrampuri-NAPS"
+          },
+          {
+            "id": "e2b5bea2-774d-486c-b303-0f193496ad49",
+            "name": "Store-Hyderabad-Panjagutta"
+          },
+          {
+            "id": "d8fe60d2-1cac-4ff5-bc58-4ea5124e138e",
+            "name": "Store-Hyderabad-Panjagutta-NAPS"
+          },
+          {
+            "id": "0575f3ba-5836-4c98-a3b2-0bc9fc61b3f1",
+            "name": "Store-Hyderabad-Rajahmundry"
+          },
+          {
+            "id": "af2ea56c-43ec-4219-9d38-dc0490ef9269",
+            "name": "Store-Hyderabad-Ramanthapur"
+          },
+          {
+            "id": "f0c39a17-1b63-49c1-8e11-3c95e9d649b3",
+            "name": "Store-Hyderabad-Ramanthapur-NAPS"
+          },
+          {
+            "id": "170e8067-bf11-4f70-b834-04fa23f6a654",
+            "name": "Store-Hyderabad-Sarath"
+          },
+          {
+            "id": "034a5cbe-d185-4242-af04-d1e64b48cdc2",
+            "name": "Store-Hyderabad-Sarath-NAPS"
+          },
+          {
+            "id": "7df3ed4e-f0d6-42cc-bd67-15d7d40b76f8",
+            "name": "Store-Indore-Apollo"
+          },
+          {
+            "id": "010677b7-a0e9-42e1-97bd-ccc257d38086",
+            "name": "Store-Indore-Apollo-NAPS"
+          },
+          {
+            "id": "0ee483b5-c87d-49d8-8b2b-ad02b0c6417f",
+            "name": "Store-Indore-Space Tower"
+          },
+          {
+            "id": "215f770e-eeeb-4881-93a4-cf74432f571c",
+            "name": "Store-Indore-Space Tower-NAPS"
+          },
+          {
+            "id": "33fe77fe-ba4d-4da1-a684-b0a370b01730",
+            "name": "Store-Jaipur-Vaishali Nagar"
+          },
+          {
+            "id": "dc089234-d0c6-48cf-96eb-9bc9e4406e42",
+            "name": "Store-Jaipur-Vaishali Nagar-NAPS"
+          },
+          {
+            "id": "7e9588d5-2fa9-47c3-9fcb-acc7c071de1f",
+            "name": "Store-Jamnagar- Shreejione"
+          },
+          {
+            "id": "6bbc2c45-40de-48b3-97cc-50385daa661b",
+            "name": "Store-Junagadh-Western Square"
+          },
+          {
+            "id": "eb55a6ae-4dc0-405d-85b3-f7b3f95dc715",
+            "name": "Store-Junagadh-Western Square-NAPS"
+          },
+          {
+            "id": "8f12a42c-48f0-4bbb-9bfc-07f737790285",
+            "name": "Store-Kharagpur –OT Road"
+          },
+          {
+            "id": "712eae81-34d9-42ea-9363-5c222618e194",
+            "name": "Store-Kharagpur –OT Road-NAPS"
+          },
+          {
+            "id": "edc6db71-5662-423d-adad-b30cdea47e62",
+            "name": "Store-Kolhapur-StarB"
+          },
+          {
+            "id": "9cf4a210-5026-43bc-a01b-44417ef6742b",
+            "name": "Store-Kolhapur-StarB-NAPS"
+          },
+          {
+            "id": "9fe36e4c-3d16-4d53-a9b7-9c90a02bbd27",
+            "name": "Store-Kolkata-Barasat"
+          },
+          {
+            "id": "68274171-2fd5-4092-926a-42db0dfef384",
+            "name": "Store-Kolkata-Barasat-NAPS"
+          },
+          {
+            "id": "80507741-ec28-43c6-bc88-0a1f9f31b234",
+            "name": "Store-Kolkata-Chinar Park"
+          },
+          {
+            "id": "0ead8be0-2074-4dba-87a2-b67553b54506",
+            "name": "Store-Kolkata-Chinar Park-NAPS"
+          },
+          {
+            "id": "dbbf4a78-81f8-4b02-afd4-0f18fa6e9593",
+            "name": "Store-Kolkata-Kalikapur"
+          },
+          {
+            "id": "8dd3eeff-5959-493b-bca3-47efe540f97b",
+            "name": "Store-Kolkata-Kalikapur-NAPS"
+          },
+          {
+            "id": "7a85a500-fcbf-4ea6-8be3-707b440417ef",
+            "name": "Store-Kolkata-Rajarhat"
+          },
+          {
+            "id": "dd56930e-3702-4723-8c80-7fbd8013b17b",
+            "name": "Store-Kolkata-Rajarhat-NAPS"
+          },
+          {
+            "id": "77b06ff1-ec9e-4d35-a985-f64ebc1dc281",
+            "name": "Store-Kolkata-Salt Lake"
+          },
+          {
+            "id": "2f4a8dec-df34-4a83-b2cb-dd6893042d92",
+            "name": "Store-Kolkata-Salt Lake-NAPS"
+          },
+          {
+            "id": "48d2d028-948f-47f3-be85-2526f0554797",
+            "name": "Store-Kolkata-Sarat Bose"
+          },
+          {
+            "id": "b7ebfd05-49c0-4d4c-9350-e85c3536a5cc",
+            "name": "Store-Kolkata-Sarat Bose-NAPS"
+          },
+          {
+            "id": "919398f7-e6e6-42ea-8f2a-ce82d9af9a12",
+            "name": "Store-Kota-Ridhi Sidhi"
+          },
+          {
+            "id": "fff1c427-d107-41e5-908e-6c8b51175f52",
+            "name": "Store-Kota-Ridhi Sidhi-NAPS"
+          },
+          {
+            "id": "9a9c9666-f29a-4bde-8ffa-dad10131b8ca",
+            "name": "Store-Kurnool-Raj Vihar Centre"
+          },
+          {
+            "id": "645d6547-df74-474e-baf5-efdf0f4e06dd",
+            "name": "Store-Latur-Ambejogai Road"
+          },
+          {
+            "id": "ced03f0d-a1a6-4b03-9bc2-38dc996a2860",
+            "name": "Store-Latur-Ambejogai Road-NAPS"
+          },
+          {
+            "id": "ff84584e-8c25-4bd9-86d2-9965a97587d6",
+            "name": "Store-Lucknow-Alambagh"
+          },
+          {
+            "id": "60885b7f-2c73-4c80-bab0-26d814c4f3d7",
+            "name": "Store-Lucknow-Alambagh-NAPS"
+          },
+          {
+            "id": "1d06607b-6ebb-4189-8f5a-16bdbf9557bc",
+            "name": "Store-Lucknow-Aliganj"
+          },
+          {
+            "id": "3a21e8b4-4020-414c-bce7-4030cc47a8cd",
+            "name": "Store-Lucknow-Aliganj-NAPS"
+          },
+          {
+            "id": "e1134754-0b55-4aba-aeb7-d91f599d98ec",
+            "name": "Store-Mandya-Dayanand"
+          },
+          {
+            "id": "f3953940-71af-4d67-a109-c69430cf8607",
+            "name": "Store-Mandya-Dayanand-NAPS"
+          },
+          {
+            "id": "0c4bb417-ea72-408b-88e2-c91bba86a15b",
+            "name": "Store-Mangalore-MAK Mall"
+          },
+          {
+            "id": "1a358f56-e78c-47ca-b31a-72cb684600d0",
+            "name": "Store-Mangalore-MAK Mall-NAPS"
+          },
+          {
+            "id": "32d1b221-42aa-4ee3-b079-7ccf886bfd32",
+            "name": "Store-Maninagar-Lotus&Lilly"
+          },
+          {
+            "id": "dfd6ad36-9df7-45b1-b22d-4b60561bc38f",
+            "name": "Store-Maninagar-Lotus&Lilly-NAPS"
+          },
+          {
+            "id": "ff44a6ce-1755-4331-aa8a-b31e8a5bdcca",
+            "name": "Store-Mehsana-Simandhar"
+          },
+          {
+            "id": "edb18130-cee5-4877-aa0d-23a8cdd76e74",
+            "name": "Store-Mehsana-Simandhar-NAPS"
+          },
+          {
+            "id": "4e483963-4405-45ca-a6cf-730d4b355b30",
+            "name": "Store-MP-Gwalior"
+          },
+          {
+            "id": "8f9ee623-b1e4-48ec-9284-a393217deb0a",
+            "name": "Store-MP-Gwalior-NAPS"
+          },
+          {
+            "id": "140f7ea1-6960-4b3c-82bb-67675c6311a7",
+            "name": "Store-Mumbai-Airport"
+          },
+          {
+            "id": "6bbcf639-223f-4185-a05d-039472324876",
+            "name": "Store-Mumbai-Airport T2D"
+          },
+          {
+            "id": "f3325589-f890-485d-9df6-88204c32dd9b",
+            "name": "Store-Mumbai-Andheri"
+          },
+          {
+            "id": "9490533c-32b8-4590-b1e7-7198007c7cf4",
+            "name": "Store-Mumbai-Andheri-NAPS"
+          },
+          {
+            "id": "cdd0aebd-7ae2-4d9e-82fa-97fee28477c0",
+            "name": "Store-Mumbai-Bandra"
+          },
+          {
+            "id": "f0eb3ec0-67b7-444e-9677-f3f70651344e",
+            "name": "Store-Mumbai-Bandra-NAPS"
+          },
+          {
+            "id": "8562ee64-851d-4c38-a0b7-cd2cd48877df",
+            "name": "Store-Mumbai-Bhandup"
+          },
+          {
+            "id": "ef803dc1-09d9-4bc4-a68c-2e771f0f005a",
+            "name": "Store-Mumbai-Bhandup-NAPS"
+          },
+          {
+            "id": "7f04092b-d3c0-431f-8c58-d0a350250c2f",
+            "name": "Store-Mumbai-Borivali"
+          },
+          {
+            "id": "1cc8281a-5d53-4492-87d0-73bcce656ee8",
+            "name": "Store-Mumbai-Borivali-NAPS"
+          },
+          {
+            "id": "7a645a71-ac22-40db-939f-94350573f298",
+            "name": "Store-Mumbai-Breach Candy"
+          },
+          {
+            "id": "69a7bed8-b8b5-47ed-bebe-33b28f2ff210",
+            "name": "Store-Mumbai-Chembur"
+          },
+          {
+            "id": "4966d6d7-2e5a-41d1-9b3c-1dee41d9d20c",
+            "name": "Store-Mumbai-Chembur-NAPS"
+          },
+          {
+            "id": "57b0f938-e29c-4a39-a0d5-f3141c843281",
+            "name": "Store-Mumbai-Churchgate"
+          },
+          {
+            "id": "80837569-7c3c-4cf5-827d-0cbdb71cc071",
+            "name": "Store-Mumbai-Churchgate-NAPS"
+          },
+          {
+            "id": "6638a21f-8609-40e6-be24-45bd466cee14",
+            "name": "Store-Mumbai-Fort"
+          },
+          {
+            "id": "1b79153e-e99b-4918-9267-318dad739dd9",
+            "name": "Store-Mumbai-Fort-NAPS"
+          },
+          {
+            "id": "e69a18eb-ae2d-435e-8920-3c9581acb98d",
+            "name": "Store-Mumbai-Ghatkopar"
+          },
+          {
+            "id": "b89fdb0c-8df8-4ca4-8a0e-91f39ed10f74",
+            "name": "Store-Mumbai-Ghatkopar-NAPS"
+          },
+          {
+            "id": "4a960dd2-23d5-4fc7-a3b6-d3ebff3c7b2f",
+            "name": "Store-Mumbai-Growel"
+          },
+          {
+            "id": "8ea5f21b-cadc-4c7e-9848-eaa41f727eb0",
+            "name": "Store-Mumbai-Growel-NAPS"
+          },
+          {
+            "id": "be6f349e-be1b-4722-b606-fefb98235104",
+            "name": "Store-Mumbai-Infiniti"
+          },
+          {
+            "id": "6b3be6c7-53b2-44b4-bd86-6c34052b34e5",
+            "name": "Store-Mumbai-Infiniti-NAPS"
+          },
+          {
+            "id": "230dadbe-d1fd-41f7-ab58-23a31f6c8152",
+            "name": "Store-Mumbai-Juhu"
+          },
+          {
+            "id": "8dad2356-442c-41dd-af84-44ce8b6e60c0",
+            "name": "Store-Mumbai-Juhu-NAPS"
+          },
+          {
+            "id": "a837dd7d-c132-426f-a854-2c0dc5abe9b2",
+            "name": "Store-Mumbai-Kandivali"
+          },
+          {
+            "id": "c850ec14-d68f-4ed7-a5f7-4834a2494bcd",
+            "name": "Store-Mumbai-Kandivali West"
+          },
+          {
+            "id": "8cf65770-05d1-458f-8130-47fe05b77dea",
+            "name": "Store-Mumbai-Kandivali-NAPS"
+          },
+          {
+            "id": "970cea38-ddaa-4752-9702-89b3fe89d9fe",
+            "name": "Store-Mumbai-Kurla"
+          },
+          {
+            "id": "7fd87572-7c83-4803-9c65-b820c579ede4",
+            "name": "Store-Mumbai-Kurla G One"
+          },
+          {
+            "id": "5c5aeb33-7e8f-48d6-af49-3e64dbe2361c",
+            "name": "Store-Mumbai-Kurla G One-NAPS"
+          },
+          {
+            "id": "0a0fb3ff-eaf8-4c28-a862-a6004b325ae4",
+            "name": "Store-Mumbai-Kurla-NAPS"
+          },
+          {
+            "id": "f0f99c1e-8970-4b33-8404-9275f4865bb0",
+            "name": "Store-Mumbai-Malad"
+          },
+          {
+            "id": "a03792e1-24fd-4695-967c-fda62680f575",
+            "name": "Store-Mumbai-Malad-NAPS"
+          },
+          {
+            "id": "89bb225e-1158-423a-8340-67dde4866fab",
+            "name": "Store-Mumbai-Mulund"
+          },
+          {
+            "id": "8b28edad-c815-44db-8f00-810f3f3e5abf",
+            "name": "Store-Mumbai-Mulund-NAPS"
+          },
+          {
+            "id": "df4b4075-cd44-435d-9671-98b96aab74f2",
+            "name": "Store-Mumbai-Oberoi"
+          },
+          {
+            "id": "9693e09f-9e39-44dd-b7a5-0e7c7a9d8e94",
+            "name": "Store-Mumbai-Oberoi-NAPS"
+          },
+          {
+            "id": "63e03080-0f79-454f-8aa3-b09b926dd199",
+            "name": "Store-Mumbai-Phoenix"
+          },
+          {
+            "id": "98784ce8-4e61-4920-b44a-6dbcb05b627c",
+            "name": "Store-Mumbai-Phoenix-NAPS"
+          },
+          {
+            "id": "2c9297c6-c776-4e2c-9a24-4a49cdc5dd45",
+            "name": "Store-Mumbai-Prabhadevi"
+          },
+          {
+            "id": "7fb65e94-6dea-4ad8-a06f-935c539e5dbd",
+            "name": "Store-Mumbai-Prabhadevi-NAPS"
+          },
+          {
+            "id": "718c03e6-b39b-4ff9-b564-0b17bea471a5",
+            "name": "Store-Mumbai-Sion"
+          },
+          {
+            "id": "c77ebc52-c736-42b4-8f8c-2238d50ba966",
+            "name": "Store-Mumbai-Sion-NAPS"
+          },
+          {
+            "id": "350df732-bf26-42ba-b7ea-85270124de18",
+            "name": "Store-Mysore-Double Road"
+          },
+          {
+            "id": "6cbab94d-5a3f-4017-b745-84b8f4924689",
+            "name": "Store-Nadiad- Sepal Building"
+          },
+          {
+            "id": "66267a1f-afbf-435a-bf8d-0c9bbda41c62",
+            "name": "Store-Nadiad- Sepal Building-NAPS"
+          },
+          {
+            "id": "3a1cbac4-0c0f-4bf0-b14b-8729aaf0dd5a",
+            "name": "Store-Nashik-Hari Prabha"
+          },
+          {
+            "id": "691112a5-e28a-4e97-9183-761cfd8770a3",
+            "name": "Store-Nashik-Hari Prabha-NAPS"
+          },
+          {
+            "id": "5529097d-58f9-4f9a-bc8a-61321d8d7c05",
+            "name": "Store-Nashik-Pushpa Park"
+          },
+          {
+            "id": "5bc86e3f-5e89-48a4-9edd-82af0d4ef1ee",
+            "name": "Store-Nashik-Pushpa Park-NAPS"
+          },
+          {
+            "id": "55170d64-ba0e-4d4d-ab80-49a91245310a",
+            "name": "Store-NaviMumbai-Belapur"
+          },
+          {
+            "id": "641c415b-ca4d-4658-a27e-1c0c5a09afc2",
+            "name": "Store-NaviMumbai-Belapur-NAPS"
+          },
+          {
+            "id": "8b3c9535-5778-479d-8d8e-8fc991ef06e7",
+            "name": "Store-NaviMumbai-Khargar"
+          },
+          {
+            "id": "70cc976a-60d0-4314-9ee5-3ee80fe971fd",
+            "name": "Store-NaviMumbai-Khargar-NAPS"
+          },
+          {
+            "id": "2a42d255-1e8c-4dba-8b90-a8b9cc48c719",
+            "name": "Store-NaviMumbai-Seawoods"
+          },
+          {
+            "id": "70d0e2db-eaa6-4450-9e64-9d0e0f6bd569",
+            "name": "Store-NaviMumbai-Seawoods-NAPS"
+          },
+          {
+            "id": "77443d2c-65f0-4065-a421-aabe90e6f768",
+            "name": "Store-NaviMumbai-Vashi Akshar Plaza"
+          },
+          {
+            "id": "e7f60531-bbf4-418a-ac58-08ef33a59726",
+            "name": "Store-NaviMumbai-Vashi Akshar Plaza-NAPS"
+          },
+          {
+            "id": "98ce6236-59c3-4f92-a60e-e7bb301af05e",
+            "name": "Store-Navsari-Kabilpore"
+          },
+          {
+            "id": "0544a90b-8306-44e5-a3cb-c3a8a47cefb4",
+            "name": "Store-Navsari-Kabilpore-NAPS"
+          },
+          {
+            "id": "99ad43e1-b128-4616-83bf-e6314892cc25",
+            "name": "Store-Noida-Garden Galleria"
+          },
+          {
+            "id": "5d9ee7a2-fb79-42f2-bc14-708157eb7888",
+            "name": "Store-Noida-Gaur City"
+          },
+          {
+            "id": "19e02f21-8d5b-421a-9b94-1d16ec22aa35",
+            "name": "Store-Noida-Gaur City-NAPS"
+          },
+          {
+            "id": "3dd83733-485b-4c28-a8ce-09b274b067a3",
+            "name": "Store-Noida-Mall of India"
+          },
+          {
+            "id": "d4a93f5d-8a08-40d9-816d-657ed4fb4259",
+            "name": "Store-Noida-Mall of India-NAPS"
+          },
+          {
+            "id": "3ccaa913-0b4c-4ad5-97e7-00af14d577fd",
+            "name": "Store-Palanpur-Delhi Highway"
+          },
+          {
+            "id": "a302231e-7a2a-48f6-bb78-dc0f267e0f2a",
+            "name": "Store-Palanpur-Delhi Highway-NAPS"
+          },
+          {
+            "id": "d7d726e9-5fa0-4b7b-8da2-3ab03e9f9f7d",
+            "name": "Store-Patiala-Bhupendra Rd"
+          },
+          {
+            "id": "212f2876-7e0c-4c69-af7b-89df5c6de1ef",
+            "name": "Store-Patiala-Bhupendra Rd-NAPS"
+          },
+          {
+            "id": "e4a4bee8-e4cb-42e3-b778-0059a13e9b0b",
+            "name": "Store-Pune-Aundh"
+          },
+          {
+            "id": "8499e684-9d6b-4070-8de9-909c606cb148",
+            "name": "Store-Pune-Aundh-NAPS"
+          },
+          {
+            "id": "172593e1-edb9-4cfd-b729-f744d2a01646",
+            "name": "Store-Pune-Baner"
+          },
+          {
+            "id": "e5da6ad7-bc43-4862-9d6b-48b03590432f",
+            "name": "Store-Pune-Baner-NAPS"
+          },
+          {
+            "id": "932d501b-02ed-4c87-85ab-64e0cc72b7af",
+            "name": "Store-Pune-Chinchwad"
+          },
+          {
+            "id": "9ac40880-abdf-4e6d-82a9-712b794df6ab",
+            "name": "Store-Pune-Chinchwad-NAPS"
+          },
+          {
+            "id": "257f121e-393a-46db-a057-0a6dd5558331",
+            "name": "Store-Pune-JVA Mall"
+          },
+          {
+            "id": "67834286-ff8d-4e85-bd11-468900e208d8",
+            "name": "Store-Pune-JVA Mall-NAPS"
+          },
+          {
+            "id": "8dcc18fe-578f-416e-a52d-e578b38a3f89",
+            "name": "Store-Pune-Katraj"
+          },
+          {
+            "id": "a92d2c86-c9d4-419e-adf4-5c17bb9ef1c2",
+            "name": "Store-Pune-Katraj-NAPS"
+          },
+          {
+            "id": "3963f2d7-0025-4a4d-92e6-a034a4d1e109",
+            "name": "Store-Pune-Kothrud"
+          },
+          {
+            "id": "142919e4-c4db-4980-9fb4-e655ca51dc4b",
+            "name": "Store-Pune-Kothrud-NAPS"
+          },
+          {
+            "id": "df4386ac-fe72-4933-88ed-a7e607736d6c",
+            "name": "Store-Pune-Krome"
+          },
+          {
+            "id": "0543a055-3dc4-4281-a8d9-c974a6bf488f",
+            "name": "Store-Pune-Krome-NAPS"
+          },
+          {
+            "id": "34218d61-039a-4efa-8432-893e3d999fb5",
+            "name": "Store-Pune-Monte Rosa"
+          },
+          {
+            "id": "4a8429c6-d743-43fa-80d5-108d1edaccb5",
+            "name": "Store-Pune-Monte Rosa-NAPS"
+          },
+          {
+            "id": "d759f3a5-e767-4807-bf8a-c5a1525fc87d",
+            "name": "Store-Pune-Phoenix Market City"
+          },
+          {
+            "id": "1ad8e4cd-eac6-4567-843b-6c4dc4176780",
+            "name": "Store-Pune-Phoenix Market City-NAPS"
+          },
+          {
+            "id": "de020122-68ed-441a-8eab-92e8e1df93f5",
+            "name": "Store-Pune-Pimpri"
+          },
+          {
+            "id": "a268f488-34d7-4df5-b3e5-47f91479fcbc",
+            "name": "Store-Pune-Pimpri-NAPS"
+          },
+          {
+            "id": "ce2ba381-deb3-4029-8cee-570dad163ba5",
+            "name": "Store-Pune-Seasons Mall"
+          },
+          {
+            "id": "d2b8c835-bcb0-4946-8694-750408695e5c",
+            "name": "Store-Pune-Seasons Mall-NAPS"
+          },
+          {
+            "id": "696f1d79-3ca2-4a17-9f33-93617159bbf5",
+            "name": "Store-Pune-Wakad"
+          },
+          {
+            "id": "34fc38de-a2ff-4d00-a8bf-5cdb09ee1950",
+            "name": "Store-Pune-Wakad-NAPS"
+          },
+          {
+            "id": "c4f13d58-2309-4ec0-8101-b74f5711c1a0",
+            "name": "Store-Punjab-Chandigarh-Sec22"
+          },
+          {
+            "id": "e75eb1f8-420f-4dff-997a-a485f5d0e40e",
+            "name": "Store-Punjab-Chandigarh-Sec22-NAPS"
+          },
+          {
+            "id": "73eec1c9-bfb4-41f6-951d-ab3476b76cc8",
+            "name": "Store-Punjab-Chandigarh-Sec26"
+          },
+          {
+            "id": "d2b7c3c8-0193-4421-b804-1a68377ee65c",
+            "name": "Store-Punjab-Chandigarh-Sec26-NAPS"
+          },
+          {
+            "id": "1caa5a6a-ac15-440c-bab3-2800d6de1706",
+            "name": "Store-Punjab-Mohali"
+          },
+          {
+            "id": "55128cd4-850b-4a19-ad08-de07ecc58943",
+            "name": "Store-Punjab-Mohali-NAPS"
+          },
+          {
+            "id": "c3041150-acb1-4c99-997e-7510b2d508ce",
+            "name": "Store-Punjab-New Jalandhar"
+          },
+          {
+            "id": "f32c3e21-dcf1-42e0-8cef-29f7331a1c40",
+            "name": "Store-Punjab-New Jalandhar-NAPS"
+          },
+          {
+            "id": "6b18b044-d353-4eb7-a9c9-aeb68070e035",
+            "name": "Store-Raipur-Currency Tower"
+          },
+          {
+            "id": "57efdc92-e0f8-41da-b607-87b45db75989",
+            "name": "Store-Raipur-Currency Tower-NAPS"
+          },
+          {
+            "id": "b964a13e-84d6-473a-9ed9-072f3bb08812",
+            "name": "Store-Raipur-Pandri Road"
+          },
+          {
+            "id": "69bdfc9f-b557-4c4d-abb6-e7e1f0926a28",
+            "name": "Store-Raipur-Pandri Road-NAPS"
+          },
+          {
+            "id": "2452b4fc-247b-4ea0-a3fc-901429d75c7a",
+            "name": "Store-Rajasthan-Jaipur"
+          },
+          {
+            "id": "ff37e3a5-e21f-49ba-922a-93e1e5bc4e8e",
+            "name": "Store-Rajasthan-Jaipur-NAPS"
+          },
+          {
+            "id": "0f6a240a-7b0c-4f4e-b9e7-afe15b62ac37",
+            "name": "Store-Rajkot-Crystal"
+          },
+          {
+            "id": "0f4efae3-0d85-4248-be79-e7e78b856b67",
+            "name": "Store-Rajkot-Crystal-NAPS"
+          },
+          {
+            "id": "2005cc27-faa5-4778-a572-fcba2365ac2e",
+            "name": "Store-Rajkot-RK Prime"
+          },
+          {
+            "id": "df238a6d-0314-4992-bcef-1a1ff13cc29b",
+            "name": "Store-Rajkot-RK Prime-NAPS"
+          },
+          {
+            "id": "19f5d91b-36fb-4188-9ba1-1e35fe396b2c",
+            "name": "Store-Solapur-Vishal Hights"
+          },
+          {
+            "id": "4c01a798-c59f-4788-96ec-c11ee642a056",
+            "name": "Store-Solapur-Vishal Hights-NAPS"
+          },
+          {
+            "id": "a95c84e8-357f-47d6-981d-e0f96f3d29cb",
+            "name": "Store-Surat – Kamrej"
+          },
+          {
+            "id": "b594dc5f-ca10-4a61-8704-49ac45642bd3",
+            "name": "Store-Surat – Kamrej-NAPS"
+          },
+          {
+            "id": "abaf9845-3dab-4c7a-bdd8-e0115a7a7885",
+            "name": "Store-Surat-Avadh Arena"
+          },
+          {
+            "id": "60d72e63-1db7-4788-a0e7-70b81c14bb6b",
+            "name": "Store-Surat-Crossway"
+          },
+          {
+            "id": "c5ec37f3-6819-4fe4-8dbb-fbf1e2be0a6f",
+            "name": "Store-Surat-Crossway-NAPS"
+          },
+          {
+            "id": "14f2a255-bae8-44f2-b85d-4521726aaea0",
+            "name": "Store-Surat-Parvat Patiya"
+          },
+          {
+            "id": "8d758221-cf6e-429f-a8c2-3c3af8f9fa94",
+            "name": "Store-Surat-Parvat Patiya-NAPS"
+          },
+          {
+            "id": "582549cf-fe8d-4ec6-aaf4-00a2f1daad50",
+            "name": "Store-Surat-Proton Plus"
+          },
+          {
+            "id": "c8a5a1ed-c04f-47c6-b9ac-46e5186b629a",
+            "name": "Store-Surat-Proton Plus-NAPS"
+          },
+          {
+            "id": "267a4f84-6e55-4ded-80b0-b4c6f8ff4431",
+            "name": "Store-Surat-RippleMall"
+          },
+          {
+            "id": "d49b8047-9343-408c-ba9a-8df769b19167",
+            "name": "Store-Surat-RippleMall-NAPS"
+          },
+          {
+            "id": "f0722f08-98bc-46c1-a1dd-8824bd78a193",
+            "name": "Store-Surat-Varachha"
+          },
+          {
+            "id": "90f21248-b7e0-473b-96d7-b8787bcacde6",
+            "name": "Store-Surat-Varachha-NAPS"
+          },
+          {
+            "id": "a8d02028-4f5d-4506-a612-cf8fafdaa60c",
+            "name": "Store-Thane-Bhayender"
+          },
+          {
+            "id": "039ff18e-21f1-4dae-baba-0e0bf67359e6",
+            "name": "Store-Thane-Bhayender-NAPS"
+          },
+          {
+            "id": "e962d738-f72b-4cfd-afde-5ed7745dd170",
+            "name": "Store-Thane-Big Centre"
+          },
+          {
+            "id": "d054c3ea-ff8c-4604-b1b0-09a203edf40a",
+            "name": "Store-Thane-Big Centre-NAPS"
+          },
+          {
+            "id": "86944523-a82f-4afd-b630-7444de599f76",
+            "name": "Store-Thane-Ghodbunder"
+          },
+          {
+            "id": "8a50fb4a-1ae7-44e1-92c6-dc32c9a6d0ef",
+            "name": "Store-Thane-Ghodbunder-NAPS"
+          },
+          {
+            "id": "95d4f5ef-8ff3-4393-addf-8ed621a08e06",
+            "name": "Store-Thane-R Mall"
+          },
+          {
+            "id": "6c131444-4d35-4584-a204-fa6ceb3c03e7",
+            "name": "Store-Thane-R Mall-NAPS"
+          },
+          {
+            "id": "9ad15bdc-1150-4101-b27a-ece2b80cbc6f",
+            "name": "Store-Thrissur-MG Road"
+          },
+          {
+            "id": "3c769877-1c5f-48d9-97a6-8e3cd35050e8",
+            "name": "Store-Vapi-Rathod Tower"
+          },
+          {
+            "id": "0e2af87b-746b-43e5-ac16-7b68aa81e636",
+            "name": "Store-Vapi-Rathod Tower-NAPS"
+          },
+          {
+            "id": "cd020f95-3e52-427a-9a14-2c794a6271a6",
+            "name": "Store-Vijayawada - Benz Circle"
+          },
+          {
+            "id": "d4f7ba70-8c03-4e6c-aff9-a966a1d5c4d9",
+            "name": "Store-Vijayawada - Benz Circle-NAPS"
+          },
+          {
+            "id": "c433cddf-394f-49af-8088-7af337331c2c",
+            "name": "Store-Visakhapatnam-Muralinagar"
+          },
+          {
+            "id": "6c634a50-84c0-48ef-b091-c2c88d3a6505",
+            "name": "Store-Visakhapatnam-Muralinagar-NAPS"
+          },
+          {
+            "id": "078d97f9-3050-4472-9a6f-bd35e6688d00",
+            "name": "Store-Visakhapatnam-MVR Mall"
+          },
+          {
+            "id": "7b7bd55a-1f04-43c1-9d29-2e6d2925ef65",
+            "name": "Store-West Bengal-Asansol"
+          },
+          {
+            "id": "720edd8a-bf2f-4854-8914-db7321e16ba2",
+            "name": "Store-West Bengal-Asansol-NAPS"
+          },
+          {
+            "id": "cc422a8a-ab55-4798-9bb5-57f7044cbdb5",
+            "name": "Support Office"
+          },
+          {
+            "id": "45eaf48b-f50e-417f-87e2-428bf55b195e",
+            "name": "Support Office - BE & Digital Transforma"
+          },
+          {
+            "id": "888cdd6e-1ebf-4647-8185-5145ca80c3d4",
+            "name": "Support Office - Business Excellence"
+          },
+          {
+            "id": "ed891378-e3e6-4c5a-a4df-ba4ef34c4d2b",
+            "name": "Support Office - Health and Safety"
+          },
+          {
+            "id": "6a48e2bf-3268-499f-a4a6-b0ee6b9e2158",
+            "name": "Support Office - OL- Sales &  Service-SO"
+          },
+          {
+            "id": "c0c16884-37b0-4401-b89a-5565403502af",
+            "name": "Support Office - Property- Legal"
+          },
+          {
+            "id": "6f28f6d7-9eeb-4e2e-949f-84deef319fdc",
+            "name": "Support Office - SOH"
+          },
+          {
+            "id": "aaac73f5-e51b-4bac-8208-dae7080fae94",
+            "name": "Support Office - VAS"
+          },
+          {
+            "id": "937c0d17-3eda-4c2f-b62e-e15de7c3c612",
+            "name": "Support Office - Webstore Merchandising"
+          },
+          {
+            "id": "75f1f4fd-084e-4333-acfb-e2d7ff693a5f",
+            "name": "Support Office - Webstore Operations"
+          },
+          {
+            "id": "6a140ad4-0fe3-4ccb-9274-801c8de69305",
+            "name": "Support office - Webstore Payment Ops"
+          },
+          {
+            "id": "4d850920-baa4-407c-a3f2-21f0890eaa6d",
+            "name": "Support Office - Webstore- CS & UX"
+          },
+          {
+            "id": "8148b72e-d27e-4e40-813b-d22e5b233e09",
+            "name": "Support office - Wider-than-store"
+          },
+          {
+            "id": "7eb9a3ab-7971-4ead-828e-ba4737719a20",
+            "name": "Support Office- Business Solution Group"
+          },
+          {
+            "id": "9e0de9a2-0d8c-4591-a79a-71b9f000a7fd",
+            "name": "Support Office- Buying"
+          },
+          {
+            "id": "42998b23-aa7d-48a1-8719-39c249eb70da",
+            "name": "Support Office- Buying- APL"
+          },
+          {
+            "id": "94507196-7e33-4f91-8b39-6b617187157e",
+            "name": "Support Office- Buying- ENT"
+          },
+          {
+            "id": "06dff455-7f39-4f28-9dbd-225be50754e0",
+            "name": "Support Office- E Commerce"
+          },
+          {
+            "id": "fd18001e-d682-4b21-89f2-f5ada266c261",
+            "name": "Support Office- Own Label"
+          },
+          {
+            "id": "33d4e38d-a62f-43bf-9789-5877d508b8bc",
+            "name": "Support Office- Own Label- Buying"
+          },
+          {
+            "id": "5cbf89ab-6563-48df-b00d-fb2d2dbeeca8",
+            "name": "Support Office- Supply Chain"
+          },
+          {
+            "id": "63d53cb4-b7ba-479d-823b-4e94eb430009",
+            "name": "Support Office-Administration"
+          },
+          {
+            "id": "7d18d86e-0739-4e24-bc05-b9709a55acc7",
+            "name": "Support Office-Brand Marketing"
+          },
+          {
+            "id": "f9e648f5-4c58-41f7-bf56-4a3a5dcf4adc",
+            "name": "Support Office-Catchment Marketing"
+          },
+          {
+            "id": "e5ec0e76-d503-46f5-88bb-71af7bf7d7fe",
+            "name": "Support Office-Customer Service"
+          },
+          {
+            "id": "f7f1b155-b0fa-4d8e-a2be-48e45de5ebf4",
+            "name": "Support Office-Finance"
+          },
+          {
+            "id": "7c4fc587-5750-48b2-a923-4254c56821af",
+            "name": "Support Office-Finance-NAPS"
+          },
+          {
+            "id": "db9fbab3-662e-416d-ae78-9d4257d8000b",
+            "name": "Support Office-HR"
+          },
+          {
+            "id": "cee68422-16fd-4e1f-9c57-c22c185217af",
+            "name": "Support Office-Internal Audit"
+          },
+          {
+            "id": "72e46fe4-4a58-4d3b-9ff4-59b53e3da540",
+            "name": "Support Office-IT"
+          },
+          {
+            "id": "8825029a-d80c-4e81-89a4-012d09393cb6",
+            "name": "Support Office-Legal"
+          },
+          {
+            "id": "d21b01f3-1798-4505-a895-102493b32ac4",
+            "name": "Support Office-Marketing"
+          },
+          {
+            "id": "5f1c5379-5ad6-455b-aa20-b19dc1a34077",
+            "name": "Support Office-Operations"
+          },
+          {
+            "id": "2f92fb59-c294-47de-851d-0565402b1726",
+            "name": "Support Office-Operations-Omnichannel"
+          },
+          {
+            "id": "17c14f32-7913-46d4-a0aa-16ed86297352",
+            "name": "Support Office-Projects-Procurements & M"
+          },
+          {
+            "id": "dca708d5-163c-4422-8c3d-1fbfddd2f970",
+            "name": "Support Office-Property & Catchment Dev"
+          },
+          {
+            "id": "870ad87c-bcf1-454b-afe7-979c5df24761",
+            "name": "Support Office-Property Development"
+          },
+          {
+            "id": "839d56a1-dd20-4829-988f-106d8fbb267b",
+            "name": "Support Office-Revenue Growth Management"
+          },
+          {
+            "id": "611cab18-d480-49be-9779-1b8f585da25d",
+            "name": "Support Office-Store Planning"
+          },
+          {
+            "id": "b4b979fa-7dd5-4907-a1d2-ef6eee551c49",
+            "name": "Support Office-Training"
+          },
+          {
+            "id": "ac1cf943-9974-40c1-bc27-995f4f0331e1",
+            "name": "Surat-Crossway"
+          },
+          {
+            "id": "3753b2ca-4632-4863-95e3-426aa9cc3c42",
+            "name": "Surat-Proton Plus"
+          },
+          {
+            "id": "9a10c37a-efbb-4cbf-a316-12b33155d1b2",
+            "name": "Surat-RippleMall"
+          },
+          {
+            "id": "14ebd712-01a2-4ae2-a54c-4f1b30718875",
+            "name": "Surat-Varachha"
+          },
+          {
+            "id": "64d6e709-00ec-4e6b-8d84-729a4f80ae7b",
+            "name": "Thane-Bhayender"
+          },
+          {
+            "id": "e882bc30-0066-4f4f-8fa7-4153c16aa69c",
+            "name": "Thane-Big Centre"
+          },
+          {
+            "id": "f173112d-1607-4368-959d-3b71e46b9ea7",
+            "name": "Thane-R Mall"
+          },
+          {
+            "id": "cca30715-3f16-4c9f-8c03-0e424a032c55",
+            "name": "Webstore Merchandising-Buying-SO"
+          },
+          {
+            "id": "742dcdd6-22e7-4af4-b04d-31be44a1aba9",
+            "name": "Webstore Operations-Ops-SO"
+          },
+          {
+            "id": "0793b5c8-9305-44f8-b9b3-fa00cd92f819",
+            "name": "Wider-than-store-Buying-SO"
+          },
+          { "id": "b5410ebf-239b-4027-a2ab-4bd340d06a04", "name": "ZO" },
+          {
+            "id": "96cb87bc-55b5-4f78-beb1-70c92df44216",
+            "name": "Zonal Office - RPA - Ahmedabad"
+          },
+          {
+            "id": "1b5c61ca-436e-4846-b9f5-b84e8da6b303",
+            "name": "Zonal Office - RPA - Bangalore"
+          },
+          {
+            "id": "93008f57-07c2-447b-bc0a-63ae124e34a2",
+            "name": "Zonal Office - RPA - Bangalore - Digi"
+          },
+          {
+            "id": "2ecb8b11-5c6e-43a1-9257-99e47f379c9a",
+            "name": "Zonal Office - RPA - Chennai"
+          },
+          {
+            "id": "e50e7674-fbac-49f8-bf10-0e152e702846",
+            "name": "Zonal Office - RPA - Delhi"
+          },
+          {
+            "id": "82316490-c805-4112-9ce4-43223e0a14c2",
+            "name": "Zonal Office - RPA - Dwarka - Dig"
+          },
+          {
+            "id": "29bfa27a-7acc-4c88-a3f2-a762abb6d7df",
+            "name": "Zonal Office - RPA - Gurgaon"
+          },
+          {
+            "id": "ecbd289f-c591-4f7b-b5e9-193b18c11302",
+            "name": "Zonal Office - RPA - Hyderabad"
+          },
+          {
+            "id": "1999b363-d2c6-4e41-b48b-64ea6b4f015a",
+            "name": "Zonal Office - RPA - Kolkata"
+          },
+          {
+            "id": "99ec65ae-a714-4652-a761-9dbc3e98b726",
+            "name": "Zonal Office - RPA - Mumbai"
+          },
+          {
+            "id": "326f07b2-8f1e-4eff-95b4-0a959073bcaf",
+            "name": "Zonal Office - RPA - Mumbai-Digi"
+          },
+          {
+            "id": "a37b0dbe-2f16-485f-9591-32e1a6c8d6e4",
+            "name": "Zonal Office- East-Kolkata DC"
+          },
+          {
+            "id": "ee4ae6dd-5e85-4cb0-943d-494689ee5bc3",
+            "name": "Zonal Office- North - Ghaziabad Cross Do"
+          },
+          {
+            "id": "e5513550-d21f-406a-9589-8b8299ca4b5c",
+            "name": "Zonal Office- North - Gurgaon Cross Dock"
+          },
+          {
+            "id": "33e905bb-2674-42d8-8502-d3f8ae47cfa4",
+            "name": "Zonal Office- North -Chandigarh - VAS"
+          },
+          {
+            "id": "59dfb7c1-91a7-496e-a24a-090a0057524f",
+            "name": "Zonal Office- North-Delhi DC"
+          },
+          {
+            "id": "f932e2c2-759f-49c8-8283-81b191f61647",
+            "name": "Zonal Office- North-Delhi- Omnichannel"
+          },
+          {
+            "id": "106da011-b107-4e63-8e50-55f67517bcf4",
+            "name": "Zonal Office- South- Chennai DC"
+          },
+          {
+            "id": "3d0c5626-47f7-4fd0-bf8c-d478f8d0d576",
+            "name": "Zonal Office- South- Hyderabad DC"
+          },
+          {
+            "id": "a9ca6a89-2028-4e9e-9c51-ed6377779e18",
+            "name": "Zonal Office- South-Bangalore DC"
+          },
+          {
+            "id": "1bfb971c-4fcf-4b67-a345-3616d654cc34",
+            "name": "Zonal Office- South-Bangalore-VAS"
+          },
+          {
+            "id": "41e8f215-1190-4c0b-ac2d-4b308da063d9",
+            "name": "Zonal Office- South-Banglore- Omnichanne"
+          },
+          {
+            "id": "3df2f382-0d9d-49ec-9352-5898c877c0ae",
+            "name": "Zonal Office- South-Chennai-VAS"
+          },
+          {
+            "id": "8e96c3e8-8605-45b8-b354-8c57e228daec",
+            "name": "Zonal Office- South-Hyderabad-VAS"
+          },
+          {
+            "id": "524fc4c1-ef42-42e8-a1d0-4a25b910d93c",
+            "name": "Zonal Office- West - Bhandup Cross Dock"
+          },
+          {
+            "id": "99c03679-2f14-421a-9027-8fadb9c5df95",
+            "name": "Zonal Office- West -Ahmedabad - VAS"
+          },
+          {
+            "id": "bf315e2e-b4d5-4d63-941c-760384c9e0ea",
+            "name": "Zonal Office- West -Ahmedabad DC"
+          },
+          {
+            "id": "4edb71b5-7339-41e1-bb8b-70641cd58408",
+            "name": "Zonal Office- West -Mumbai - VAS"
+          },
+          {
+            "id": "8f18de61-c71e-43bc-9511-d1600c13101f",
+            "name": "Zonal Office- West -Pune - VAS"
+          },
+          {
+            "id": "8f91b256-c06a-4703-9bc3-af9c3522cad2",
+            "name": "Zonal Office- West- Bhiwandi DC"
+          },
+          {
+            "id": "36b7dcbb-6d0d-44e7-bdff-785cd2d2cc1d",
+            "name": "Zonal Office- West- Nagpur DC"
+          },
+          {
+            "id": "fd04159b-e1ad-4f46-ae46-289b7e98ef7a",
+            "name": "Zonal Office- West- Pune DC"
+          },
+          {
+            "id": "f9124189-db19-4c90-b394-c5275c90dfe1",
+            "name": "Zonal Office-East-Customer Service"
+          },
+          {
+            "id": "3dc8acab-016e-46e5-82ac-43bf0d4f7bfa",
+            "name": "Zonal Office-East-Finance"
+          },
+          {
+            "id": "bd24984d-b074-4ee6-b142-3c4908e96eef",
+            "name": "Zonal Office-East-HR"
+          },
+          {
+            "id": "e1af0c0d-7e9d-4c88-8fe0-2322d0922a60",
+            "name": "Zonal Office-East-Kolkata-BSG"
+          },
+          {
+            "id": "fbb16144-76cb-4a73-a4c8-eac8f2e0d988",
+            "name": "Zonal Office-East-Kolkata-IB"
+          },
+          {
+            "id": "cfaa180e-070e-456e-a994-1ec6478929b6",
+            "name": "Zonal Office-East-Marketing-Kolkata"
+          },
+          {
+            "id": "4436bf99-19f7-4e9e-81db-31d1ee6708fd",
+            "name": "Zonal Office-East-Operations"
+          },
+          {
+            "id": "764b359f-1f70-44ac-9da2-642d3ef82def",
+            "name": "Zonal Office-East-Projects-Kolkata"
+          },
+          {
+            "id": "c5721b6f-76ac-4e77-8fda-6c69bd0af2b5",
+            "name": "Zonal Office-East-Property"
+          },
+          {
+            "id": "1233ee98-7280-4e52-a9e0-3e2969228376",
+            "name": "Zonal Office-East-Property D"
+          },
+          {
+            "id": "40f23b09-a39e-4be0-bd7f-01229e5f82eb",
+            "name": "Zonal Office-East-Sales & Service"
+          },
+          {
+            "id": "0aeaf8b2-0616-4d6e-8600-7fc6a5755c77",
+            "name": "Zonal Office-East-Training- Kolkata"
+          },
+          {
+            "id": "f25383b5-7b24-49df-8651-52327a97cf89",
+            "name": "Zonal Office-North- DEL-BSG"
+          },
+          {
+            "id": "194ee885-0354-4995-9abd-af97b536b73e",
+            "name": "Zonal Office-North- DEL-IB"
+          },
+          {
+            "id": "12a14752-68bd-43fb-9d7b-09490a265205",
+            "name": "Zonal Office-North- Own Label-Chandigarh"
+          },
+          {
+            "id": "521f5363-9b94-4159-a16f-ca14c7d489d1",
+            "name": "Zonal Office-North- Own Label-Delhi"
+          },
+          {
+            "id": "e7f4d84d-b923-4cac-8bab-af12d2844533",
+            "name": "Zonal Office-North- Sales & Service"
+          },
+          {
+            "id": "31d97f21-c2ca-4be8-83ad-f0ca189e4808",
+            "name": "Zonal Office-North-Admin-Delhi"
+          },
+          {
+            "id": "d2abf4a2-7485-44ca-85d9-d3d532ee0b07",
+            "name": "Zonal Office-North-Bhopal Corss"
+          },
+          {
+            "id": "54fca339-c9e1-4148-9204-a4d08c1f8af2",
+            "name": "Zonal Office-North-Cust Service- Delhi"
+          },
+          {
+            "id": "72c2a3db-ec9a-41c8-8846-52b220063772",
+            "name": "Zonal Office-North-Cust Service- Punjab"
+          },
+          {
+            "id": "6bec7f48-0b5f-4d7f-a40c-bb85b8bce3a7",
+            "name": "Zonal Office-North-Customer Service"
+          },
+          {
+            "id": "75e31d34-e2da-4f54-8ade-b07e1e539d36",
+            "name": "Zonal Office-North-Delhi-VAS"
+          },
+          {
+            "id": "50bdfd52-544d-4106-b05b-3d72f4cd2438",
+            "name": "Zonal Office-North-Gurgaon DC"
+          },
+          {
+            "id": "825c1c5f-c47f-498b-ad8b-2b70003ad41d",
+            "name": "Zonal Office-North-HR-Delhi"
+          },
+          {
+            "id": "6ccec72a-6428-409d-bfd3-d43e9cba0186",
+            "name": "Zonal Office-North-HR-Faridabad"
+          },
+          {
+            "id": "310fc216-8ac3-4dbd-9514-6340b45c40c2",
+            "name": "Zonal Office-North-HR-MP"
+          },
+          {
+            "id": "c2361561-50ba-429f-abc7-eddcdbca4c35",
+            "name": "Zonal Office-North-HR-Punjab"
+          },
+          {
+            "id": "d102ae59-66b6-4f37-a682-dd8055a651bf",
+            "name": "Zonal Office-North-Internal Audit-Delhi"
+          },
+          {
+            "id": "e3d1ebec-d4c0-4d47-942b-12afc7083d1d",
+            "name": "Zonal Office-North-Marketing"
+          },
+          {
+            "id": "d7df5b72-bd44-4b9d-a171-93431e102bba",
+            "name": "Zonal Office-North-Marketing-Chandigarh"
+          },
+          {
+            "id": "d31303f6-96eb-4fda-b8a5-73faec22639c",
+            "name": "Zonal Office-North-Marketing-Delhi"
+          },
+          {
+            "id": "e58b8d6a-eac2-4294-afee-0e57f77f1751",
+            "name": "Zonal Office-North-Marketing-Faridabad"
+          },
+          {
+            "id": "cada6054-4f93-4bdc-b7c7-438ac3002046",
+            "name": "Zonal Office-North-Operations-Delhi"
+          },
+          {
+            "id": "1058594d-4b12-4540-a96d-f90b172718f4",
+            "name": "Zonal Office-North-Operations-Faridabad"
+          },
+          {
+            "id": "e61a103c-5841-4dd3-899f-afe6cfbe74e4",
+            "name": "Zonal Office-North-Operations-Gaziabad"
+          },
+          {
+            "id": "02ad7702-7932-44f3-ae4e-dafba0b4469f",
+            "name": "Zonal Office-North-Operations-Madhya Pra"
+          },
+          {
+            "id": "e00859d7-62ea-4a0a-8cce-2228b88ae98c",
+            "name": "Zonal Office-North-Operations-Punjab"
+          },
+          {
+            "id": "01031313-cc35-4191-8dd6-910e412310da",
+            "name": "Zonal Office-North-Projects-Delhi"
+          },
+          {
+            "id": "96300510-f3b2-490f-9c08-0413f4ed932c",
+            "name": "Zonal Office-North-Property"
+          },
+          {
+            "id": "ba9dfb5b-65c9-4fb0-8bcb-40e3ecc841d3",
+            "name": "Zonal Office-North-Property D-Faridabad"
+          },
+          {
+            "id": "12c10be4-679b-48a5-ae3d-56d198768ca6",
+            "name": "Zonal Office-North-Property Development"
+          },
+          {
+            "id": "f2109fbb-2b83-4718-a89d-b9be7fc02c1a",
+            "name": "Zonal Office-North-Property-Faridabad"
+          },
+          {
+            "id": "e48e5fe1-0771-4d43-bfd2-5e3f0d43ab34",
+            "name": "Zonal Office-North-Training-Delhi"
+          },
+          {
+            "id": "a24e24a5-770e-4f84-b0ca-dcb594869143",
+            "name": "Zonal Office-South- BAN-IB"
+          },
+          {
+            "id": "d022de15-4211-4922-89ad-8b6074f65394",
+            "name": "Zonal Office-South- Sales & Service"
+          },
+          {
+            "id": "c8e84d7e-c998-4b41-91f0-0c823ea826a7",
+            "name": "Zonal Office-South- Sales & Service-BAN"
+          },
+          {
+            "id": "8037e66a-8326-4760-a645-e29ea7e36224",
+            "name": "Zonal Office-South- Sales & Service-CHE"
+          },
+          {
+            "id": "e98c2555-b9fd-401c-8ecb-d407a30657ac",
+            "name": "Zonal Office-South- Sales & Service-HYD"
+          },
+          {
+            "id": "fff36f97-a909-481d-b509-a3a722c55a15",
+            "name": "Zonal Office-South-Cust Service-Bangalor"
+          },
+          {
+            "id": "f0dc7da8-da33-45ce-9fe8-5a0586f3df4c",
+            "name": "Zonal Office-South-Cust Service-Chennai"
+          },
+          {
+            "id": "d4a43cf1-140c-4808-b0de-24e4ea0ea181",
+            "name": "Zonal Office-South-Cust Service-Hyderaba"
+          },
+          {
+            "id": "b7301ae4-60fc-4462-b2a2-ba0d6820b269",
+            "name": "Zonal Office-South-Cust Service-Vizag"
+          },
+          {
+            "id": "369bfcf6-5c3e-4b3a-aaf9-688069d827d9",
+            "name": "Zonal Office-South-HR-Bangaluru"
+          },
+          {
+            "id": "14008a15-c734-462c-b772-ce2b82a239b6",
+            "name": "Zonal Office-South-HR-Chennai"
+          },
+          {
+            "id": "ef430e88-c070-484c-a3f9-154cfb14ec42",
+            "name": "Zonal Office-South-HR-Hyderabad"
+          },
+          {
+            "id": "15324d41-d2fb-4a4c-b611-b349a71d3ff3",
+            "name": "Zonal Office-South-Internal Audit-Bang"
+          },
+          {
+            "id": "59ea5c25-bd83-43d3-802f-e22a445bab5a",
+            "name": "Zonal Office-South-InternalAudit-Chennai"
+          },
+          {
+            "id": "f68a6b09-c485-4e49-a85e-719cec25a3e4",
+            "name": "Zonal Office-South-InternalAudit-HYD"
+          },
+          {
+            "id": "e03aa78d-58cc-4e14-8f37-646d45c9595b",
+            "name": "Zonal Office-South-Marketing-Bangaluru"
+          },
+          {
+            "id": "168f0279-9112-4fb4-b7eb-7ff9088134c5",
+            "name": "Zonal Office-South-Marketing-Chennai"
+          },
+          {
+            "id": "6d8fb898-e49d-4408-81da-8fb911f65f56",
+            "name": "Zonal Office-South-Marketing-Hyderabad"
+          },
+          {
+            "id": "e6c1af62-b8b5-4c98-8301-13e769177f23",
+            "name": "Zonal Office-South-Operations-Bangaluru"
+          },
+          {
+            "id": "15d76475-2985-45cf-9b04-f184f8bb81ca",
+            "name": "Zonal Office-South-Operations-Chennai"
+          },
+          {
+            "id": "2c7640b6-dc27-4839-9d53-4abb2dcf962c",
+            "name": "Zonal Office-South-Operations-Hyderabad"
+          },
+          {
+            "id": "71a48c7a-267c-4a5c-ba5f-5f4b5ab7f3f8",
+            "name": "Zonal Office-South-Own Label"
+          },
+          {
+            "id": "3f05e390-5173-4167-8a59-91e4f00a186f",
+            "name": "Zonal Office-South-Projects-Bangaluru"
+          },
+          {
+            "id": "c4c8fe25-6d0b-4308-bb0f-b27d10afb7b6",
+            "name": "Zonal Office-South-Projects-Chennai"
+          },
+          {
+            "id": "b657c437-0ef5-4163-bf7a-ba3c8e5ec83c",
+            "name": "Zonal Office-South-Property"
+          },
+          {
+            "id": "f484c977-3809-4178-b024-a3a46e804761",
+            "name": "Zonal Office-South-Property D-Hyderabad"
+          },
+          {
+            "id": "af3fc58a-73e2-47da-b8eb-97d0d9afbdfe",
+            "name": "Zonal Office-South-Property Development"
+          },
+          {
+            "id": "f4ee4d5e-fdbd-4279-b631-167ae672589a",
+            "name": "Zonal Office-South-Property-Hyderabad"
+          },
+          {
+            "id": "71199f8d-ae41-47e5-bf30-db6ac06076b7",
+            "name": "Zonal Office-South-Training-Bangaluru"
+          },
+          {
+            "id": "9d6bcd26-c2ef-4a69-b488-7996433b0f05",
+            "name": "Zonal Office-South-Training-Chennai"
+          },
+          {
+            "id": "83dfaaa7-3b63-4286-8b1b-ed696e70c0a2",
+            "name": "Zonal Office-South-Training-Hyderabad"
+          },
+          {
+            "id": "3d7e77d9-df2b-4729-add9-cf5f4d0a6d7a",
+            "name": "Zonal Office-West- Own Label-AHM"
+          },
+          {
+            "id": "363485f2-5a73-4b81-90b7-74952ccf1415",
+            "name": "Zonal Office-West- Own Label-MUM"
+          },
+          {
+            "id": "179d5275-ad46-409c-9e2a-e91efbe2747d",
+            "name": "Zonal Office-West- Sales & Service"
+          },
+          {
+            "id": "bc18a57e-79d7-4677-8223-94617963fce8",
+            "name": "Zonal Office-West-Ahmedabad-IB"
+          },
+          {
+            "id": "6d15994f-73c0-4462-b291-1016dab6ce34",
+            "name": "Zonal Office-West-Cust Service- Gujrat"
+          },
+          {
+            "id": "7c7f06ef-c102-45b1-b771-ed3852849172",
+            "name": "Zonal Office-West-Cust Service-Mumbai"
+          },
+          {
+            "id": "4a6b427f-bf54-4ddd-9dc6-ad5567504ae0",
+            "name": "Zonal Office-West-Cust Service-Pune"
+          },
+          {
+            "id": "08779a8e-e99d-4140-ba40-dd93e8163417",
+            "name": "Zonal Office-West-HR-Ahmedabad"
+          },
+          {
+            "id": "5045c03a-5b5e-417f-a79a-c76d2421d156",
+            "name": "Zonal Office-West-HR-Mumbai"
+          },
+          {
+            "id": "696ab03f-0ce8-4377-95b4-bec2c7736441",
+            "name": "Zonal Office-West-HR-Pune"
+          },
+          {
+            "id": "e9f9bacd-a336-4961-811b-53f80ea66e56",
+            "name": "Zonal Office-West-Internal Audit-Gujrat"
+          },
+          {
+            "id": "eda581bb-9c6a-4553-8177-5b2a129d12ab",
+            "name": "Zonal Office-West-Internal Audit-Mumbai"
+          },
+          {
+            "id": "77bbda84-66a2-4285-b732-acf04404d39a",
+            "name": "Zonal Office-West-Internal Audit-Pune"
+          },
+          {
+            "id": "c4fb216b-044c-410f-82fe-3b0e781ccce7",
+            "name": "Zonal Office-West-Marketing-Ahmedabad"
+          },
+          {
+            "id": "9d635a9d-8265-4d15-bc10-e1e3d99f9f7a",
+            "name": "Zonal Office-West-Marketing-Mumbai"
+          },
+          {
+            "id": "1c250e4a-c269-4c5c-91e6-44a44219d5b6",
+            "name": "Zonal Office-West-Marketing-Pune"
+          },
+          {
+            "id": "b0d07237-5886-4f1d-8074-5da2d45160f4",
+            "name": "Zonal Office-West-Operations-Ahmedabad"
+          },
+          {
+            "id": "d75ecd1f-a7dc-4f08-9c86-c08a193ed73e",
+            "name": "Zonal Office-West-Operations-Mumbai"
+          },
+          {
+            "id": "8f46f9bd-8bb2-404f-b9d2-d47b12f02779",
+            "name": "Zonal Office-West-Operations-Pune"
+          },
+          {
+            "id": "6b398682-d413-4441-a2b4-4adabd9d5542",
+            "name": "Zonal Office-West-Own Label"
+          },
+          {
+            "id": "71de5a09-ebf4-4ea6-93f7-5d97e2926d04",
+            "name": "Zonal Office-West-Projects-Ahmedabad"
+          },
+          {
+            "id": "4c7bd302-5f7f-4c1f-ae6e-0785c5ee1251",
+            "name": "Zonal Office-West-Projects-Mumbai"
+          },
+          {
+            "id": "938db33f-5ac7-4c67-ada9-eefcbb859d55",
+            "name": "Zonal Office-West-Training-Ahmedabad"
+          },
+          {
+            "id": "7bd0e42c-a621-41fd-9a79-592a16ef6eb3",
+            "name": "Zonal Office-West-Training-Pune"
+          },
+          {
+            "id": "1baea830-32a2-47fc-b005-30ba8860f8cc",
+            "name": "Zonal Office-West-Training-Surat"
+          }
+        ]
+      },
+      {
+        "filterId": 5,
+        "name": "Division",
+        "sortOrder": 3,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": [
+          {
+            "id": "633eb61a-2b82-4be7-ab2f-4b57ed823726",
+            "name": "Contact Center"
+          },
+          { "id": "3c258f63-608f-4ff1-93e8-fe2da4f13c23", "name": "Store" },
+          {
+            "id": "06d798f5-021e-4737-8b17-b77b9aade985",
+            "name": "Store NAPS"
+          },
+          {
+            "id": "00f99181-82ee-4c28-9907-46143c8b2e88",
+            "name": "Support Office"
+          },
+          {
+            "id": "aa4dc512-82b7-4534-a7bc-690687067f2f",
+            "name": "Support Office NAPS"
+          },
+          {
+            "id": "ef3142d6-7cb5-4652-9188-3bf8ec83d23c",
+            "name": "Zonal Office"
+          }
+        ]
+      },
+      {
+        "filterId": 6,
+        "name": "Department",
+        "sortOrder": 4,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": [
+          {
+            "id": "ad4976d6-e8f4-4c5f-a35b-f2cc953dbd42",
+            "name": "Administration"
+          },
+          {
+            "id": "c82a468b-3e58-4fb7-a6df-62574fc9c66b",
+            "name": "Brand Marketing"
+          },
+          {
+            "id": "442131db-fe29-4515-8f24-c6dc1793e967",
+            "name": "Business Excellence"
+          },
+          {
+            "id": "a32a9393-e50c-4dff-9090-ac10de5e7f09",
+            "name": "Business Solution Group"
+          },
+          { "id": "ccad3b70-08fc-4c58-8091-607266b65aae", "name": "Buying" },
+          {
+            "id": "b5ff9879-ff39-4f9e-a90e-97d3948bbac8",
+            "name": "CEOs Office"
+          },
+          {
+            "id": "498e6fe5-b2a9-416c-ac68-f51058fb033a",
+            "name": "Contact Center"
+          },
+          {
+            "id": "49a7785e-fda2-4caa-aff2-3a26ce5bb80c",
+            "name": "Customer Service"
+          },
+          {
+            "id": "85061bf1-9dde-4f88-a38a-51dde32821b2",
+            "name": "Distribution Center"
+          },
+          { "id": "810e4a83-9d11-4b72-b136-7588c5a84dbb", "name": "Dummy" },
+          {
+            "id": "694ec444-0c6e-442a-be50-5825c4ee9819",
+            "name": "E Commerce"
+          },
+          { "id": "77b348b1-dedb-4d46-b60e-1e3f224d389c", "name": "Finance" },
+          {
+            "id": "0908c5ed-3b9e-4149-88c6-f506879f3462",
+            "name": "Health and Safety"
+          },
+          {
+            "id": "fb327419-ec6f-4aab-b0e0-178d6dc93f5e",
+            "name": "Human Resource"
+          },
+          {
+            "id": "f855b9e7-4ae5-4f70-a14c-1d00cf9a8c87",
+            "name": "Information Technology"
+          },
+          {
+            "id": "04aeaec7-cd95-4c10-99d6-3cde1e463e2c",
+            "name": "Internal Audit"
+          },
+          { "id": "8f32846c-a1d6-4d09-b8e1-9e1fb54aa394", "name": "Legal" },
+          {
+            "id": "91c7624c-0fd9-4b64-a2a2-8f556930a1d0",
+            "name": "Maintenance"
+          },
+          { "id": "a84c5ec3-d75e-47ae-a992-452ec9a55748", "name": "Marketing" },
+          {
+            "id": "98a7fa00-4272-4887-8c17-091ae8885571",
+            "name": "Merch And Revenue Growth Mgmt"
+          },
+          {
+            "id": "4aa4de66-fb3d-4ec0-91bd-efb937f36113",
+            "name": "Omni channel"
+          },
+          {
+            "id": "d79d905d-3bff-4086-b319-e674104553b9",
+            "name": "Operations"
+          },
+          { "id": "30db047f-9708-4e86-b847-7f0b6e64f820", "name": "Own Label" },
+          {
+            "id": "48092311-53d1-4d4d-a999-5094b603e3e4",
+            "name": "Own Label Buying"
+          },
+          {
+            "id": "72ea3265-1a2b-4260-a279-ddbf056a7100",
+            "name": "Own Label Sales And Service"
+          },
+          {
+            "id": "108d9e8c-7d8e-49c3-a38a-34ca7d310d1e",
+            "name": "Procurement"
+          },
+          { "id": "71287940-cebe-4533-a3b1-30ca79554a87", "name": "Projects" },
+          { "id": "b35d0407-55ed-434c-8bb1-5be5a586c311", "name": "Property" },
+          {
+            "id": "19f72bb4-f8cb-44da-b019-aed174393596",
+            "name": "Property And Catchment"
+          },
+          { "id": "ae8a7c9c-69e1-4c2a-95ba-d6b92094cfdc", "name": "RPA" },
+          {
+            "id": "64a5b5de-9ed9-4d25-abf8-7d70f9da16f3",
+            "name": "Store Planning"
+          },
+          {
+            "id": "ce390ce9-5f41-49c5-be98-8bf8a1cdb91a",
+            "name": "Supply Chain"
+          },
+          { "id": "2ce7c9f3-4077-483e-aac7-7b7225021200", "name": "Training" },
+          {
+            "id": "0906ae7f-2b19-4de1-a3e9-4a25ccd11b7f",
+            "name": "Value Added Services"
+          },
+          {
+            "id": "881fe943-23b5-48c5-b698-49a45b359023",
+            "name": "Webstore Operations"
+          }
+        ]
+      },
+      {
+        "filterId": 7,
+        "name": "Process",
+        "sortOrder": 5,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": []
+      },
+      {
+        "filterId": 8,
+        "name": "Band Grade",
+        "sortOrder": 6,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": [{ "id": "4a1d82ba-c14d-465e-ae46-836add771d7e", "name": "NA" }]
+      },
+      {
+        "filterId": 9,
+        "name": "Designation",
+        "sortOrder": 7,
+        "selectedValue": "",
+        "controlType": "Dropdown",
+        "data": [
+          {
+            "id": "b83994e2-74cc-4e9f-a0ce-4b3dd4cfd7b6",
+            "name": "ADM- Accounts & Admin"
+          },
+          {
+            "id": "fff44cf8-9ab6-4a3f-b3bc-abbb5848b438",
+            "name": "Area Accountant"
+          },
+          {
+            "id": "115b60d1-cc11-4209-af57-213e9f51a04d",
+            "name": "Assistant Area Accountant"
+          },
+          {
+            "id": "f8c412d2-5086-46f3-b01d-122e0fcc5cbd",
+            "name": "Assistant Department Manager"
+          },
+          {
+            "id": "7fe601c0-1d7d-455a-9a4a-b8a578eb4a45",
+            "name": "Assistant Manager"
+          },
+          {
+            "id": "b01ca517-8beb-436b-87cb-7765ba6f8f04",
+            "name": "Assistant Store Manager"
+          },
+          {
+            "id": "22e6ad15-8a95-4ac3-9fe2-34f52b378086",
+            "name": "Back Dock Controller"
+          },
+          { "id": "09a508bc-5ec4-40aa-bd49-6384814ac120", "name": "BUFFER" },
+          { "id": "f98458af-1eca-4722-9b1f-e0d6f9eb3173", "name": "Cashier" },
+          {
+            "id": "86199bc0-bf11-4c48-95e8-71c6b451f4b9",
+            "name": "Chief Digital Officer"
+          },
+          {
+            "id": "5ade802f-e60c-416f-a74e-4af6a1337fd9",
+            "name": "Chief Executive Officer"
+          },
+          {
+            "id": "6fe59c2b-9aad-45a9-918c-8c2a084c2c34",
+            "name": "Chief Finance Officer"
+          },
+          {
+            "id": "bf1589f2-e9d8-4463-8f9e-932c1d5574c2",
+            "name": "Chief- HR and L&D"
+          },
+          {
+            "id": "a7e80f34-1f1d-4bcc-b4d6-ab10688da48a",
+            "name": "Chief- Marketing"
+          },
+          {
+            "id": "04161fc5-87f6-4d1d-97a2-b6a624e24511",
+            "name": "Cluster Manager"
+          },
+          {
+            "id": "b6740c7d-4d9e-47ca-8400-663f5777f0a2",
+            "name": "Company Secretary & Head Legal"
+          },
+          {
+            "id": "3bdc7050-8fcf-445f-8407-10d3570bffeb",
+            "name": "CSA- Escalation Desk"
+          },
+          {
+            "id": "aaf086fe-5db1-4bcb-adc6-8995b325a546",
+            "name": "Customer Delivery Specialist"
+          },
+          {
+            "id": "2a8470a4-8899-479b-8630-ffdf98dd4eea",
+            "name": "Customer Experience Manager"
+          },
+          {
+            "id": "78913cc8-1e70-469c-ae51-8f3c05179a4b",
+            "name": "Customer Service Associate"
+          },
+          {
+            "id": "241408c2-3853-4566-b958-4e3eb172a1e2",
+            "name": "Customer Service Specialist"
+          },
+          {
+            "id": "fdb53cc4-3483-49da-aaed-ee3280502b55",
+            "name": "Customer Service Specialist-CSD"
+          },
+          { "id": "9586cac7-d82b-4584-a67c-cbd89a007a03", "name": "Executive" },
+          {
+            "id": "33f885e6-a7fb-4ddd-9ef7-3acafb38977d",
+            "name": "Executive Director & CEO"
+          },
+          {
+            "id": "9ecc3d41-c610-4d1c-be20-3d67cadb0707",
+            "name": "Executive Maintenance"
+          },
+          {
+            "id": "e997d9f0-0bb4-4782-9ad5-28e94279adfb",
+            "name": "FFFFinance"
+          },
+          {
+            "id": "053d957f-9d79-45ac-a49d-2d2190b63086",
+            "name": "General Manager"
+          },
+          {
+            "id": "76ae43f4-d595-48fa-98ca-b7dd2d903a13",
+            "name": "Group Business Manager"
+          },
+          {
+            "id": "4a5893df-6d6d-4630-9970-f9ab1ff534ae",
+            "name": "Head of Department"
+          },
+          { "id": "0591ce8c-1dfd-4123-9d2f-f370857bd254", "name": "Manager" },
+          {
+            "id": "6ca97966-743d-488a-8b1f-37052db49b4d",
+            "name": "Manager Coordination - CEOs Office"
+          },
+          {
+            "id": "277c7ee7-c6f2-492f-94d5-873e9e482006",
+            "name": "Office Assistant"
+          },
+          {
+            "id": "899052ed-1b15-466e-88fe-51654991d988",
+            "name": "Omni Champ"
+          },
+          {
+            "id": "26c8e9e0-5120-4420-a0c2-47d2f68fe424",
+            "name": "Senior Executive"
+          },
+          {
+            "id": "857988b1-3b2a-4fec-b82b-96ab4042caaa",
+            "name": "Senior Executive Maintenance"
+          },
+          {
+            "id": "6d3893ca-59de-4294-985b-ea311e690587",
+            "name": "Senior Manager"
+          },
+          {
+            "id": "7116dbc2-261c-4f19-929c-ea5803ca0fa0",
+            "name": "Senior Store Manager"
+          },
+          {
+            "id": "5d189440-1cf9-40b6-ab42-1a23b13ca59f",
+            "name": "Senior-CSD"
+          },
+          {
+            "id": "3661e54c-6935-4374-b0d8-0f5432bc60a5",
+            "name": "Sr manager"
+          },
+          {
+            "id": "123e8234-1bdd-4cee-849e-3f3dc6b7ba89",
+            "name": "Store Manager"
+          },
+          {
+            "id": "6df6abc6-e4e0-4096-b0f8-5ff939bf81b9",
+            "name": "Team Leader"
+          },
+          { "id": "2608cbe6-f94e-4c2c-b227-e854f9da35a9", "name": "Trainee" },
+          {
+            "id": "0d5baffb-36ad-45cb-849e-120c8f8e2805",
+            "name": "Zonal Manager"
+          }
+        ]
+      },
+      {
+        "filterId": 11,
+        "name": "Attendance cycle",
+        "sortOrder": 9,
+        "selectedValue": "",
+        "controlType": "RadioButton",
+        "data": [
+          { "id": "1", "name": "Calender" },
+          { "id": "2", "name": "Attendance cycle" }
+        ]
+      },
+      {
+        "filterId": 12,
+        "name": "Date Range",
+        "sortOrder": 10,
+        "selectedValue": [
+          {
+            "id": "5",
+            "name": "Custom Period [Date]",
+            "value": {
+              "from": "17-04-2021",
+              "to": ""
+            }
+          }
+        ],
+        "controlType": "Dropdown",
+        "data": [
+          { "id": "1", "name": "Current Month" },
+          { "id": "2", "name": "Previous Month" },
+          { "id": "3", "name": "Custom Period [From Month..To Month]" },
+          { "id": "4", "name": "Custom Period [From Date..To Date]" },
+          { "id": "5", "name": "Custom Period [Date]" }
+        ]
+      }
+    ]
+  }
+]
+
+

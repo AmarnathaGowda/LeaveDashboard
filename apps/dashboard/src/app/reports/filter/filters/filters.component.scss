@@ -1,0 +1,163 @@
+.mat-list-base {
+  z-index: 99;
+  position: absolute;
+  background-color: white;
+  //   float: right;
+}
+.charts {
+  // width: 90vw;
+  height:400px;
+  overflow: scroll;
+  text-align: center;
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 6px;
+  }
+  &::-webkit-scrollbar-thumb:horizontal {
+    border-radius: 10px;
+  }
+}
+.border {
+  border: 1px solid rgb(148, 148, 148);
+}
+.pad-5 {
+  padding: 0px 12px;
+}
+.pad-tb5 {
+  padding: 9px 0px;
+}
+.report_header {
+  padding: 7px;
+  font-weight: 400;
+  font-size: 21px;
+}
+.report_search {
+  color: #0068a5;
+  font-size: 15px;
+  font-weight: 500;
+}
+.required {
+  color: red;
+}
+.report_dropdown_box {
+  padding: 19px 0px 1px 53px;
+}
+.form-control {
+  display: inline-block;
+}
+.bg-grey {
+  background-color: rgb(233, 233, 233);
+  height: 28px;
+  border-radius: 2px;
+}
+.mt-10 {
+  margin: 10px 0px;
+}
+.mt-20 {
+  margin: 20px 0px;
+}
+.ht-350 {
+  height: 390px;
+}
+#bar-chart {
+  margin-top: 20px;
+}
+.odd {
+  display: none;
+  &.dataTables_empty {
+    display: none;
+  }
+}
+.dataTables_wrapper {
+  .dt-buttons {
+    float: right;
+  }
+
+  .dataTables_filter {
+    float: left;
+  }
+}
+.box {
+  border: 1px solid #999999;
+  padding: 10px;
+  // width: 83%;
+  p {
+    margin-top: -23px;
+    background: white;
+    width: 17%;
+  }
+}
+.text-end {
+  text-align: end;
+}
+.mlr-5 {
+  margin: 5px 5px;
+}
+#bar-horizontal-chart {
+  overflow-y: scroll;
+}
+::ng-deep .mat-form-field-infix {
+  width: fit-content !important;
+}
+
+.example-month-picker .mat-calendar-period-button {
+  pointer-events: none;
+}
+
+.example-month-picker .mat-calendar-arrow {
+  display: none;
+}
+
+.w-50 {
+  width: 46% !important;
+  margin: 11px 1px;
+  margin-right: 7px;
+}
+.m {
+  margin: 11px 1px;
+}
+::ng-deep {
+  table.dataTable thead th,
+  table.dataTable thead td {
+    background: #5b9bd5;
+    color: white;
+    line-height: 18px;
+    padding: 3px 18px;
+    border-bottom: none;
+    // text-align: center;
+  }
+  table.dataTable tbody td {
+    padding: 2px 8px;
+    border-bottom: 1px solid #5b9bd5;
+    border-right: 1px dotted #5b9bd5;
+    border-left: 1px dotted #5b9bd5;
+    border-top: none;
+  }
+  .dataTables_wrapper .dataTables_filter {
+    float: left;
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  div.dt-buttons {
+    position: absolute;
+    float: left;
+    top: -6rem;
+    visibility: hidden;
+  }
+}

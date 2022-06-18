@@ -1,0 +1,55 @@
+.bar1 {
+  fill: aqua;
+}
+.bar2 {
+  fill: deepskyblue;
+}
+.bar3 {
+  fill: steelblue;
+}
+.bar:hover {
+  fill: orange;
+}
+// .axis--x path { display: none; }
+path {
+  fill: none;
+}
+.line {
+  fill: none;
+  stroke: royalblue;
+  stroke-width: 3;
+}
+.dot {
+  fill: royalblue;
+  stroke: royalblue;
+}
+
+.bar {
+  fill: rgb(92 155 213);
+}
+
+.bar:hover {
+  fill: rgb(40 67 188);
+}
+#linebar-chart {
+  // width: 800px;
+  max-height: 250px;
+  // width: 23rem;
+  // height: 13rem;
+  // overflow-x: scroll;
+  // overflow-y: scroll;
+}
+#linebar-legend {
+  height: 30px;
+}
+// ::-webkit-scrollbar {
+//   width: 0.2em;
+//   height: 0.2em
+// }
+// ::-webkit-scrollbar-button {
+//   background: #fff
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #eee
+// }​

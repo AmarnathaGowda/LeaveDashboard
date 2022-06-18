@@ -1,0 +1,545 @@
+<div class="container-fluid mt-10">
+  <div class="border pad-5">
+    <div class="row">
+      <div class="col-sm-12">
+        <span class="report_header">{{name}} Report</span>
+      </div>
+    </div>
+
+    <div class="border pad-5 mt-10">
+      <div class="row bg-grey">
+        <span class="report_search">Search (<span class="required"> *Required Field</span>)</span>
+      </div>
+      <form name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+
+
+        <div class="row report_dropdown_box" *ngIf="filterDropdown">
+
+          <div class="col-sm-6" *ngFor="let item of filterDropdown">
+            <!-- Year dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Year'">
+              <div class="col-sm-4">
+                <label>{{ item.name }} <span class="required">*</span> </label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect [(ngModel)]="yearSelected" [dropdownSettings]="dropdownSettings"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+
+              </div>
+            </div>
+
+            <!-- Month dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Month'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}<span class="required">*</span> </label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select>
+               -->
+                <dashboard-ui-multiselect [(ngModel)]="monthSelected" [dropdownSettings]="dropdownSettings"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- City dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'City'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="citySelected" [(ngModel)]="model.citySelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.citySelected " [dropdownList]="  item.data ">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+            <!-- Branches dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Branch'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="branchSelected" [(ngModel)]="model.branchSelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.branchSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Division dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Division'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect [dropdownSettings]="dropdownSettings" [name]="item.filterId"
+                  [(ngModel)]="model.divisionSelected" [selectedData]="model.divisionSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Department dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Department'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="departmentSelected" [(ngModel)]="model.departmentSelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.departmentSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Process dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Process'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="processSelected" [(ngModel)]="model.processSelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.processSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Band Grade dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Band Grade'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="bandGradeSelected" [(ngModel)]="model.bandGradeSelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.bandGradeSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Designation dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Designation'">
+              <div class="col-sm-4">
+                <label>{{ item.name }}</label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="designationSelected" [(ngModel)]="model.designationSelected"
+                  [dropdownSettings]="dropdownSettings" [selectedData]="model.designationSelected"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+              </div>
+            </div>
+
+            <!-- Custom  Columns changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'Custom Columns'">
+              <div class="col-sm-4">
+                <label>{{item.name}}
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                        <option *ngFor="let itemoptions of item.data">
+                          {{ itemoptions.name }}
+                        </option>
+                      </select> -->
+                <dashboard-ui-multiselect name="customColumn" [(ngModel)]="model.customSelected"
+                  #customColumnSelected="ngModel" [dropdownSettings]="dropdownSettings"
+                  [selectedData]="model.customSelected" [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+
+              </div>
+            </div>
+
+
+            <!-- Designation dropdown changes -->
+            <div class="row pad-tb5" *ngIf="item.name === 'View By(for graph only)'">
+              <div class="col-sm-4">
+                <label>View By (for graph only)<span class="required">*</span>
+                </label>
+              </div>
+              <div class="col-sm-6">
+                <!-- <select multiple class="form-control">
+                  <option *ngFor="let itemoptions of item.data">
+                    {{ itemoptions.name }}
+                  </option>
+                </select> -->
+                <dashboard-ui-multiselect name="viewBySelected" required [(ngModel)]="model.view"
+                  #viewBySelected="ngModel" [dropdownSettings]="singledropdownSettings" [selectedData]="model.view"
+                  [dropdownList]="item.data">
+                </dashboard-ui-multiselect>
+                <span class="required" *ngIf="viewBySelected.invalid">
+                  Please select View By
+                </span>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+          <div class="row">
+            <!-- Attendance cycle changes -->
+            <span *ngFor="let item of filterDropdown">
+              <div class="row pad-tb5" *ngIf="item.name === 'Attendance cycle'">
+                <div class="col-sm-2"><label>Attendance Cycle</label></div>
+                <div class="col-sm-4">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <label class="col-sm-6">Calendar </label>
+                      <input class="col-sm-4" type="radio" name="Calendar" (change)="setAttendanceCycle($event)" [(ngModel)]="model.calendarId"
+                        value="calendar" title='[{"id":"calendar","name":"Calendar","value":null}]' />
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="col-sm-10">Attendance Cycle </label>
+                      <input type="radio" name="Calendar" [(ngModel)]="model.calendarId" (change)="setAttendanceCycle($event)" value="attendancecycle" title='[{"id":"attendancecycle","name":"Attendance Cycle","value":null}]' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+
+
+
+
+            <span *ngFor="let item of filterDropdown">
+              <div class="row pad-tb5" *ngIf="item.name === 'Date Range'">
+                <div class="col-sm-2">
+                  <label>Date Range
+                  </label>
+                </div>
+                <div class="col-sm-3">
+
+                  <dashboard-ui-multiselect (ngModelChange)="checkSelected($event)" name="Range" #Range
+                    [(ngModel)]="model.Range" [selectedData]="model.Range" [dropdownSettings]="singledropdownSettings"
+                    [dropdownList]="item.data">
+                  </dashboard-ui-multiselect>
+                </div>
+              </div>
+            </span>
+          </div>
+
+          <div class="row" *ngIf="model.selectedRange === 'Custom Period [Date]'">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                </div>
+                <div class="col-sm-6">
+                  <label class="col-sm-3">Date</label>
+                  <mat-form-field class="col-sm-9">
+                    <input matInput [matDatepicker]="dp" name="fromPDate" (dateChange)="addDate($event,'fromPDate')"
+                      [(ngModel)]="model.fromPDate">
+                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                    <mat-datepicker #dp startView="multi-year" panelClass="example-month-picker">
+                    </mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" *ngIf="model.selectedRange === 'Custom Period [From Month..To Month]'">
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-4">
+                  <label class="m">From</label>
+                </div>
+                <div class="col-sm-6">
+                  <select class="col-sm-6 form-control w-50" name="fromMonth" [(ngModel)]="model.fromMonth">
+                    <option disabled value="null" selected>Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                  <select class="col-sm-6 form-control w-50" name="fromYear" [(ngModel)]="model.fromYear">
+                    <option disabled value="null" selected>Year</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <label class="m">To</label>
+                </div>
+                <div class="col-sm-6">
+                  <select class="col-sm-6 form-control w-50" name="toMonth" [(ngModel)]="model.toMonth">
+                    <option disabled value="null" selected>Month</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                  </select>
+                  <select class="col-sm-6 form-control w-50" name="toYear" [(ngModel)]="model.toYear">
+                    <option disabled value="null" selected>Year</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="row" *ngIf="model.selectedRange === 'Custom Period [From Date..To Date]'">
+
+            <div class="col-sm-6">
+              <div class="row">
+                <div class="col-sm-5">
+                  <label class="col-sm-3">From</label>
+                  <mat-form-field class="col-sm-9">
+                    <input matInput [matDatepicker]="dp" name="fromPDate" (dateChange)="addDate($event,'fromPDate')"
+                      [(ngModel)]="model.fromPDate">
+                    <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+                    <mat-datepicker #dp startView="multi-year" panelClass="example-month-picker">
+                    </mat-datepicker>
+                  </mat-form-field>
+                </div>
+                <div class="col-sm-5">
+                  <label class="col-sm-3">To</label>
+                  <mat-form-field class="col-sm-9">
+
+                    <input matInput [matDatepicker]="toDate" name="toDate" (dateChange)="addDate($event,'toDate')"
+                      [(ngModel)]="model.toDate">
+                    <mat-datepicker-toggle matSuffix [for]="toDate"></mat-datepicker-toggle>
+                    <mat-datepicker #toDate startView="multi-year" panelClass="example-month-picker">
+                    </mat-datepicker>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="row">
+            <div class="col-sm-12 text-end">
+              <button class="btn btn-primary btn-md   mt-20 mlr-5" type="button" *ngIf="filters.graphId >= 5" (click)="cloneReport()">
+                <i class="fa fa-copy"></i> Clone
+              </button>
+              <button class="btn btn-primary btn-md   mt-20 mlr-5" (click)="resetBtn()" type="button">
+                <i class="fa fa-undo"></i> Reset
+              </button>
+              <button class="btn btn-primary btn-md   mt-20 mlr-5" type="button" (click)="runReport()">
+                <i class="fa fa-list-alt"></i> Run Report
+              </button>
+              <button class="btn btn-primary btn-md   mt-20 mlr-5">
+                <i class="fa fa-save"></i> Save
+              </button>
+
+            </div>
+          </div>
+
+
+          <!-- <div class="row">
+          <div class="box">
+            <p>Save Changes to Dashboard</p>
+            <div class="row">
+              <div class="col-sm-10">
+                  <label class="col-sm-11">Reset to default filters and Graph
+                  </label>
+                  <input class="col-sm-1" type="radio" name="filters" />
+              
+                  <label class="col-sm-11">Save the current settings and graph to dashboard
+                  </label>
+                  <input class="col-sm-1" type="radio" name="filters" />
+              </div>
+              <div class="col-sm-2">
+                <button class="btn btn-primary btn-sm pull-right" (click)="saveBtn()" type="button">
+                  <i class="fa fa-save"></i> Save
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+
+        </div>
+
+
+      </form>
+
+    </div>
+
+    <div class="border pad-5 mt-10">
+      <div class="row bg-grey">
+        <span class="report_search">Chart Details</span>
+      </div>
+      <div class="row">
+        <div class="ht-350 charts">
+
+          <dashboard-ui-newdonutchart *ngIf="filters?.graphId === 1 && getDailyAttendanceStatus?.data " [data]="getDailyAttendanceStatus.data">
+          </dashboard-ui-newdonutchart>
+
+          <!-- <dashboard-ui-dounutchart
+            [data]="getDailyAttendanceStatus.data" [keys]="getDailyAttendanceStatus.keys"
+            [colors]="getDailyAttendanceStatus.colors" [type]="getDailyAttendanceStatus.type">
+          </dashboard-ui-dounutchart> -->
+          <dashboard-ui-linebarchart *ngIf="filters?.graphId === 2 && getTargetVsActualWorkDays?.data "
+            [keys]="getTargetVsActualWorkDays.keys" [color]="getTargetVsActualWorkDays.color"
+            [data]="getTargetVsActualWorkDays.data"></dashboard-ui-linebarchart>
+
+            
+
+          <dashboard-ui-dounutchart *ngIf="lateloginChart && filters?.graphId === 3" [data]="lateloginChart.data"
+            [keys]="lateloginChart.keys" [colors]="lateloginChart.colors" [type]="lateloginChart.type">
+          </dashboard-ui-dounutchart>
+
+          <dashboard-ui-dounutchart *ngIf="earlylogoutChart && filters?.graphId === 4" [data]="earlylogoutChart.data"
+            [keys]="earlylogoutChart.keys" [colors]="earlylogoutChart.colors" [type]="earlylogoutChart.type">
+          </dashboard-ui-dounutchart>
+
+
+          <dashboard-ui-stackedbarchart *ngIf="filters?.graphId === 5 && getDailyAttendance?.data"
+            [color]="getDailyAttendance.color" [data]="getDailyAttendance?.data"   [keys]="getDailyAttendance?.keys">
+          </dashboard-ui-stackedbarchart>
+
+          <dashboard-ui-linechart *ngIf="filters?.graphId === 6 && getEmpWorkedOnWeekend?.data"
+            [xaxis]="getEmpWorkedOnWeekend.x" [yaxis]="getEmpWorkedOnWeekend.y" [color]="getEmpWorkedOnWeekend.colors"
+            [keys]="getEmpWorkedOnWeekend.keys" [data]="getEmpWorkedOnWeekend.data">
+          </dashboard-ui-linechart>
+
+          <dashboard-ui-groupedverticalbarchart *ngIf="filters?.graphId === 7 && getPenalizationMetrics"
+          
+            [color]="getPenalizationMetrics.color" [data]="getPenalizationMetrics.data">
+          </dashboard-ui-groupedverticalbarchart>
+
+          <dashboard-ui-horizontalbarchart *ngIf="filters?.graphId === 8 && getEarlyLogoutMetricsData "
+            [xaxis]="getEarlyLogoutMetricsData.x" [yaxis]="getEarlyLogoutMetricsData.y"
+            [data]="getEarlyLogoutMetricsData.data"></dashboard-ui-horizontalbarchart>
+
+          <dashboard-ui-linechart *ngIf="filters?.graphId === 9 &&  getSummaryOfWorkHours?.data "
+            [color]="getSummaryOfWorkHours.color" [xaxis]="getSummaryOfWorkHours.x" [yaxis]="getSummaryOfWorkHours.y"
+            [keys]="getSummaryOfWorkHours.keys" [data]="getSummaryOfWorkHours.data">
+          </dashboard-ui-linechart>
+
+
+          <dashboard-ui-horizontalbarchart *ngIf="filters?.graphId === 10 && getLateLogintMetricsData"
+            [xaxis]="getLateLogintMetricsData.x" [yaxis]="getLateLogintMetricsData.y"
+            [data]="getLateLogintMetricsData.data"></dashboard-ui-horizontalbarchart>
+
+            <dashboard-ui-multiseries *ngIf="filters?.graphId === 11 && getweeklyOvertime" [data]="getweeklyOvertime?.data"></dashboard-ui-multiseries>
+
+          <dashboard-ui-verticalbarchart class="charts" *ngIf="filters?.graphId === 12 && getOvertimeDetails "
+            [data]="getOvertimeDetails.data" [color]="getOvertimeDetails.color" [xaxis]="getOvertimeDetails.x"
+            [yaxis]="getOvertimeDetails.y">
+          </dashboard-ui-verticalbarchart>
+
+          <dashboard-ui-verticalbarchart class="charts"
+            *ngIf="filters?.graphId === 13 && getAvgOTHoursByAge?.data" [data]="getAvgOTHoursByAge?.data"
+            [color]="getAvgOTHoursByAge.color" [xaxis]="getAvgOTHoursByAge.x" [yaxis]="getAvgOTHoursByAge.y">
+          </dashboard-ui-verticalbarchart>
+
+          <dashboard-ui-linechart *ngIf="filters?.graphId === 14 &&  totalDeviationMins "
+            [color]="totalDeviationMins.color" [keys]="totalDeviationMins.keys" [data]="totalDeviationMins.data"
+            [xaxis]="totalDeviationMins.x" [yaxis]="totalDeviationMins.y">
+          </dashboard-ui-linechart>
+
+        
+          <dashboard-ui-penalinstance *ngIf="filters?.graphId === 15 && getPenalizationInstances" [data]="getPenalizationInstances.data"> </dashboard-ui-penalinstance>
+ 
+
+
+        </div>
+      </div>
+
+    </div>
+    <div class="border pad-5 mt-20" *ngIf="showReport" style="margin-top: 68px;">
+      <div class="row bg-grey">
+        <span class="report_search">Report Details</span>
+      </div>
+      <div class="row">
+        <div class="mt-20" >
+          <dashboard-ui-loader *ngIf="!gridData"></dashboard-ui-loader>
+          <dashboard-ui-reportcomp *ngIf="gridData " [gridData]="gridData"></dashboard-ui-reportcomp>
+          <!-- <dashboard-ui-gridreports *ngIf="gridParams " [gridColumns]="gridColumns" [gridData]="gridData" [gridParams]="gridParams">
+          </dashboard-ui-gridreports> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

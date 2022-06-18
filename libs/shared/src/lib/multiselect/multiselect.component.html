@@ -1,0 +1,9 @@
+<ng-multiselect-dropdown
+  [placeholder]="'All'"
+  [settings]="_dropdownSettings"
+  [data]="_dropdownList"
+  [(ngModel)]="value"
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+>
+</ng-multiselect-dropdown>

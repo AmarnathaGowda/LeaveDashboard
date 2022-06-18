@@ -1,0 +1,89 @@
+<dashboard-ui-loader *ngIf="loader"></dashboard-ui-loader>
+<div *ngIf="persons && persons.length === 0">No data Found</div>
+<div *ngIf="persons && persons.length >= 1">
+    <form name="form" #f="ngForm">
+        <div class="ad">
+            <button class="btn btn-primary btn-md    mlr-5 mr-10" type="button" (click)="submitbtn(button)">
+                <i class="fa fa-file-excel-o"></i> Export As
+            </button>
+            <input type="radio" [(ngModel)]="button" name="dt-buttons" value="excel" /> Excel
+            <input type="radio" [(ngModel)]="button" name="dt-buttons" value="Print" /> Print
+        </div>
+    </form>
+
+
+    <!-- <table *ngIf="persons && persons?.length != 0 " datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger"
+        class="row-border hover">
+
+        <thead>
+            <tr>
+                <th *ngFor="let d of _displayColumns">{{d.value}} </th>
+
+            </tr>
+        </thead>
+        <tbody *ngIf="persons && persons?.length != 0 ">
+            <tr *ngFor="let person of persons">
+
+                <td *ngFor="let d of _displayColumns">{{person[d.key]}}</td>
+
+            </tr>
+        </tbody>
+    
+    </table> -->
+</div>
+<!-- <h5 *ngIf="_gridParams && _gridParams.data && !_gridParams.data.length">No Records Found</h5> -->
+
+
+<!-- <table id="example" class="display" cellspacing="0" width="100%">
+    <thead>
+        <tr>
+            <th *ngFor="let d of _displayColumns">{{d.value}} </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of persons">
+
+            <td *ngFor="let d of _displayColumns">{{person[d.key]}}</td>
+
+        </tr>
+    </tbody>
+</table> -->
+
+<!-- <table *ngIf="_gridColumns" datatable [dtOptions]="dtOptionsa" class="row-border hover">
+</table> -->
+<!-- <table id="example" *ngIf="_displayColumns" class="display" width="100%"></table> -->
+<!-- 
+<table datatable id="firstTable" *ngIf="_displayColumns" [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+        <tr>
+            <th *ngFor="let d of _displayColumns">{{d.value}} </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of persons">
+
+            <td *ngFor="let d of _displayColumns">{{person[d.key]}}</td>
+
+        </tr>
+    </tbody>
+</table> -->
+{{_displayColumns|json}}
+<!-- <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+
+    <thead>
+        <tr>
+            <th *ngFor="let d of _displayColumns">{{d.title}} </th>
+
+        </tr>
+    </thead>
+    <tbody *ngIf="_displayColumns">
+        <tr *ngFor="let person of persons">
+            <td *ngFor="let d of _displayColumns">{{person[d.data]}}</td>
+
+        </tr>
+    </tbody>
+</table> -->
+{{dtRendered}}
+<table *ngIf="dtRendered" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover"></table>
